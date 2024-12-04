@@ -26,7 +26,7 @@
             <?php endforeach; ?>
         </div>
 
-        <?php if ($settings['show_arrows'] == 'visible'): ?>
+        <?php if ($settings['show_arrows'] != 'hidden'): ?>
             <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer">
                 <span class="arrow prv pe-7s-angle-left"></span>
             </div>
@@ -35,7 +35,7 @@
             </div>
         <?php endif; ?>
 
-        <?php if ($settings['show_dots'] == 'visible'): ?>
+        <?php if ($settings['show_dots'] != 'hidden'): ?>
             <div class="swiper-pagination"></div>
         <?php endif; ?>
     </div>

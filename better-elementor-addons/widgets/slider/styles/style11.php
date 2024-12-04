@@ -27,7 +27,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
-        <?php if ($settings['show_arrows'] == 'visible'): ?>
+        <?php if ($settings['show_arrows'] != 'hidden'): ?>
             <div class="setone top">
                 <div class="swiper-button-next swiper-nav-ctrl next-ctrl">
                     <i class="fas fa-chevron-right"></i>

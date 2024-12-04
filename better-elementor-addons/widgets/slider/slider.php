@@ -565,10 +565,10 @@ class Better_Slider extends Widget_Base {
 				'label' => __( 'Show Arrows','better-el-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'visible' => __( 'Show','better-el-addons' ),
-					'hidden' => __( 'Hide','better-el-addons' ),
+					'' => esc_html__( 'Show','better-el-addons' ),
+					'hidden' => esc_html__( 'Hide','better-el-addons' ),
 				],
-				'default' => 'visible',
+				'default' => '',
 				'condition' => [
 					'better_slider_style' => array('5','8','9','11')
 				],
@@ -586,10 +586,10 @@ class Better_Slider extends Widget_Base {
 				'label' => __( 'Show Dots','better-el-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'visible' => __( 'Show','better-el-addons' ),
+					'' => __( 'Show','better-el-addons' ),
 					'hidden' => __( 'Hide','better-el-addons' ),
 				],
-				'default' => 'visible',
+				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .better-slider.style-2 .slick-dots' => 'visibility: {{VALUE}};',
 				],
@@ -602,7 +602,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'slider_mask',
 			[
-				'label' => __( 'Slider Mask', 'avo_plg' ),
+				'label' => __( 'Slider Mask', 'better-el-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5,
 				
@@ -1092,7 +1092,6 @@ class Better_Slider extends Widget_Base {
 		$style = $settings['better_slider_style'];	
 		// Define an array of allowed styles
     	$allowed_styles = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'); // Add more styles as needed
-
 
 	    // Check if the selected style is in the allowed list
 	    if (in_array($style, $allowed_styles)) {

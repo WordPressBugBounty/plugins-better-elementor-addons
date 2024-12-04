@@ -458,6 +458,12 @@ class Plugin
             '20200508'
         );
         wp_enqueue_style(
+            'better-swiper',
+            plugin_dir_url( __FILE__ ) . 'assets/css/swiper.min.css',
+            array(),
+            '20200508'
+        );
+        wp_enqueue_style(
             'better-style',
             plugin_dir_url( __FILE__ ) . 'assets/style.css',
             array(),

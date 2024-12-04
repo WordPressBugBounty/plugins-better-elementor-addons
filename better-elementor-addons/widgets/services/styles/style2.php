@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-6 better-valign">
                 <div class="content">
-                    <h4 class="wow" data-splitting><?php echo wp_kses_post($settings['title']); ?></h4>
+                    <h4 class="better-services-title wow" data-splitting><?php echo wp_kses_post($settings['title']); ?></h4>
                     <p class="wow txt" data-splitting><?php echo wp_kses_post($settings['subtitle']); ?></p>
                     <ul class="feat v">
                         <?php foreach ($settings['services_list'] as $index => $item) : ?>

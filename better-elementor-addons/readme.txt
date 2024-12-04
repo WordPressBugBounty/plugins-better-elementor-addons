@@ -3,9 +3,11 @@ Contributors:  betteraddon,betteraddons, elementcamp, designstore21,
 Donate link: https://widgets.betteraddons.com/
 Tags: addons, elementor, elementor addon, elementor addons, elementor widget
 Requires at least: 4.6
-Tested up to: 6.5.3
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.5.2
+Elementor tested up to: 3.25.10
+Elementor Pro tested up to: 3.25.4
+Stable tag: 1.5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +74,9 @@ Yes, You can customize it. We provided all possible options in backend to update
 More Features Coming Soon!
 
 == Changelog ==
+
+= 1.5.3 - 04/12/2024  =
+Compatibility update. 
 
 = 1.5.2 - 22/06/2024  =
 improve editor control. 

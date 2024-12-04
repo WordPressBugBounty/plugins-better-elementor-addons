@@ -123,6 +123,16 @@ class Better_Showcase extends Widget_Base {
 			]
 		);
 
+		$repeater->add_control(
+			'btn_text', [
+				'label' => esc_html__( 'Button Text', 'better-el-addons' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Explore <br> More' , 'better-el-addons' ),
+				'show_label' => true,
+                'label_block' => true,
+			]
+		);
+
         $repeater->add_control(
 			'image', [
 				'label' => esc_html__( 'Image', 'better-el-addons' ),
@@ -144,10 +154,12 @@ class Better_Showcase extends Widget_Base {
 					[
 						'title' => esc_html__( 'Title', 'better-el-addons' ),
 						'subtitle' => esc_html__( 'Sub Title', 'better-el-addons' ),
+						'btn_text' => __( 'Explore <br> More', 'better-el-addons' ),
 					],
 					[
 						'title' => esc_html__( 'Title', 'better-el-addons' ),
 						'subtitle' => esc_html__( 'Sub Title', 'better-el-addons' ),
+						'btn_text' => __( 'Explore <br> More', 'better-el-addons' ),
 					],
 				],
 				'title_field' => '{{{ title }}}',

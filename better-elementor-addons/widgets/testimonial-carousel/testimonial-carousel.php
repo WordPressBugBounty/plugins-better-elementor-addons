@@ -782,6 +782,34 @@ class Better_Testimonial_Carousel extends Widget_Base
             ]
         );
 
+        $this->add_responsive_control(
+            'style6_better_text_alignment',
+            [
+                'label' => __('Text Alignment', 'themescamp-core'),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => __('Left', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => __('Center', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => __('Right', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .better-testimonial .testim .cont' => 'text-align: {{VALUE}};',
+                ],
+				'condition' => [
+					'better_testimonial_style' => array('style8')
+				],
+            ]
+        );
+
         $this->add_control(
             'style6_better_testimonial_active_dot_color',
             [

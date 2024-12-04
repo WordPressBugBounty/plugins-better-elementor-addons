@@ -402,7 +402,9 @@
         /* ===============================  SPLITTING TEXT  =============================== */
 
         if (typeof Splitting === 'function') {
-            Splitting();
+            $(window).load(function () {
+                Splitting();
+            });
         }
 
     }

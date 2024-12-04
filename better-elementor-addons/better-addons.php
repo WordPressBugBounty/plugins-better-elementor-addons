@@ -2,19 +2,20 @@
 
 /**
  * @package better_el_addons 
- * @version 1.5.2
+ * @version 1.5.3
  */
 /**
  * Plugin Name: Better Elementor Addons
  * Description: Simple Elementor Addons for making Beautiful Website.
  * Plugin URI:  https://wordpress.org/plugins/better-elementor-addons/
- * Version:     1.5.2
+ * Version:     1.5.3
  * Author:      BetterAddons
  * Author URI:  https://widgets.betteraddons.com/
  * Text Domain: better-el-addons
  * Domain Path: /lang
- * Elementor tested up to: 3.22.1
- * Elementor Pro tested up to: 3.20.0
+ * Tested up to: 6.7
+ * Elementor tested up to: 3.25.10
+ * Elementor Pro tested up to: 3.25.4
  */
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -23,7 +24,7 @@ if ( !defined( 'ABSPATH' ) ) {
 // Ensure the free version is deactivated if premium is running
 
 // Plugin version
-define( 'BEA_VERSION', '1.5.2' );
+define( 'BEA_VERSION', '1.5.3' );
 // Plugin Root File
 define( 'BEA_PLUGIN_FILE', __FILE__ );
 // Plugin Folder Path

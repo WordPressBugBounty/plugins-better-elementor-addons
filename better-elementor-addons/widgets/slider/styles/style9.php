@@ -27,7 +27,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
-        <?php if ($settings['show_arrows'] == 'visible'): ?>
+        <?php if ($settings['show_arrows'] != 'hidden'): ?>
             <div class="cta__slider-arrows">
                 <i id="better-slider9-next" class="cta__slider-arrow cta__slider-arrow--next">
                     <i class="fas fa-chevron-up"></i>

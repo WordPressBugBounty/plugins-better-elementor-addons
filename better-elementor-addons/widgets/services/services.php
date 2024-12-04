@@ -154,6 +154,34 @@ class Better_Services extends Widget_Base {
 			]
 		);
 
+        $this->add_responsive_control(
+            'title_alignment',
+            [
+                'label' => __('Title Alignment', 'themescamp-core'),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => __('Left', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => __('Center', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => __('Right', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .better-services .better-services-title' => 'text-align: {{VALUE}};',
+                ],
+				'condition' => [
+					'better_services_style' => array('1','2','5')
+				],
+            ]
+        );
+
 		$this->add_control(
 			'subtitle',
 			[
@@ -181,6 +209,34 @@ class Better_Services extends Widget_Base {
 				],
 			]
 		);
+
+        $this->add_responsive_control(
+            'text_alignment',
+            [
+                'label' => __('Text Alignment', 'themescamp-core'),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => __('Left', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => __('Center', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => __('Right', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .better-services .better-services-text' => 'text-align: {{VALUE}};',
+                ],
+				'condition' => [
+					'better_services_style' => array('1','5')
+				],
+            ]
+        );
 
 		$this->add_control(
 			'link',
@@ -300,6 +356,34 @@ class Better_Services extends Widget_Base {
 				],
 			]
 		);
+
+        $this->add_responsive_control(
+            'style4_item_icon_alignment',
+            [
+                'label' => __('Text Alignment', 'themescamp-core'),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'left' => [
+                        'title' => __('Left', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-left',
+                    ],
+                    'center' => [
+                        'title' => __('Center', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-center',
+                    ],
+                    'right' => [
+                        'title' => __('Right', 'themescamp-core'),
+                        'icon' => 'eicon-text-align-right',
+                    ],
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .better-services .better-services-icon' => 'text-align: {{VALUE}};',
+                ],
+				'condition' => [
+					'better_services_style' => array('4','5')
+				],
+            ]
+        );
 
 		$this->add_control(
 			'style4_item_title',

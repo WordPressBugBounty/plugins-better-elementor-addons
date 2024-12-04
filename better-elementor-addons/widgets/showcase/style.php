@@ -16,7 +16,7 @@
                                             <div class="bord"></div>
                                         </h1>
                                         <div class="discover">
-                                            <a href="<?php echo esc_url($item['link']['url']); ?>"><span>Explore <br> More</span></a>
+                                            <a href="<?php echo esc_url($item['link']['url']); ?>"><span><?php echo wp_kses_post($item['btn_text']) ?></span></a>
                                         </div>
                                     </div>
                                 </div>
