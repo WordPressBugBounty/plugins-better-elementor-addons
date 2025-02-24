@@ -84,7 +84,7 @@ class Better_List_Holder extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		// start of the Content tab section
 		$this->start_controls_section(

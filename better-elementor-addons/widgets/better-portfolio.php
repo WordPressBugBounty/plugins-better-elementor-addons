@@ -94,7 +94,7 @@ class Better_Portfolio extends Widget_Base
      * @since 1.0.0
      * @access protected
      */
-    protected function _register_controls()
+    protected function register_controls()
     {
         // start of the Content tab section
         $this->start_controls_section(

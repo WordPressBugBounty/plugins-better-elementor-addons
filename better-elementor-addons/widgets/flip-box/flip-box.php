@@ -89,7 +89,7 @@ class Better_Flip_Box extends Widget_Base
      *
      * @access protected
      */
-    protected function _register_controls()
+    protected function register_controls()
     { 
 
           //----------------------------------------------- flip Box content section-----------------------------------//

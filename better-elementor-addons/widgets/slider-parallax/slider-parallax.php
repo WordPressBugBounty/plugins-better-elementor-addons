@@ -61,7 +61,7 @@ class Better_Slider_Parallax extends Widget_Base
     /**
      * Register the widget controls.
      */
-    protected function _register_controls()
+    protected function register_controls()
     {
 
         $this->start_controls_section(

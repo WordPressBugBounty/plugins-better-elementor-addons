@@ -40,7 +40,7 @@ class Better_Post_Date extends Widget_Base {
 		return [ 'better-widgets-post-elements' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 

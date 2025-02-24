@@ -10,7 +10,6 @@ use Elementor\Plugin;
 use Elementor\Frontend;
 use Elementor\Icons_Manager;
 use Elementor\Group_Control_Image_Size;
-use Elementor\Scheme_Base;
 
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -88,7 +87,7 @@ class Better_Button extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 	
 		$this->start_controls_section(
 			'section_content',

@@ -95,7 +95,7 @@ class Better_Blog_Adv extends Widget_Base
      *
      * @access protected
      */
-    protected function _register_controls()
+    protected function register_controls()
     { 
 
             //----------------------------------------------- blog setting section-----------------------------------//

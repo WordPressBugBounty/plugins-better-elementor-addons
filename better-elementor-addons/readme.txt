@@ -5,9 +5,8 @@ Tags: addons, elementor, elementor addon, elementor addons, elementor widget
 Requires at least: 4.6
 Tested up to: 6.7
 Requires PHP: 5.6
-Elementor tested up to: 3.25.10
-Elementor Pro tested up to: 3.25.4
-Stable tag: 1.5.3
+Elementor tested up to: 3.27.6
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +73,8 @@ Yes, You can customize it. We provided all possible options in backend to update
 More Features Coming Soon!
 
 == Changelog ==
+= 1.5.4 - 24/02/2025  =
+Compatibility update. 
 
 = 1.5.3 - 04/12/2024  =
 Compatibility update. 
