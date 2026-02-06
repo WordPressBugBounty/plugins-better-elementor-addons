@@ -38,7 +38,7 @@ class Better_Price extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Price Plan', 'better-el-addons' );
+		return esc_html__( 'Price Plan', 'better-elementor-addons' );
 	}
 
 	/**
@@ -101,7 +101,7 @@ class Better_Price extends Widget_Base {
 		$this->start_controls_section(
 			'price_style_section',
 			[
-				'label' => esc_html__( 'Price Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -109,12 +109,12 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -123,11 +123,11 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_mode_style',
 			[
-				'label' => __( 'Mode', 'better-el-addons' ),
+				'label' => __( 'Mode', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 				'condition' => [
@@ -142,7 +142,7 @@ class Better_Price extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -151,10 +151,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_title',
 			[
-				'label' => esc_html__( 'Price Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Standard' ),
+				'default' => esc_html( 'Standard' ),
 			]
 		);
 
@@ -162,10 +162,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_amount',
 			[
-				'label' => esc_html__( 'Price Amount', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Amount', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( '$35' ),
+				'default' => esc_html( '$35' ),
 			]
 		);
 
@@ -173,10 +173,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_plan',
 			[
-				'label' => esc_html__( 'Price Plan', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Plan', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Month' ),
+				'default' => esc_html( 'Month' ),
 			]
 		);
 
@@ -184,26 +184,26 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_features_list',
 			[
-				'label' => esc_html__( 'Features List', 'better-el-addons' ),
+				'label' => esc_html__( 'Features List', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => [
 					[
 						'name' => 'better_price_box_features',
-						'label' => esc_html__( 'Features Title', 'better-el-addons' ),
+						'label' => esc_html__( 'Features Title', 'better-elementor-addons' ),
 						'type' => \Elementor\Controls_Manager::TEXT,
 						'label_block' => true,
-						'default' => esc_html__( 'Add New Feature' , 'better-el-addons' ),
+						'default' => esc_html( 'Add New Feature' , 'better-elementor-addons' ),
 					],
 				],
 				'default' => [
 					[
-						'text' => esc_html__( 'List Item #1', 'better-el-addons' ),
+						'text' => esc_html__( 'List Item #1', 'better-elementor-addons' ),
 					],
 					[
-						'text' => esc_html__( 'List Item #2', 'better-el-addons' ),
+						'text' => esc_html__( 'List Item #2', 'better-elementor-addons' ),
 					],
 					[
-						'text' => esc_html__( 'List Item #3', 'better-el-addons' ),
+						'text' => esc_html__( 'List Item #3', 'better-elementor-addons' ),
 					],
 				],
 				'title_field' => '{{{ better_price_box_features }}}',
@@ -216,10 +216,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_features',
 			[
-				'label' => esc_html__( 'Features Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Features Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::WYSIWYG,
 				'label_block' => true,
-				'default' => esc_html__( 'Add New Feature' , 'better-el-addons' ),
+				'default' => esc_html( 'Add New Feature' , 'better-elementor-addons' ),
 				'condition' => [
 					'better_price_style' => array('2','3')
 				],
@@ -229,10 +229,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_popular_plan',
 			[
-				'label' => esc_html__( 'Popular plan', 'genesis-core' ),
+				'label' => esc_html__( 'Popular plan', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'genesis-core' ),
-				'label_off' => esc_html__( 'Hide', 'genesis-core' ),
+				'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'condition' => [
@@ -245,10 +245,10 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_button_text',
 			[
-				'label' => esc_html__( 'Button Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Text', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Click me', 'better-el-addons' ),
+				'default' => esc_html( 'Click me', 'better-elementor-addons' ),
 			]
 		);
 
@@ -256,7 +256,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_button_link', 
 			[
-				'label' => __( 'Button Link', 'better-el-addons' ),
+				'label' => __( 'Button Link', 'better-elementor-addons' ),
 				'type'        => \Elementor\Controls_Manager::URL,
 				'label_block' => true,
 				'default'       => [
@@ -272,7 +272,7 @@ class Better_Price extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_price_style' => array('1')
@@ -284,7 +284,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_title_options',
 			[
-				'label' => esc_html__( 'Price Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -294,7 +294,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -308,7 +308,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price_box_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-1 .price-title h4',
 			]
 		);
@@ -317,7 +317,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_amount_options',
 			[
-				'label' => esc_html__( 'Price Amount', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Amount', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -327,7 +327,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_amount_color',
 			[
-				'label' => esc_html__( 'Amount Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Amount Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -341,7 +341,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price_box_amount_typography',
-				'label' => esc_html__( 'Amount Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Amount Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-1 .price-tag h2',
 			]
 		);
@@ -350,7 +350,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_amount_background',
 			[
-				'label' => esc_html__( 'Amount Background', 'better-el-addons' ),
+				'label' => esc_html__( 'Amount Background', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fafafa',
 				'selectors' => [
@@ -363,7 +363,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_plan_options',
 			[
-				'label' => esc_html__( 'Price Plan', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Plan', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -373,7 +373,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_plan_color',
 			[
-				'label' => esc_html__( 'Amount Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Amount Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -387,7 +387,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price_box_plan_typography',
-				'label' => esc_html__( 'Amount Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Amount Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-1 .price-tag h2 span',
 			]
 		);
@@ -396,7 +396,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_features_options',
 			[
-				'label' => esc_html__( 'Price Features', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Features', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -406,7 +406,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_features_color',
 			[
-				'label' => esc_html__( 'Features Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Features Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -420,7 +420,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price_box_features_typography',
-				'label' => esc_html__( 'Features Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Features Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-1 .price-item ul li',
 			]
 		);		
@@ -429,7 +429,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_button_options',
 			[
-				'label' => esc_html__( 'Price Button', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Button', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -439,7 +439,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_button_color',
 			[
-				'label' => esc_html__( 'Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -452,7 +452,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price_box_button_background',
 			[
-				'label' => esc_html__( 'Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#b19777',
 				'selectors' => [
@@ -466,7 +466,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'abetter_price_box_button_typography',
-				'label' => esc_html__( 'Button Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Button Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-1 a',
 			]
 		);
@@ -477,7 +477,7 @@ class Better_Price extends Widget_Base {
 		$this->start_controls_section(
 			'style2_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_price_style' => array('2','3')
@@ -488,7 +488,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_background',
 			[
-				'label' => esc_html__( 'Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price .item, {{WRAPPER}} .better-price .item.active' => 'background: {{VALUE}}',
@@ -499,7 +499,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_popular_box_background',
 			[
-				'label' => esc_html__( 'popular Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'popular Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price .item.active:after' => 'background: {{VALUE}}',
@@ -512,7 +512,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_title_options',
 			[
-				'label' => esc_html__( 'Price Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -523,7 +523,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price2_box_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-2 .item .type h5, {{WRAPPER}} .better-price.style-3 .item .title h5',
 			]
 		);
@@ -531,7 +531,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price.style-2 .item .type h5, {{WRAPPER}} .better-price.style-3 .item .title h5' => 'color: {{VALUE}}',
@@ -543,7 +543,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_amount_options',
 			[
-				'label' => esc_html__( 'Price Amount', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Amount', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -554,7 +554,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price2_box_amount_typography',
-				'label' => esc_html__( 'Price Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Price Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-2 .item .amount h2, {{WRAPPER}} .better-price.style-3 .item .amount h2',
 			]
 		);
@@ -562,7 +562,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_amount_color',
 			[
-				'label' => esc_html__( 'Price Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price.style-2 .item .amount h2, {{WRAPPER}} .better-price.style-3 .item .amount h2' => 'color: {{VALUE}}',
@@ -574,7 +574,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_plan_options',
 			[
-				'label' => esc_html__( 'Price Plan', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Plan', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -585,7 +585,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price2_box_plan_typography',
-				'label' => esc_html__( 'Period Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Period Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-2 .item .amount h2 i, {{WRAPPER}} .better-price.style-3 .item .amount h6',
 			]
 		);
@@ -593,7 +593,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_plan_color',
 			[
-				'label' => esc_html__( 'Period Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Period Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price.style-2 .item .amount h2 i, {{WRAPPER}} .better-price.style-3 .item .amount h6' => 'color: {{VALUE}}',
@@ -605,7 +605,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_features_options',
 			[
-				'label' => esc_html__( 'Price Features', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Features', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -616,7 +616,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price2_box_features_typography',
-				'label' => esc_html__( 'Features Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Features Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-price.style-2 .item .feat p, {{WRAPPER}} .better-price.style-3 .item .cont',
 			]
 		);	
@@ -624,7 +624,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_features_color',
 			[
-				'label' => esc_html__( 'Features Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Features Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-price.style-2 .item .feat p, {{WRAPPER}} .better-price.style-3 .item .cont' => 'color: {{VALUE}}',
@@ -636,7 +636,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_button_options',
 			[
-				'label' => esc_html__( 'Price Button', 'better-el-addons' ),
+				'label' => esc_html__( 'Price Button', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -647,7 +647,7 @@ class Better_Price extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_price2_box_button_typography',
-				'label' => esc_html__( 'Button Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Button Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .btn-curve.btn-lit span, {{WRAPPER}} .better-price .order a',
 			]
 		);
@@ -655,7 +655,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_button_background',
 			[
-				'label' => esc_html__( 'Button Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .btn-curve.btn-lit, {{WRAPPER}} .better-price .order a.better-btn-pricing, {{WRAPPER}} .better-price .order a.better-btn-architec' => 'background: {{VALUE}}',
@@ -666,7 +666,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_button_color',
 			[
-				'label' => esc_html__( 'Button text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Button text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .btn-curve.btn-lit, {{WRAPPER}} .better-price .order a.better-btn-pricing, {{WRAPPER}} .better-price .order a.better-btn-architec' => 'color: {{VALUE}}',
@@ -678,7 +678,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_button_background_hover',
 			[
-				'label' => esc_html__( 'Button Background Color Hover', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Background Color Hover', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .btn-curve.btn-lit:hover, {{WRAPPER}} .better-price .order a.better-btn-pricing:hover, {{WRAPPER}} .better-price .order a.better-btn-architec:hover, {{WRAPPER}} .better-btn-curve.btn-wit:after' => 'background: {{VALUE}}',
@@ -690,7 +690,7 @@ class Better_Price extends Widget_Base {
 		$this->add_control(
 			'better_price2_box_button_color_hover',
 			[
-				'label' => esc_html__( 'Button text Color Hover', 'better-el-addons' ),
+				'label' => esc_html__( 'Button text Color Hover', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .btn-curve.btn-lit:hover, {{WRAPPER}} .better-price .order a.better-btn-pricing:hover, {{WRAPPER}} .better-price .order a.better-btn-architec:hover, {{WRAPPER}} .better-price .order .better-btn-curve.btn-lit:hover span' => 'color: {{VALUE}}',

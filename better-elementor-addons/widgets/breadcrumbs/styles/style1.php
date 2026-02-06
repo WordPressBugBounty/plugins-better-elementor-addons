@@ -3,7 +3,7 @@ function better_breadcrumb()
 {
     $showOnHome = 1; // 1 - show breadcrumbs on the homepage, 0 - don't show
     $delimiter = esc_html( '/' ); // delimiter between crumbs
-    $home = esc_html__( 'Home', 'better-el-addons' ); // text for the 'Home' link
+    $home = esc_html__( 'Home', 'better-elementor-addons' ); // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $the_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
     
@@ -21,10 +21,10 @@ function better_breadcrumb()
             if ($thisCat->parent != 0) {
                 echo esc_html(get_category_parents($thisCat->parent, true, ' <span>' . esc_html($delimiter) . '</span> '));
             }
-            echo '<a class="active">' . esc_html__('Archive by category "', 'better-el-addons') . single_cat_title('', false) . '"</a>';
+            echo '<a class="active">' . esc_html__('Archive by category "', 'better-elementor-addons') . single_cat_title('', false) . '"</a>';
 
         } elseif (is_search()) {
-            echo '<a class="active">' . esc_html__('Search results for "', 'better-el-addons') . get_search_query() . '"</a>';
+            echo '<a class="active">' . esc_html__('Search results for "', 'better-elementor-addons') . get_search_query() . '"</a>';
 
         } elseif (is_day()) {
             echo '<a href="' . esc_url(get_year_link(get_the_time('Y'))) . '">' . esc_html(get_the_time('Y')) . '</a> <span>' . esc_html($delimiter) . '</span> ';
@@ -106,7 +106,7 @@ function better_breadcrumb()
             if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author()) {
                 echo ' (';
             }
-            echo esc_html__('Page', 'better-el-addons' ) . ' ' . esc_html(get_query_var('paged'));
+            echo esc_html__('Page', 'better-elementor-addons' ) . ' ' . esc_html(get_query_var('paged'));
             if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author()) {
                 echo ')';
             }

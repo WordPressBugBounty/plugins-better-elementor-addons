@@ -42,7 +42,7 @@ class Better_Contact_Form extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Contact Form', 'better-el-addons' );
+		return esc_html__( 'Contact Form', 'better-elementor-addons' );
 	}
 
 	/**
@@ -105,14 +105,14 @@ class Better_Contact_Form extends Widget_Base {
         $this->start_controls_section(
 			'section_shortcode',
 			[
-				'label' => esc_html__( 'Shortcode', 'genesis-core' ),
+				'label' => esc_html__( 'Shortcode', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'shortcode',
 			[
-				'label' => esc_html__( 'Insert your shortcode here', 'genesis-core' ),
+				'label' => esc_html__( 'Insert your shortcode here', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'placeholder' => 'Place cintact form shortcode here',
 				'default' => '[contact-form-7 id="51" title="genesis contact form"]',
@@ -124,7 +124,7 @@ class Better_Contact_Form extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -133,7 +133,7 @@ class Better_Contact_Form extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_heading_sub_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-contact-shortcode .form input, {{WRAPPER}} .better-contact-shortcode .form textarea, {{WRAPPER}} .better-contact-shortcode .form span',
 			]
 		);

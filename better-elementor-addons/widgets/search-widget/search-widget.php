@@ -38,7 +38,7 @@ class Better_Search_Widget extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Search Widget', 'better-el-addons' );
+		return __( 'Search Widget', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,7 +86,7 @@ class Better_Search_Widget extends Widget_Base {
         $this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Main', 'better-el-addons' ),
+				'label' => __( 'Main', 'better-elementor-addons' ),
 			]
 		);
 
@@ -111,7 +111,7 @@ class Better_Search_Widget extends Widget_Base {
 	        <div class="item">
 	            <div class="form search"> 
 	                <form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-	                    <input type="text" class="search-field" name="s" placeholder="<?php esc_attr_e('Search', 'text-domain'); ?>" value="<?php echo esc_attr(get_search_query()); ?>">
+	                    <input type="text" class="search-field" name="s" placeholder="<?php esc_attr_e('Search', 'better-elementor-addons'); ?>" value="<?php echo esc_attr(get_search_query()); ?>">
 	                    <button type="submit" class="icon"><span class="pe-7s-search"></span></button>
 	                </form>
 	            </div>

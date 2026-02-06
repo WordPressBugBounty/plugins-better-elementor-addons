@@ -44,7 +44,7 @@ class Better_Blog_Adv extends Widget_Base
      */
     public function get_title()
     {
-        return __('Blog Advanced', 'BEA');
+        return __('Blog Advanced', 'better-elementor-addons');
     }
 
     /**
@@ -104,20 +104,20 @@ class Better_Blog_Adv extends Widget_Base
             $this->start_controls_section(
                 'section_settings',
                 [
-                    'label' => __('Settings', 'BEA'),
+                    'label' => __('Settings', 'better-elementor-addons'),
                 ]
             );
             $this->add_control(
                 'blog_posts_column',
                 [
-                    'label'     => esc_html__( 'Show Posts Per Row', 'BEA' ),
+                    'label'     => esc_html__( 'Show Posts Per Row', 'better-elementor-addons' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
                     'options'   => [
-                        'col-lg-12 col-md-12'   => esc_html__( '1', 'BEA' ),
-                        'col-lg-6 col-md-6'     => esc_html__( '2', 'BEA' ),
-                        'col-lg-4 col-md-6'     => esc_html__( '3', 'BEA' ),
-                        'col-lg-3 col-md-6'     => esc_html__( '4', 'BEA' ),
-                        'col-lg-2 col-md-6'     => esc_html__( '6', 'BEA' ),
+                        'col-lg-12 col-md-12'   => esc_html__( '1', 'better-elementor-addons' ),
+                        'col-lg-6 col-md-6'     => esc_html__( '2', 'better-elementor-addons' ),
+                        'col-lg-4 col-md-6'     => esc_html__( '3', 'better-elementor-addons' ),
+                        'col-lg-3 col-md-6'     => esc_html__( '4', 'better-elementor-addons' ),
+                        'col-lg-2 col-md-6'     => esc_html__( '6', 'better-elementor-addons' ),
                     ],
                     'default'   => 'col-lg-4 col-md-6',
                 ]
@@ -125,10 +125,10 @@ class Better_Blog_Adv extends Widget_Base
             $this->add_control(
                 'blog_posts_feature_img',
                 [
-                    'label'     => esc_html__( 'Show Featured Image', 'BEA' ),
+                    'label'     => esc_html__( 'Show Featured Image', 'better-elementor-addons' ),
                     'type'      => \Elementor\Controls_Manager::SWITCHER,
-                    'label_on'  => esc_html__( 'Yes', 'BEA' ),
-                    'label_off' => esc_html__( 'No', 'BEA' ),
+                    'label_on'  => esc_html__( 'Yes', 'better-elementor-addons' ),
+                    'label_off' => esc_html__( 'No', 'better-elementor-addons' ),
                     'default'   => 'yes',
                 ]
             );
@@ -136,11 +136,11 @@ class Better_Blog_Adv extends Widget_Base
             $this->add_control(
             'blog_posts_Image_position',
                 [
-                    'label'     => esc_html__( 'Image Position', 'BEA' ),
+                    'label'     => esc_html__( 'Image Position', 'better-elementor-addons' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
                     'options'   => [
-                        'top' => esc_html__( 'Top', 'BEA' ),
-                        'left' => esc_html__( 'Left', 'BEA' ),
+                        'top' => esc_html__( 'Top', 'better-elementor-addons' ),
+                        'left' => esc_html__( 'Left', 'better-elementor-addons' ),
                     ],
                     'default'   => 'top',
                     'condition' => [
@@ -158,7 +158,7 @@ class Better_Blog_Adv extends Widget_Base
                     'name'=> 'blog_posts_feature_img_size',
                     'fields_options'    => [
                         'size'  => [
-                            'label' => esc_html__( 'Featured Image Size', 'BEA' ),
+                            'label' => esc_html__( 'Featured Image Size', 'better-elementor-addons' ),
                         ],
                     ],
                     'exclude'           => [ 'custom' ],
@@ -172,10 +172,10 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_title',
             [
-                'label'     => esc_html__( 'Show Title', 'BEA' ),
+                'label'     => esc_html__( 'Show Title', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::SWITCHER,
-                'label_on'  => esc_html__( 'Yes', 'BEA' ),
-                'label_off' => esc_html__( 'No', 'BEA' ),
+                'label_on'  => esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'No', 'better-elementor-addons' ),
                 'default'   => 'yes',
             ]
         );
@@ -183,7 +183,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_title_trim',
             [
-                'label'     => esc_html__( 'Crop title by word', 'BEA' ),
+                'label'     => esc_html__( 'Crop title by word', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::NUMBER,
                 'default'   => '',
                 'condition' => [
@@ -194,10 +194,10 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_title_trim_end',
             [
-                'label' => esc_html__( 'Title crop end', 'BEA' ),
+                'label' => esc_html__( 'Title crop end', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => esc_html__( '...', 'BEA' ),
-                'placeholder' => esc_html__( '[...] // ....Read More', 'BEA' ),
+                'default' => esc_html( '...', 'better-elementor-addons' ),
+                'placeholder' => esc_html__( '[...] // ....Read More', 'better-elementor-addons' ),
                 'condition' => [
                     'blog_posts_title' => 'yes',
                 ],
@@ -206,17 +206,17 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_excerpt',
             [
-                'label'     => esc_html__( 'Show Excerpt', 'BEA' ),
+                'label'     => esc_html__( 'Show Excerpt', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::SWITCHER,
-                'label_on'  => esc_html__( 'Yes', 'BEA' ),
-                'label_off' => esc_html__( 'No', 'BEA' ),
+                'label_on'  => esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'No', 'better-elementor-addons' ),
                 'default'   => 'yes',
             ]
         );
         $this->add_control(
             'blog_posts_excerpt_trim',
             [
-                'label'     => esc_html__( 'Crop excerpt by word', 'BEA' ),
+                'label'     => esc_html__( 'Crop excerpt by word', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::NUMBER,
                 'default'   => '',
                 'condition' => [
@@ -227,10 +227,10 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
 			'blog_posts_excerpt_trim_end',
 			[
-				'label' => esc_html__( 'excerpt crop end', 'BEA' ),
+				'label' => esc_html__( 'excerpt crop end', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( '[...]', 'BEA' ),
-				'placeholder' => esc_html__( '[...] // ....Read More', 'BEA' ),
+				'default' => esc_html( '[...]', 'better-elementor-addons' ),
+				'placeholder' => esc_html__( '[...] // ....Read More', 'better-elementor-addons' ),
                 'condition' => [
                     'blog_posts_excerpt' => 'yes',
                 ],
@@ -242,14 +242,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'blog_posts_content_section',
             [
-                'label' => esc_html__( 'Query', 'BEA' ),
+                'label' => esc_html__( 'Query', 'better-elementor-addons' ),
             ]
         );
  
         $this->add_control(
             'blog_posts_num',
             [
-                'label'     => esc_html__( 'Posts Count', 'BEA' ),
+                'label'     => esc_html__( 'Posts Count', 'better-elementor-addons' ),
                 'type'      => Controls_Manager::NUMBER,
                 'min'       => 1,
                 'max'       => 100,
@@ -260,11 +260,11 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_cats_sort',
             [
-                'label'     => esc_html__( 'Filter By Category', 'BEA' ),
+                'label'     => esc_html__( 'Filter By Category', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::SWITCHER,
                 'render_type' => 'template',
-                'label_on'  => esc_html__( 'Yes', 'BEA' ),
-                'label_off' => esc_html__( 'No', 'BEA' ),
+                'label_on'  => esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'No', 'better-elementor-addons' ),
                 'default'   => 'no',
             ]
         );
@@ -273,9 +273,9 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_cats',
             [
-                'label' =>esc_html__('Select Categories', 'BEA'),
+                'label' =>esc_html__('Select Categories', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::SELECT2,
-                'options'   =>blog_adv_cat_array(),
+                'options'   =>better_elementor_addons_blog_adv_cat_array(),
                 'label_block' => true,
                 'multiple'  => true,
                 'condition' => [ 'blog_posts_cats_sort' => 'yes' ]
@@ -285,14 +285,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_order_by',
             [
-                'label'   => esc_html__( 'Order by', 'BEA' ),
+                'label'   => esc_html__( 'Order by', 'better-elementor-addons' ),
                 'type'    => Controls_Manager::SELECT,
                 'options' => [
-                    'date'          => esc_html__( 'Date', 'BEA' ),
-                    'title'         => esc_html__( 'Title', 'BEA' ),
-                    'author'        => esc_html__( 'Author', 'BEA' ),
-                    'modified'      => esc_html__( 'Modified', 'BEA' ),
-                    'comment_count' => esc_html__( 'Comments', 'BEA' ),
+                    'date'          => esc_html__( 'Date', 'better-elementor-addons' ),
+                    'title'         => esc_html__( 'Title', 'better-elementor-addons' ),
+                    'author'        => esc_html__( 'Author', 'better-elementor-addons' ),
+                    'modified'      => esc_html__( 'Modified', 'better-elementor-addons' ),
+                    'comment_count' => esc_html__( 'Comments', 'better-elementor-addons' ),
                 ],
                 'default' => 'date',
             ]
@@ -301,11 +301,11 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_sort',
             [
-                'label'   => esc_html__( 'Order', 'BEA' ),
+                'label'   => esc_html__( 'Order', 'better-elementor-addons' ),
                 'type'    => Controls_Manager::SELECT,
                 'options' => [
-                    'ASC'  => esc_html__( 'ASC', 'BEA' ),
-                    'DESC' => esc_html__( 'DESC', 'BEA' ),
+                    'ASC'  => esc_html__( 'ASC', 'better-elementor-addons' ),
+                    'DESC' => esc_html__( 'DESC', 'better-elementor-addons' ),
                 ],
                 'default' => 'DESC',
             ]
@@ -320,29 +320,29 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'section_meta',
             [
-                'label' => __('Meta', 'BEA'),
+                'label' => __('Meta', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
             'blog_posts_meta',
             [
-                'label'=> esc_html__( 'Show Meta Data', 'BEA' ),
+                'label'=> esc_html__( 'Show Meta Data', 'better-elementor-addons' ),
                 'type'=> \Elementor\Controls_Manager::SWITCHER,
-                'label_on'=> esc_html__( 'Yes', 'BEA' ),
-                'label_off'=> esc_html__( 'No', 'BEA' ),
+                'label_on'=> esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off'=> esc_html__( 'No', 'better-elementor-addons' ),
                 'default'=> 'yes',
             ]
         );
         $this->add_control(
          'blog_posts_title_position',
             [
-                'label' => esc_html__( 'Meta Position', 'BEA' ),
+                'label' => esc_html__( 'Meta Position', 'better-elementor-addons' ),
                 'type'  => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    'before_title'  => esc_html__( 'Before Title', 'BEA' ),
-                    'after_title' => esc_html__( 'After Title', 'BEA' ),
-                    'after_content'  => esc_html__( 'After Content', 'BEA' ),
+                    'before_title'  => esc_html__( 'Before Title', 'better-elementor-addons' ),
+                    'after_title' => esc_html__( 'After Title', 'better-elementor-addons' ),
+                    'after_content'  => esc_html__( 'After Content', 'better-elementor-addons' ),
                 ],
                 'default' => 'before_title',
                 'condition' => [
@@ -353,13 +353,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_meta_select',
             [
-                'label'     => esc_html__( 'Meta Data', 'BEA' ),
+                'label'     => esc_html__( 'Meta Data', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::SELECT2,
                 'options'   => [
-                    'author'=> esc_html__( 'Author', 'BEA' ),
-                    'category'=> esc_html__( 'Category', 'BEA' ),
-                    'date'=> esc_html__( 'Date', 'BEA' ),
-                    'comment'=> esc_html__( 'Comment', 'BEA' ),
+                    'author'=> esc_html__( 'Author', 'better-elementor-addons' ),
+                    'category'=> esc_html__( 'Category', 'better-elementor-addons' ),
+                    'date'=> esc_html__( 'Date', 'better-elementor-addons' ),
+                    'comment'=> esc_html__( 'Comment', 'better-elementor-addons' ),
                 ],
                 'multiple' => true,
                 'default'   => [
@@ -374,13 +374,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
 			'blog_posts_meta_separator',
 			[
-				'label' => esc_html__( 'Item Separator', 'textdomain' ),
+				'label' => esc_html__( 'Item Separator', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					'' => esc_html__( 'None', 'textdomain' ),
-					'dot'  => esc_html__( 'Dot', 'textdomain' ),
-					'custom' => esc_html__( 'Custom', 'textdomain' ),
+					'' => esc_html__( 'None', 'better-elementor-addons' ),
+					'dot'  => esc_html__( 'Dot', 'better-elementor-addons' ),
+					'custom' => esc_html__( 'Custom', 'better-elementor-addons' ),
 				],
 				'condition' => [
                     'blog_posts_meta' => 'yes',
@@ -390,10 +390,10 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_meta_separator_text',
             [
-                'label' => esc_html__( 'Custom Separator', 'BEA' ),
+                'label' => esc_html__( 'Custom Separator', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => esc_html__( '/', 'BEA' ),
-                'placeholder' => esc_html__( '/', 'BEA' ),
+                'default' => esc_html( '/', 'better-elementor-addons' ),
+                'placeholder' => esc_html__( '/', 'better-elementor-addons' ),
                 'condition' => [
                     'blog_posts_meta_separator' => 'custom',
                 ],
@@ -402,7 +402,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_meta_icon_comment',
             [
-                'label' => esc_html__( 'Comment Icon', 'BEA' ),
+                'label' => esc_html__( 'Comment Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'far fa-comment',
@@ -417,7 +417,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_meta_icon_author',
             [
-                'label' => esc_html__( 'author Icon', 'BEA' ),
+                'label' => esc_html__( 'author Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'far fa-user',
@@ -432,7 +432,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_meta_icon_category',
             [
-                'label' => esc_html__( 'category Icon', 'BEA' ),
+                'label' => esc_html__( 'category Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'far fa-folder-open',
@@ -447,7 +447,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_meta_icon_date',
             [
-                'label' => esc_html__( 'date Icon', 'BEA' ),
+                'label' => esc_html__( 'date Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'far fa-calendar-alt',
@@ -466,24 +466,24 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'section_FLoating_icon',
             [
-                'label' => __('FLoating Icon', 'BEA'),
+                'label' => __('FLoating Icon', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
             'blog_posts_floating',
             [
-                'label'=> esc_html__( 'Show FLoating Icon ', 'BEA' ),
+                'label'=> esc_html__( 'Show FLoating Icon ', 'better-elementor-addons' ),
                 'type'=> \Elementor\Controls_Manager::SWITCHER,
-                'label_on'=> esc_html__( 'Yes', 'BEA' ),
-                'label_off'=> esc_html__( 'No', 'BEA' ),
+                'label_on'=> esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off'=> esc_html__( 'No', 'better-elementor-addons' ),
                 'default'=> 'yes',
             ]
         );
         $this->add_control(
             'blog_posts_floating_icon',
             [
-                'label' => esc_html__( 'Icon', 'BEA' ),
+                'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'fas fa-arrow-right',
@@ -500,17 +500,17 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'section_read_more',
             [
-                'label' => __('Read More', 'BEA'),
+                'label' => __('Read More', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
             'blog_posts_read_more',
             [
-                'label'     => esc_html__( 'Show Read More', 'BEA' ),
+                'label'     => esc_html__( 'Show Read More', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::SWITCHER,
-                'label_on'  => esc_html__( 'Yes', 'BEA' ),
-                'label_off' => esc_html__( 'No', 'BEA' ),
+                'label_on'  => esc_html__( 'Yes', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'No', 'better-elementor-addons' ),
                 'default'   => '',
             ]
         ); 
@@ -518,10 +518,10 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_btn_text',
             [
-                'label' =>esc_html__( 'Label', 'BEA' ),
+                'label' =>esc_html__( 'Label', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
-                'default' =>esc_html__( 'Learn more ', 'BEA' ),
-                'placeholder' =>esc_html__( 'Learn more ', 'BEA' ),
+                'default' =>esc_html__( 'Learn more ', 'better-elementor-addons' ),
+                'placeholder' =>esc_html__( 'Learn more ', 'better-elementor-addons' ),
                 'condition' => [
                     'blog_posts_read_more' => 'yes',
                 ],
@@ -531,11 +531,11 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
          'blog_posts_btn_icons__switch',
          [
-             'label' => esc_html__('Icon ', 'BEA'),
+             'label' => esc_html__('Icon ', 'better-elementor-addons'),
              'type' => Controls_Manager::SWITCHER,
              'default' => 'yes',
-             'label_on' =>esc_html__( 'Yes', 'BEA' ),
-             'label_off' =>esc_html__( 'No', 'BEA' ),
+             'label_on' =>esc_html__( 'Yes', 'better-elementor-addons' ),
+             'label_off' =>esc_html__( 'No', 'better-elementor-addons' ),
              'condition' => [
                 'blog_posts_read_more' => 'yes',
             ],
@@ -545,7 +545,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_btn_icons',
             [
-                'label' =>esc_html__( 'Icon', 'BEA' ),
+                'label' =>esc_html__( 'Icon', 'better-elementor-addons' ),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'blog_posts_btn_icon',
                  'default' => [
@@ -561,12 +561,12 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_control(
             'blog_posts_btn_icon_align',
             [
-                'label' =>esc_html__( 'Icon Position', 'BEA' ),
+                'label' =>esc_html__( 'Icon Position', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'left',
                 'options' => [
-                    'left' =>esc_html__( 'Before', 'BEA' ),
-                    'right' =>esc_html__( 'After', 'BEA' ),
+                    'left' =>esc_html__( 'Before', 'better-elementor-addons' ),
+                    'right' =>esc_html__( 'After', 'better-elementor-addons' ),
                 ],
                 'condition'  => [
                     'blog_posts_read_more' => 'yes',
@@ -577,19 +577,19 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_btn_align',
             [
-                'label' =>esc_html__( 'Alignment', 'BEA' ),
+                'label' =>esc_html__( 'Alignment', 'better-elementor-addons' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left'    => [
-                        'title' =>esc_html__( 'Left', 'BEA' ),
+                        'title' =>esc_html__( 'Left', 'better-elementor-addons' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' =>esc_html__( 'Center', 'BEA' ),
+                        'title' =>esc_html__( 'Center', 'better-elementor-addons' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' =>esc_html__( 'Right', 'BEA' ),
+                        'title' =>esc_html__( 'Right', 'better-elementor-addons' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -608,7 +608,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
            'blog_posts_wrapper_style',
            [
-               'label'     => esc_html__( 'Wrapper', 'BEA' ),
+               'label'     => esc_html__( 'Wrapper', 'better-elementor-addons' ),
                'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                
            ]
@@ -617,7 +617,7 @@ class Better_Blog_Adv extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'blog_posts_wrapper_backgoround',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .bea-blog-adv'
             ]
@@ -625,7 +625,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_wrapper_margin',
             [
-                'label'      => esc_html__( 'item Margin', 'BEA' ),
+                'label'      => esc_html__( 'item Margin', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -637,7 +637,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_item_padding',
             [
-                'label'      => esc_html__( 'Item Padding', 'BEA' ),
+                'label'      => esc_html__( 'Item Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -649,7 +649,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_wrapper_padding',
             [
-                'label'      => esc_html__( 'Wrapper Padding', 'BEA' ),
+                'label'      => esc_html__( 'Wrapper Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -665,7 +665,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
            'blog_posts_image_style',
            [
-               'label'     => esc_html__( 'Image', 'BEA' ),
+               'label'     => esc_html__( 'Image', 'better-elementor-addons' ),
                'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                'condition' => [
                    'blog_posts_meta' => 'yes',
@@ -675,7 +675,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_height',
             [
-                'label' => esc_html__( 'Height', 'BEA' ),
+                'label' => esc_html__( 'Height', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -697,7 +697,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_height_odd',
             [
-                'label' => esc_html__( 'Height (Odd Items)', 'BEA' ),
+                'label' => esc_html__( 'Height (Odd Items)', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -715,7 +715,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_width',
             [
-                'label' => esc_html__( 'Width', 'BEA' ),
+                'label' => esc_html__( 'Width', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -741,19 +741,19 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'icon_alignment_self',
             [
-                'label' => __('Vertical Alignment', 'BEA'),
+                'label' => __('Vertical Alignment', 'better-elementor-addons'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => __('top', 'BEA'),
+                        'title' => __('top', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => __('Center', 'BEA'),
+                        'title' => __('Center', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'flex-end' => [
-                        'title' => __('Bottom', 'BEA'),
+                        'title' => __('Bottom', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -768,7 +768,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_margin',
             [
-                'label'      => esc_html__( 'Margin', 'BEA' ),
+                'label'      => esc_html__( 'Margin', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -780,7 +780,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_padding',
             [
-                'label'      => esc_html__( 'Padding', 'BEA' ),
+                'label'      => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -795,7 +795,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_image_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_group_control(
@@ -809,12 +809,12 @@ class Better_Blog_Adv extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'blog_posts_image_overlay_normal',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => ['classic', 'gradient'],
                 'exclude'   => ['image'],
                 'fields_options'  => [
                     'background' => [
-                        'label' => esc_html__( 'Overlay Background', 'BEA' ),
+                        'label' => esc_html__( 'Overlay Background', 'better-elementor-addons' ),
                     ]
                 ],
                 'selector' => '{{WRAPPER}} .bea-blog-adv .img::after'
@@ -825,7 +825,7 @@ class Better_Blog_Adv extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name'      => 'blog_posts_image_border',
-                'label'     => esc_html__( 'Border', 'BEA' ),
+                'label'     => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector'  => '{{WRAPPER}} .bea-blog-adv .img',
             ]
         );
@@ -833,7 +833,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_radius',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -847,7 +847,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_image_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_group_control(
@@ -861,12 +861,12 @@ class Better_Blog_Adv extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'blog_posts_image_overlay_normal_hover',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => ['classic', 'gradient'],
                 'exclude'   => ['image'],
                 'fields_options'  => [
                     'background' => [
-                        'label' => esc_html__( 'Overlay Background', 'BEA' ),
+                        'label' => esc_html__( 'Overlay Background', 'better-elementor-addons' ),
                     ]
                 ],
                 'selector' => '{{WRAPPER}} .bea-blog-adv .img:hover::after'
@@ -877,7 +877,7 @@ class Better_Blog_Adv extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name'      => 'blog_posts_image_border_hover',
-                'label'     => esc_html__( 'Border', 'BEA' ),
+                'label'     => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector'  => '{{WRAPPER}} .bea-blog-adv .img:hover',
             ]
         );
@@ -885,7 +885,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_image_radius_hover',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -904,7 +904,7 @@ class Better_Blog_Adv extends Widget_Base
        $this->start_controls_section(
         'blog_posts_title_style',
         [
-            'label'     => esc_html__( 'Title', 'BEA' ),
+            'label'     => esc_html__( 'Title', 'better-elementor-addons' ),
             'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
             'condition' => [
                 'blog_posts_title' => 'yes',
@@ -914,23 +914,23 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_title_alignment',
             [
-                'label'   => esc_html__( 'Alignment', 'BEA' ),
+                'label'   => esc_html__( 'Alignment', 'better-elementor-addons' ),
                 'type'    => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left'   => [
-                        'title' => esc_html__( 'Left', 'BEA' ),
+                        'title' => esc_html__( 'Left', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-left',
                     ],
                     'center'  => [
-                        'title' => esc_html__( 'Center', 'BEA' ),
+                        'title' => esc_html__( 'Center', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-center',
                     ],
                     'right'   => [
-                        'title' => esc_html__( 'Right', 'BEA' ),
+                        'title' => esc_html__( 'Right', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'justify', 'BEA' ),
+                        'title' => esc_html__( 'justify', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-justify',
                     ],
                 ],
@@ -955,14 +955,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_title_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'blog_posts_title_color',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .title a' => 'color: {{VALUE}};'
@@ -989,14 +989,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_title_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'blog_posts_title_hover_color',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .title a:hover' => 'color: {{VALUE}};',
@@ -1032,7 +1032,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_title_padding',
             [
-                'label'      => esc_html__( 'Padding', 'BEA' ),
+                'label'      => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1055,7 +1055,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'blog_posts_excerpt_style',
             [
-                'label'     => esc_html__( 'Excerpt', 'BEA' ),
+                'label'     => esc_html__( 'Excerpt', 'better-elementor-addons' ),
                 'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'blog_posts_excerpt' => 'yes',
@@ -1065,23 +1065,23 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_excerpt_alignment',
             [
-                'label'   => esc_html__( 'Alignment', 'BEA' ),
+                'label'   => esc_html__( 'Alignment', 'better-elementor-addons' ),
                 'type'    => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left'   => [
-                        'title' => esc_html__( 'Left', 'BEA' ),
+                        'title' => esc_html__( 'Left', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-left',
                     ],
                     'center'  => [
-                        'title' => esc_html__( 'Center', 'BEA' ),
+                        'title' => esc_html__( 'Center', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-center',
                     ],
                     'right'   => [
-                        'title' => esc_html__( 'Right', 'BEA' ),
+                        'title' => esc_html__( 'Right', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'justify', 'BEA' ),
+                        'title' => esc_html__( 'justify', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-justify',
                     ],
                 ],
@@ -1106,14 +1106,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_excerpt_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'blog_posts_excerpt_color',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .excerpt' => 'color: {{VALUE}};'
@@ -1140,14 +1140,14 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_excerpt_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'blog_posts_excerpt_hover_color',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .excerpt:hover' => 'color: {{VALUE}};',
@@ -1183,7 +1183,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_excerpt_padding',
             [
-                'label'      => esc_html__( 'Padding', 'BEA' ),
+                'label'      => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1205,7 +1205,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
            'blog_posts_meta_style',
            [
-               'label'     => esc_html__( 'Meta', 'BEA' ),
+               'label'     => esc_html__( 'Meta', 'better-elementor-addons' ),
                'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                'condition' => [
                    'blog_posts_meta' => 'yes',
@@ -1221,23 +1221,23 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_alignment',
             [
-                'label'   => esc_html__( 'Alignment', 'BEA' ),
+                'label'   => esc_html__( 'Alignment', 'better-elementor-addons' ),
                 'type'    => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start'   => [
-                        'title' => esc_html__( 'Left', 'BEA' ),
+                        'title' => esc_html__( 'Left', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-left',
                     ],
                     'center'  => [
-                        'title' => esc_html__( 'Center', 'BEA' ),
+                        'title' => esc_html__( 'Center', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-center',
                     ],
                     'flex-end'   => [
-                        'title' => esc_html__( 'Right', 'BEA' ),
+                        'title' => esc_html__( 'Right', 'better-elementor-addons' ),
                         'icon'  => 'eicon-text-align-right',
                     ],
                     'space-between' => [
-                        'title' => esc_html__( 'Space Between', 'BEA' ),
+                        'title' => esc_html__( 'Space Between', 'better-elementor-addons' ),
                         'icon'  => 'eicon-justify-space-between-h',
                     ],
                 ],
@@ -1252,7 +1252,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_icon_size',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1275,7 +1275,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_gap_icon',
             [
-                'label' => esc_html__( 'icon Spacing', 'BEA' ),
+                'label' => esc_html__( 'icon Spacing', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1297,7 +1297,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_gap',
             [
-                'label' => esc_html__( 'item Spacing', 'BEA' ),
+                'label' => esc_html__( 'item Spacing', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1325,13 +1325,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_meta_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_mets_color',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .post-meta .meta-item span , {{WRAPPER}} .bea-blog-adv .post-meta .meta-item a , {{WRAPPER}} .bea-blog-adv .post-meta .meta-item i' => 'color: {{VALUE}};',
@@ -1369,13 +1369,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_meta_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_meta_color_hover',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .post-meta .meta-item:hover span , {{WRAPPER}} .bea-blog-adv .post-meta .meta-item:hover a , {{WRAPPER}} .bea-blog-adv .post-meta .meta-item:hover i' => 'color: {{VALUE}};',
@@ -1418,7 +1418,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_radius',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1429,7 +1429,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_padding_item',
             [
-                'label'      => esc_html__( 'Item Padding', 'BEA' ),
+                'label'      => esc_html__( 'Item Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -1440,7 +1440,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_meta_padding_wrapper',
             [
-                'label'      => esc_html__( 'Wrapper Padding', 'BEA' ),
+                'label'      => esc_html__( 'Wrapper Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -1454,7 +1454,7 @@ class Better_Blog_Adv extends Widget_Base
          $this->start_controls_section(
              'blog_posts_meta_separator_style',
              [
-                'label'     => esc_html__( 'Meta Separator', 'BEA' ),
+                'label'     => esc_html__( 'Meta Separator', 'better-elementor-addons' ),
                 'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'blog_posts_meta_separator' => ['custom','dot'],
@@ -1464,7 +1464,7 @@ class Better_Blog_Adv extends Widget_Base
          $this->add_responsive_control(
             'blog_posts_meta_sperataor_size',
             [
-                'label' => esc_html__( 'Size', 'BEA' ),
+                'label' => esc_html__( 'Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1483,7 +1483,7 @@ class Better_Blog_Adv extends Widget_Base
          $this->add_control(
             'blog_posts_meta_color_sperataor',
             [
-                'label'=> esc_html__( 'Color', 'BEA' ),
+                'label'=> esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'=> \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .post-meta .meta-custom' => 'color: {{VALUE}};',
@@ -1498,7 +1498,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'blog_posts_btn_style',
             [
-                'label'     => esc_html__( 'Read More', 'BEA' ),
+                'label'     => esc_html__( 'Read More', 'better-elementor-addons' ),
                 'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'blog_posts_read_more' => 'yes',
@@ -1517,7 +1517,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_btn_icon_size',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1541,7 +1541,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_btn_gap_icon',
             [
-                'label' => esc_html__( 'icon Spacing', 'BEA' ),
+                'label' => esc_html__( 'icon Spacing', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1568,13 +1568,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_btn_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_btn_color',
             [
-                'label'=> esc_html__( 'Color', 'BEA' ),
+                'label'=> esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'=> \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .read-btn span , {{WRAPPER}} .bea-blog-adv .read-btn i' => 'color: {{VALUE}};',
@@ -1612,13 +1612,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_btn_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_btn_color_hover',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .read-btn:hover span , {{WRAPPER}} .bea-blog-adv .read-btn:hover i' => 'color: {{VALUE}};',
@@ -1661,7 +1661,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_btn_radius',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1672,7 +1672,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_btn_padding',
             [
-                'label'      => esc_html__( 'Padding', 'BEA' ),
+                'label'      => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -1687,7 +1687,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_section(
             'blog_posts_floating_style',
             [
-                'label'     => esc_html__( 'Floating Icon', 'BEA' ),
+                'label'     => esc_html__( 'Floating Icon', 'better-elementor-addons' ),
                 'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'blog_posts_floating' => 'yes',
@@ -1698,7 +1698,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_icon_size',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1721,7 +1721,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_icon_warpper',
             [
-                'label' => esc_html__( 'icon warpper', 'BEA' ),
+                'label' => esc_html__( 'icon warpper', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1748,13 +1748,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_floating_normal',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_floating_color',
             [
-                'label'=> esc_html__( 'Color', 'BEA' ),
+                'label'=> esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'=> \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors'  => [
@@ -1774,7 +1774,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_rotate',
             [
-                'label' => esc_html__( 'Rotate', 'BEA' ),
+                'label' => esc_html__( 'Rotate', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'deg' ],
                 'range' => [
@@ -1810,7 +1810,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_radius',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1825,13 +1825,13 @@ class Better_Blog_Adv extends Widget_Base
         $this->start_controls_tab(
             'blog_posts_floating_hover',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'blog_posts_floating_color_hover',
             [
-                'label'      => esc_html__( 'Color', 'BEA' ),
+                'label'      => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type'       => \Elementor\Controls_Manager::COLOR,
                 'selectors'  => [
                     '{{WRAPPER}} .bea-blog-adv .floating-icon:hover span ,  {{WRAPPER}} .bea-blog-adv .floating-icon:hover i' => 'color: {{VALUE}};',
@@ -1850,7 +1850,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_rotate_hover',
             [
-                'label' => esc_html__( 'Rotate', 'BEA' ),
+                'label' => esc_html__( 'Rotate', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'deg' ],
                 'range' => [
@@ -1882,7 +1882,7 @@ class Better_Blog_Adv extends Widget_Base
         $this->add_responsive_control(
             'blog_posts_floating_radius_hover',
             [
-                'label'     => esc_html__( 'Border radius', 'BEA' ),
+                'label'     => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type'      => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1936,7 +1936,7 @@ class Better_Blog_Adv extends Widget_Base
                                 <div class="meta-item">
                                     <?php  \Elementor\Icons_Manager::render_icon( $settings['blog_meta_icon_'.$meta], [ 'aria-hidden' => 'true' ] );?>
                                     <?php if ($meta =="author"){ ?>
-                                    <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="author-name"><?php the_author_meta('display_name'); ?></a>
+                                    <a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) )); ?>" class="author-name"><?php the_author_meta('display_name'); ?></a>
                                     <?php } else if ($meta =="comment"){ ?>
                                         <a href="<?php comments_link(); ?>"><?php echo esc_html( get_comments_number() ); ?> </a>
                                     <?php } 
@@ -1968,7 +1968,7 @@ class Better_Blog_Adv extends Widget_Base
                             </a>
                             <div class="info ">
                                 <?php if ($settings['blog_posts_title_position']=="before_title"):?>
-                                    <?php echo $meta_data_html;  ?>
+                                    <?php echo wp_kses_post($meta_data_html);  ?>
                                 <?php endif; ?>
 
                                 <?php if ($settings['blog_posts_title']=="yes"):?>
@@ -1984,7 +1984,7 @@ class Better_Blog_Adv extends Widget_Base
                                 <?php endif; ?>
 
                                 <?php if ($settings['blog_posts_title_position']=="after_title"):?>
-                                    <?php echo $meta_data_html;  ?>
+                                    <?php echo wp_kses_post($meta_data_html);  ?>
                                 <?php endif; ?>
 
                                 <?php if ($settings['blog_posts_excerpt']=="yes"):?>
@@ -1998,7 +1998,7 @@ class Better_Blog_Adv extends Widget_Base
                                 <?php endif; ?>
 
                                 <?php if ($settings['blog_posts_title_position']=="after_content"):?>
-                                    <?php echo $meta_data_html;  ?>
+                                    <?php echo wp_kses_post($meta_data_html);  ?>
                                 <?php endif; ?>
                                 <div class="btn-warpper">
                                     <a href="<?php echo esc_url(the_permalink()); ?>" class="read-btn">

@@ -41,7 +41,7 @@ class Better_Comparison extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Comparison', 'better-el-addons' );
+		return __( 'Comparison', 'better-elementor-addons' );
 	}
 
 	/**
@@ -89,7 +89,7 @@ class Better_Comparison extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Comparison Settings', 'bim_plg' ),
+				'label' => __( 'Comparison Settings', 'better-elementor-addons' ),
 			]
 		);
 		
@@ -99,7 +99,7 @@ class Better_Comparison extends Widget_Base {
 		$this->add_control(
 			'better_before_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'default' => [
@@ -111,7 +111,7 @@ class Better_Comparison extends Widget_Base {
 		$this->add_control(
 			'better_after_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'default' => [

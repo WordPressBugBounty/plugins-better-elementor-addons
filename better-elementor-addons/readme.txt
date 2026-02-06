@@ -1,14 +1,14 @@
-=== Better Elementor Addons ===
-Contributors:  betteraddon,betteraddons, elementcamp, designstore21,
-Donate link: https://widgets.betteraddons.com/
+=== Better Addons for Elementor ===
+Contributors:  wpdive,designstore21
+Donate link: https://wpdive.com/plugins/better-addons/
 Tags: addons, elementor, elementor addon, elementor addons, elementor widget
 Requires at least: 4.6
-Tested up to: 6.7
-Requires PHP: 5.6
-Elementor tested up to: 3.27.6
-Stable tag: 1.5.4
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 6.9
+Requires PHP: 7.4
+Elementor tested up to: 3.33
+Stable tag: 1.5.7
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Showcase useful elements with card style for elementor page builder.
 
@@ -19,25 +19,25 @@ Better Elementor Addons is an elementor add-on to showcase your Count down, Serv
 *Note:* This plugin is a widget of [Elementor Page Builder](https://wordpress.org/plugins/elementor/) and will only work with Elementor Page Builder installed.
 
 ## Elementor Widgets & Addons Included:
-1. [**Flip Box**](https://widgets.betteraddons.com/bea-flip-box/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
+1. [**Flip Box**](https://betteraddons.wpdive.com/bea-flip-box/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
 
-2. [**Icon Box**](https://widgets.betteraddons.com/bea-icon-box/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
+2. [**Icon Box**](https://betteraddons.wpdive.com/bea-icon-box/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
 
-3. [**Button advanced**](https://widgets.betteraddons.com/bea-button/) *(FREE-New)*: Very good Elementor Widget to present your business page call to actions for Elementor comes with many customization options.
+3. [**Button advanced**](https://betteraddons.wpdive.com/bea-button/) *(FREE-New)*: Very good Elementor Widget to present your business page call to actions for Elementor comes with many customization options.
 
-4. [**Countdown**](https://widgets.betteraddons.com/better-elementor-addons/countdown/) *(FREE)*: Very good Elementor Widget to comming soon page for Elementor comes with many customization options.
+4. [**Countdown**](https://betteraddons.wpdive.com/better-elementor-addons/countdown/) *(FREE)*: Very good Elementor Widget to comming soon page for Elementor comes with many customization options.
 
-5. [**Team Members**](https://widgets.betteraddons.com/better-elementor-addons/team-members/) *(FREE)*: Very good Elementor Widget to list team members, co-workers, etc. Team Members Widget for Elementor comes with many customization options.
+5. [**Team Members**](https://betteraddons.wpdive.com/better-elementor-addons/team-members/) *(FREE)*: Very good Elementor Widget to list team members, co-workers, etc. Team Members Widget for Elementor comes with many customization options.
 
-6. [**Testimonials**](https://widgets.betteraddons.com/better-elementor-addons/testimonial/) *(FREE)*: The modern Testimonials Widget us available with many customization options.
+6. [**Testimonials**](https://betteraddons.wpdive.com/better-elementor-addons/testimonial/) *(FREE)*: The modern Testimonials Widget us available with many customization options.
 
-7. [**Heading title**](https://widgets.betteraddons.com/better-elementor-addons/heading/) *(FREE)*: Elementor Heading Widget has many customization options and ready-made heading styles.
+7. [**Heading title**](https://betteraddons.wpdive.com/better-elementor-addons/heading/) *(FREE)*: Elementor Heading Widget has many customization options and ready-made heading styles.
 
-8. [**Image Box**](https://widgets.betteraddons.com/better-elementor-addons/image-box/) *(FREE)*: An advanced Image Box Widget for Elementor with customization options.
+8. [**Image Box**](https://betteraddons.wpdive.com/better-elementor-addons/image-box/) *(FREE)*: An advanced Image Box Widget for Elementor with customization options.
 
-9. [**featured box**](https://widgets.betteraddons.com/better-elementor-addons/info-box/) *(FREE)*: The modern Featured product Widget us available with many customization options.
+9. [**featured box**](https://betteraddons.wpdive.com/better-elementor-addons/info-box/) *(FREE)*: The modern Featured product Widget us available with many customization options.
 
-10. [**Heading Advanced**](https://widgets.betteraddons.com/bea-heading-advanced/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
+10. [**Heading Advanced**](https://betteraddons.wpdive.com/bea-heading-advanced/) *(FREE-New)*: Very good Elementor Widget to present your business page for Elementor comes with many customization options.
 
 ==
 **Blog/Post Elements**
@@ -73,6 +73,13 @@ Yes, You can customize it. We provided all possible options in backend to update
 More Features Coming Soon!
 
 == Changelog ==
+
+= 1.5.7 - 19/01/2026  =
+Compatibility update. 
+
+= 1.5.6 - 01/01/2026  =
+Compatibility update. 
+
 = 1.5.4 - 24/02/2025  =
 Compatibility update. 
 

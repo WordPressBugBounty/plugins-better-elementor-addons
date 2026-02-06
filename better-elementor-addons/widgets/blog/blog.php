@@ -21,7 +21,7 @@ function better_cat_array($term = 'category') {
         'hide_empty' => true
     ));
     $cat_array = array();
-    $cat_array['all'] = esc_html__( 'All', 'better-el-addons');
+    $cat_array['all'] = esc_html__( 'All', 'better-elementor-addons');
     foreach ($cats as $cat) {
         $cat_array[$cat->slug] = $cat->name;
     }
@@ -57,7 +57,7 @@ class Better_Blog extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Blog', 'better_plg' );
+		return __( 'Blog', 'better-elementor-addons' );
 	}
 
 	/**
@@ -105,25 +105,25 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Blog Settings', 'better_plg' ),
+				'label' => __( 'Blog Settings', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'better_blog_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'style1' => __( 'Style 1', 'better-el-addons' ),
-					'style2' => __( 'Style 2', 'better-el-addons' ),
-					'style3' => __( 'Style 3', 'better-el-addons' ),
-					'style4' => __( 'Style 4', 'better-el-addons' ),
-					'style5' => __( 'Style 5', 'better-el-addons' ),
-					'style6' => __( 'Style 6', 'better-el-addons' ),
-					'style7' => __( 'Style 7', 'better-el-addons' ),
-					'style8' => __( 'Style 8', 'better-el-addons' ),
-					'style9' => __( 'Style 9', 'better-el-addons' ),
-					'style10' => __( 'Style 10', 'better-el-addons' ),
+					'style1' => __( 'Style 1', 'better-elementor-addons' ),
+					'style2' => __( 'Style 2', 'better-elementor-addons' ),
+					'style3' => __( 'Style 3', 'better-elementor-addons' ),
+					'style4' => __( 'Style 4', 'better-elementor-addons' ),
+					'style5' => __( 'Style 5', 'better-elementor-addons' ),
+					'style6' => __( 'Style 6', 'better-elementor-addons' ),
+					'style7' => __( 'Style 7', 'better-elementor-addons' ),
+					'style8' => __( 'Style 8', 'better-elementor-addons' ),
+					'style9' => __( 'Style 9', 'better-elementor-addons' ),
+					'style10' => __( 'Style 10', 'better-elementor-addons' ),
 				],
 				'default' => 'style1',
 			]
@@ -134,7 +134,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Blog Post Settings', 'better-el-addons' ),
+				'label' => __( 'Blog Post Settings', 'better-elementor-addons' ),
 				'condition' => [
 					'better_blog_style' => array('style1','style2','style4','style9','style10')
 				],
@@ -144,7 +144,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
             'blog_post',
             [
-                'label' => __( 'Blog Post to show', 'better-el-addons' ),
+                'label' => __( 'Blog Post to show', 'better-elementor-addons' ),
                 'type' => Controls_Manager::NUMBER,
 				'default' => '6',
 
@@ -154,11 +154,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'sort_cat',
 			[
-				'label' => __( 'Sort post by Category', 'better-el-addons' ),
+				'label' => __( 'Sort post by Category', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
-				'label_on' => __( 'Yes', 'better-el-addons' ),
-				'label_off' => __( 'No', 'better-el-addons' ),
+				'label_on' => __( 'Yes', 'better-elementor-addons' ),
+				'label_off' => __( 'No', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -168,11 +168,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'paged_on',
 			[
-				'label' => __( 'Always show the same list on every page(not paged).', 'better-el-addons' ),
+				'label' => __( 'Always show the same list on every page(not paged).', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
-				'label_on' => __( 'Yes', 'better-el-addons' ),
-				'label_off' => __( 'No', 'better-el-addons' ),
+				'label_on' => __( 'Yes', 'better-elementor-addons' ),
+				'label_off' => __( 'No', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -180,11 +180,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'show_excerpt',
 			[
-				'label' => __( 'Show Exerpt', 'better-el-addons' ),
+				'label' => __( 'Show Exerpt', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'better_blog_style!' => 'style9',
@@ -196,7 +196,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
             'excerpt',
             [
-                'label' => __( 'Blog Excerpt Length', 'better-el-addons' ),
+                'label' => __( 'Blog Excerpt Length', 'better-elementor-addons' ),
                 'type' => Controls_Manager::NUMBER,
 				'default' => '150',
 				'min' => 10,
@@ -211,7 +211,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
             'excerpt_after',
             [
-                'label' => __( 'After Excerpt text/symbol', 'better-el-addons' ),
+                'label' => __( 'After Excerpt text/symbol', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
 				'condition' => [
 					'show_excerpt' => 'yes',
@@ -225,13 +225,13 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'blog_column',
 			[
-				'label' => __( 'Blog Columns', 'better-el-addons' ),
+				'label' => __( 'Blog Columns', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'one' => __( 'One Column', 'better-el-addons' ),
-					'two' => __( 'Two Columns', 'better-el-addons' ),
-					'three' => __( 'Three Columns', 'better-el-addons' ),
-					'four' => __( 'Four Columns', 'better-el-addons' ),
+					'one' => __( 'One Column', 'better-elementor-addons' ),
+					'two' => __( 'Two Columns', 'better-elementor-addons' ),
+					'three' => __( 'Three Columns', 'better-elementor-addons' ),
+					'four' => __( 'Four Columns', 'better-elementor-addons' ),
 				],
 				'default' => 'three',
 			]
@@ -239,11 +239,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'image',
 			[
-				'label' => __( 'Show Featured Image', 'better-el-addons' ),
+				'label' => __( 'Show Featured Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'better_blog_style!' => 'style9',
@@ -255,11 +255,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'button_show',
 			[
-				'label' => __( 'Show Button', 'better-el-addons' ),
+				'label' => __( 'Show Button', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -267,9 +267,9 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
             'button',
             [
-                'label' => __( 'Button Text', 'better-el-addons'),
+                'label' => __( 'Button Text', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( 'Read More', 'better-el-addons' ),
+				'default' => __( 'Read More', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'button_show' => 'yes',
@@ -280,7 +280,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'icon',
 			[
-				'label' => __( 'Button Icon', 'better-el-addons' ),
+				'label' => __( 'Button Icon', 'better-elementor-addons' ),
 				'type' => Controls_Manager::ICON,
 				'label_block' => true,
 				'default' => '',
@@ -295,12 +295,12 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'icon_align',
 			[
-				'label' => __( 'Button Icon Position', 'better-el-addons' ),
+				'label' => __( 'Button Icon Position', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'left',
 				'options' => [
-					'left' => __( 'Before', 'better-el-addons' ),
-					'right' => __( 'After', 'better-el-addons' ),
+					'left' => __( 'Before', 'better-elementor-addons' ),
+					'right' => __( 'After', 'better-elementor-addons' ),
 				],
 				'condition' => [
 				    'button_show' => 'yes',
@@ -314,7 +314,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'icon_indent',
 			[
-				'label' => __( 'Button Icon Spacing', 'better-el-addons' ),
+				'label' => __( 'Button Icon Spacing', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -337,11 +337,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'meta_show',
 			[
-				'label' => __( 'Show Post Meta', 'better-el-addons' ),
+				'label' => __( 'Show Post Meta', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -349,11 +349,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'cat_show',
 			[
-				'label' => __( 'Show Post Category', 'better-el-addons' ),
+				'label' => __( 'Show Post Category', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'image' => 'yes',
@@ -365,7 +365,7 @@ class Better_Blog extends Widget_Base {
 			'colors_warning',
 			[
 				'type' =>  Controls_Manager::RAW_HTML,
-				'raw' => __( '<b>Note:</b> Try to show pagination only for (single) blog page.', 'better-el-addons' ),
+				'raw' => __( '<b>Note:</b> Try to show pagination only for (single) blog page.', 'better-elementor-addons' ),
 				'content_classes' => 'elementor-panel-alert elementor-panel-alert-warning',
 				'condition' => [
 					'paged_on' => '',
@@ -378,11 +378,11 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_show',
 			[
-				'label' => __( 'Show Pagination', 'better-el-addons' ),
+				'label' => __( 'Show Pagination', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'paged_on' => '',
@@ -397,7 +397,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'main_settings',
 			[
-				'label' => esc_html__( 'Blog Post Settings', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Post Settings', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 				'condition' => [
 					'better_blog_style' => array('style3','style5','style6','style7','style8')
@@ -408,7 +408,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'posts_number',
 			[
-				'label' => esc_html__( 'Post Number', 'better-el-addons' ),
+				'label' => esc_html__( 'Post Number', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => 1,
 				'max' => 30,
@@ -419,7 +419,7 @@ class Better_Blog extends Widget_Base {
 
 		$this->add_control(
             'order', [
-                'label' => esc_html__( 'Order', 'better-el-addons' ),
+                'label' => esc_html__( 'Order', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'ASC' => 'ASC',
@@ -431,7 +431,7 @@ class Better_Blog extends Widget_Base {
 		
 		$this->add_control(
             'cat', [
-                'label' => esc_html__( 'Category', 'better-el-addons' ),
+                'label' => esc_html__( 'Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => better_cat_array(),
                 'default' => 'all',
@@ -443,7 +443,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'post_section',
 			[
-				'label' => __( 'Post Settings', 'better-el-addons' ),
+				'label' => __( 'Post Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style1','style2')
@@ -454,7 +454,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'post_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -468,7 +468,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'title_section',
 			[
-				'label' => __( 'Title Settings', 'better-el-addons' ),
+				'label' => __( 'Title Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style1','style2')
@@ -479,7 +479,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'title_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -491,7 +491,7 @@ class Better_Blog extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'title_typo',
-				'label'     => __( 'Title Typography', 'better-el-addons' ),
+				'label'     => __( 'Title Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .blog-col-inner .excerpt-box h3',
 			]
 		);
@@ -499,7 +499,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -511,7 +511,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => __( 'Color on Hover', 'better-el-addons' ),
+				'label' => __( 'Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -525,7 +525,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'text_section',
 			[
-				'label' => __( 'Text Settings', 'better-el-addons' ),
+				'label' => __( 'Text Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style1','style2')
@@ -536,7 +536,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'text_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -548,7 +548,7 @@ class Better_Blog extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'text_typo',
-				'label'     => __( 'Text Typography', 'better-el-addons' ),
+				'label'     => __( 'Text Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-blog p',
 			]
 		);
@@ -556,7 +556,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'text_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -571,7 +571,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'meta_section',
 			[
-				'label' => __( 'Post Meta Settings', 'better-el-addons' ),
+				'label' => __( 'Post Meta Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'meta_show' => 'yes',
@@ -583,7 +583,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'meta_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -597,7 +597,7 @@ class Better_Blog extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'meta_typo',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .blog-col-inner .excerpt-box .post-meta',
 			]
 		);
@@ -605,7 +605,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'meta_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -617,7 +617,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'meta_link',
 			[
-				'label' => __( 'Link Color', 'better-el-addons' ),
+				'label' => __( 'Link Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -629,7 +629,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'meta_link_hover',
 			[
-				'label' => __( 'Link Color on Hover', 'better-el-addons' ),
+				'label' => __( 'Link Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -641,7 +641,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'meta_icon',
 			[
-				'label' => __( 'Icon Color', 'better-el-addons' ),
+				'label' => __( 'Icon Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -655,7 +655,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'cat_section_setting',
 			[
-				'label' => __( 'Post Category Settings', 'better-el-addons' ),
+				'label' => __( 'Post Category Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'cat_show' => 'yes',
@@ -667,7 +667,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'cat_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -681,7 +681,7 @@ class Better_Blog extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'cat_typo',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .cat-post',
 			]
 		);
@@ -689,7 +689,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'cat_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -703,7 +703,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'btn_settings',
 			[
-				'label' => __( 'Button Setting','better-el-addons' ),
+				'label' => __( 'Button Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'button_show' => 'yes',
@@ -716,7 +716,7 @@ class Better_Blog extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'btn_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .content-btn',
 			]
 		);
@@ -724,7 +724,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -736,7 +736,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -748,7 +748,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -762,7 +762,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'btn_color_section',
 			[
-				'label' => __( 'Button Color Scheme Setting','better-el-addons' ),
+				'label' => __( 'Button Color Scheme Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'button_show' => 'yes',
@@ -774,7 +774,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .content-btn' => 'color: {{VALUE}};',
@@ -785,7 +785,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_color_hover',
 			[
-				'label' => __( 'Color on Hover','better-el-addons' ),
+				'label' => __( 'Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .blog-col-inner .excerpt-box .content-btn:hover' => 'color: {{VALUE}};',
@@ -796,7 +796,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_bg',
 			[
-				'label' => __( 'Background Color','better-el-addons' ),
+				'label' => __( 'Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .blog-col-inner .excerpt-box .content-btn' => 'background-color: {{VALUE}};',
@@ -808,7 +808,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_bg_hover',
 			[
-				'label' => __( 'Background Color on Hover','better-el-addons' ),
+				'label' => __( 'Background Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .content-btn:hover' => 'background-color: {{VALUE}};',
@@ -820,7 +820,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border',
 			[
-				'label' => __( 'Border', 'better-el-addons' ),
+				'label' => __( 'Border', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -832,7 +832,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border_hover',
 			[
-				'label' => __( 'Border on Hover', 'better-el-addons' ),
+				'label' => __( 'Border on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -844,7 +844,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_border_color',
 			[
-				'label' => __( 'Border Color','better-el-addons' ),
+				'label' => __( 'Border Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .blog-col-inner .excerpt-box .content-btn' => 'border-color: {{VALUE}};',
@@ -855,7 +855,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'btn_border_color_hover',
 			[
-				'label' => __( 'Border Color on  Hover','better-el-addons' ),
+				'label' => __( 'Border Color on  Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .content-btn:hover' => 'border-color: {{VALUE}};',
@@ -868,7 +868,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'pagination_setting',
 			[
-				'label' => __( 'Pagination Setting','better-el-addons' ),
+				'label' => __( 'Pagination Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style1','style2')
@@ -879,7 +879,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color',
 			[
-				'label' => __( 'Pagination Color','better-el-addons' ),
+				'label' => __( 'Pagination Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a' => 'color: {{VALUE}};',
@@ -890,7 +890,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color_hover',
 			[
-				'label' => __( 'Pagination Color on Hover','better-el-addons' ),
+				'label' => __( 'Pagination Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a:hover' => 'color: {{VALUE}};',
@@ -901,7 +901,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color_bg',
 			[
-				'label' => __( 'Pagination Background Color','better-el-addons' ),
+				'label' => __( 'Pagination Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -912,7 +912,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color_hover_bg',
 			[
-				'label' => __( 'Pagination Background Color on Hover','better-el-addons' ),
+				'label' => __( 'Pagination Background Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a:hover' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -923,7 +923,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color_active',
 			[
-				'label' => __( 'Pagination Color on Active','better-el-addons' ),
+				'label' => __( 'Pagination Color on Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > .active > a' => 'color: {{VALUE}};',
@@ -934,7 +934,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'page_color_hover_bg_active',
 			[
-				'label' => __( 'Pagination Background Color on Active','better-el-addons' ),
+				'label' => __( 'Pagination Background Color on Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > .active > a' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -947,7 +947,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section(
 			'content_padding_setting',
 			[
-				'label' => __( 'Text & Button Content Setting','better-el-addons' ),
+				'label' => __( 'Text & Button Content Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style1','style2')
@@ -958,7 +958,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'content_bg',
 			[
-				'label' => __( 'Background','better-el-addons' ),
+				'label' => __( 'Background', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .excerpt-box' => 'background-color: {{VALUE}};',
@@ -969,7 +969,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_responsive_control(
 			'excerpt_padding_box',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -991,7 +991,7 @@ class Better_Blog extends Widget_Base {
 		$this->start_controls_section( 
 			'section_style3',
 			[
-				'label' => esc_html__( 'Main Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Main Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_blog_style' => array('style3','style5','style6','style7','style8','style9','style10')
@@ -1002,7 +1002,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_item_options',
 			[
-				'label' => esc_html__( 'Item setting', 'better-el-addons' ),
+				'label' => esc_html__( 'Item setting', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1010,7 +1010,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_item_bg',
 			[
-				'label' => esc_html__( 'Blog item Background', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog item Background', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog.style-3 .item.list .cont' => 'background: {{VALUE}}',
@@ -1024,7 +1024,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_title_options',
 			[
-				'label' => esc_html__( 'Blog Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1035,7 +1035,7 @@ class Better_Blog extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_blog_title_typography',
-				'label' => esc_html__( 'Blog Title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Title Typography', 'better-elementor-addons' ),
                 'selector' => '{{WRAPPER}} .better-blog .posts .item .content h4 a, {{WRAPPER}} .better-blog .item .cont h6, {{WRAPPER}} .better-blog .item .cont h5, {{WRAPPER}} .better-blog .sm-post p',
 			]
 		);
@@ -1043,7 +1043,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_title_color',
 			[
-				'label' => esc_html__( 'Blog Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog .posts .item .content h4 a, 
@@ -1058,7 +1058,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_author_options',
 			[
-				'label' => esc_html__( 'Blog Author', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Author', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1069,7 +1069,7 @@ class Better_Blog extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_blog_author_typography',
-				'label' => esc_html__( 'Blog Author Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Author Typography', 'better-elementor-addons' ),
 				 
                 'selector' => '{{WRAPPER}} .better-blog .item .cont .info .author a, {{WRAPPER}} .better-blog .item .cont .info h6 a',
 				'condition' => [
@@ -1081,7 +1081,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_author_color',
 			[
-				'label' => esc_html__( 'Blog Author Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Author Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog .item .cont .info .author' => 'color: {{VALUE}}',
@@ -1097,7 +1097,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_category_options',
 			[
-				'label' => esc_html__( 'Blog Category', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Category', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1108,7 +1108,7 @@ class Better_Blog extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_blog_category_typography',
-				'label' => esc_html__( 'Blog Category Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Category Typography', 'better-elementor-addons' ),
 				 
                 'selector' => '{{WRAPPER}} .better-blog .posts .item .content .tags a, {{WRAPPER}} .better-blog .item .cont .info .tag a',
 			]
@@ -1117,7 +1117,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_category_color',
 			[
-				'label' => esc_html__( 'Blog Category Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Category Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog .posts .item .content .tags a, {{WRAPPER}} .better-blog .item .cont .info .tag,.better-blog.style-3 .item .cont .info .tag a' => 'color: {{VALUE}}',
@@ -1129,7 +1129,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_date_options',
 			[
-				'label' => esc_html__( 'Blog Date', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Date', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1140,7 +1140,7 @@ class Better_Blog extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_blog_date_typography',
-				'label' => esc_html__( 'Blog Date Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Date Typography', 'better-elementor-addons' ),
 				 
                 'selector' => '{{WRAPPER}} .better-blog .posts .item .content .date, {{WRAPPER}} .better-blog .item .cont h6 span, {{WRAPPER}} .better-blog .item .cont .date span, {{WRAPPER}} .better-blog .item .cont .date span i, {{WRAPPER}} .better-blog .sm-post span',
 			]
@@ -1149,7 +1149,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_date_color',
 			[
-				'label' => esc_html__( 'Blog Date Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Date Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog .item .cont .date span' => 'color: {{VALUE}}',
@@ -1165,7 +1165,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_date_background',
 			[
-				'label' => esc_html__( 'Blog Date Background', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Date Background', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog .item .cont .date' => 'background: {{VALUE}}',
@@ -1177,7 +1177,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_btn_options',
 			[
-				'label' => esc_html__( 'Blog Read More Button', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Read More Button', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1188,7 +1188,7 @@ class Better_Blog extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_blog_btn_typography',
-				'label' => esc_html__( 'Blog Button Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Button Typography', 'better-elementor-addons' ),
 				 
                 'selector' => '{{WRAPPER}} .better-simple-btn',
 			]
@@ -1197,7 +1197,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_btn_color',
 			[
-				'label' => esc_html__( 'Blog Button Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Button Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-simple-btn'=> 'color: {{VALUE}}',
@@ -1211,7 +1211,7 @@ class Better_Blog extends Widget_Base {
         $this->add_control(
 			'better_blog_btn_background',
 			[
-				'label' => esc_html__( 'Blog Button Background', 'better-el-addons' ),
+				'label' => esc_html__( 'Blog Button Background', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-simple-btn:after' => 'background: {{VALUE}}',
@@ -1223,7 +1223,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_cover_color',
 			[
-				'label' => esc_html__( 'Cover Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Cover Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-blog.style-7 .item:after' => 'background: {{VALUE}}',
@@ -1237,7 +1237,7 @@ class Better_Blog extends Widget_Base {
 		$this->add_control(
 			'better_blog_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ '%' ],
 				'range' => [

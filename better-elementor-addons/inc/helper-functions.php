@@ -1,5 +1,5 @@
 <?php
-function bea_get_option($option_name, $default = null) {
+function better_elementor_addons_get_option($option_name, $default = null) {
 
     $settings = get_option('bea_settings');
 
@@ -8,10 +8,10 @@ function bea_get_option($option_name, $default = null) {
     else
         $option_value = $default;
 
-    return apply_filters('bea_get_option', $option_value, $option_name, $default);
+    return apply_filters('better_elementor_addons_get_option', $option_value, $option_name, $default);
 }
 
-function bea_update_option($option_name, $option_value) {
+function better_elementor_addons_update_option($option_name, $option_value) {
 
     $settings = get_option('bea_settings');
 
@@ -28,7 +28,7 @@ function bea_update_option($option_name, $option_value) {
  * Update multiple options in one go
  * @param array $setting_data An collection of settings key value pairs;
  */
-function bea_update_options($setting_data) {
+function better_elementor_addons_update_options($setting_data) {
 
     $settings = get_option('bea_settings');
 

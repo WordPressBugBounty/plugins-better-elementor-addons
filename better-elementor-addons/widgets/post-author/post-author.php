@@ -31,7 +31,7 @@ class Better_Post_Author extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Post Author', 'better-el-addons' );
+		return __( 'Post Author', 'better-elementor-addons' );
 	}
 
 	public function get_icon() {
@@ -49,14 +49,14 @@ class Better_Post_Author extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'author settings', 'better-el-addons' ),
+				'label' => __( 'author settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'author',
 			[
-				'label' => __( 'Author', 'better-el-addons' ),
+				'label' => __( 'Author', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $this->user_fields_labels(),
 				'default' => 'display_name',
@@ -66,7 +66,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'html_tag',
 			[
-				'label' => __( 'HTML Tag', 'better-el-addons' ),
+				'label' => __( 'HTML Tag', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -86,23 +86,23 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'better-el-addons' ),
+						'title' => __( 'Justified', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -116,9 +116,9 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link', 'better-el-addons' ),
+				'label' => __( 'Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'better-el-addons' ),
+				'placeholder' => __( 'https://your-link.com', 'better-elementor-addons' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -134,7 +134,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Autho style', 'better-el-addons' ),
+				'label' => __( 'Autho style', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -142,7 +142,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'better-el-addons' ),
+				'label' => __( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-widgets-author' => 'color: {{VALUE}};',
@@ -179,7 +179,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'space',
 			[
-				'label' => __( 'Size (%)', 'better-el-addons' ),
+				'label' => __( 'Size (%)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -204,7 +204,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'opacity',
 			[
-				'label' => __( 'Opacity (%)', 'better-el-addons' ),
+				'label' => __( 'Opacity (%)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -228,7 +228,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'angle',
 			[
-				'label' => __( 'Angle (deg)', 'better-el-addons' ),
+				'label' => __( 'Angle (deg)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
@@ -254,7 +254,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'better-el-addons' ),
+				'label' => __( 'Hover Animation', 'better-elementor-addons' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -263,7 +263,7 @@ class Better_Post_Author extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'image_border',
-				'label' => __( 'Image Border', 'better-el-addons' ),
+				'label' => __( 'Image Border', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-widgets-author img',
 				'condition' => [
 					'author' => 'image',
@@ -274,7 +274,7 @@ class Better_Post_Author extends Widget_Base {
 		$this->add_control(
 			'image_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -329,15 +329,15 @@ class Better_Post_Author extends Widget_Base {
 	protected function user_fields_labels() {
 
 		$fields = [
-			'first_name'   => __( 'First Name', 'better-el-addons' ),
-			'last_name'    => __( 'Last Name', 'better-el-addons' ),
-			'first_last'   => __( 'First Name + Last Name', 'better-el-addons' ),
-			'last_first'   => __( 'Last Name + First Name', 'better-el-addons' ),
-			'nickname'     => __( 'Nick Name', 'better-el-addons' ),
-			'display_name' => __( 'Display Name', 'better-el-addons' ),
-			'user_login'   => __( 'User Name', 'better-el-addons' ),
-			'description'  => __( 'User Bio', 'better-el-addons' ),
-			'image'        => __( 'User Image', 'better-el-addons' ),
+			'first_name'   => __( 'First Name', 'better-elementor-addons' ),
+			'last_name'    => __( 'Last Name', 'better-elementor-addons' ),
+			'first_last'   => __( 'First Name + Last Name', 'better-elementor-addons' ),
+			'last_first'   => __( 'Last Name + First Name', 'better-elementor-addons' ),
+			'nickname'     => __( 'Nick Name', 'better-elementor-addons' ),
+			'display_name' => __( 'Display Name', 'better-elementor-addons' ),
+			'user_login'   => __( 'User Name', 'better-elementor-addons' ),
+			'description'  => __( 'User Bio', 'better-elementor-addons' ),
+			'image'        => __( 'User Image', 'better-elementor-addons' ),
 		];
 
 		return $fields;

@@ -41,7 +41,7 @@ class Better_Team extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Team', 'better-el-addons' );
+		return __( 'Team', 'better-elementor-addons' );
 	}
 	
 	//script depend
@@ -92,7 +92,7 @@ class Better_Team extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-elementor-widgets' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -100,16 +100,16 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
-					'5' => __( 'Style 5', 'better-el-addons' ),
-					'6' => __( 'Style 6', 'better-el-addons' ),
-					'7' => __( 'Style 7', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
+					'5' => __( 'Style 5', 'better-elementor-addons' ),
+					'6' => __( 'Style 6', 'better-elementor-addons' ),
+					'7' => __( 'Style 7', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -118,11 +118,11 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'team7_angle',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'left' => __( 'left', 'better-el-addons' ),
-					'right' => __( 'right', 'better-el-addons' ),
+					'left' => __( 'left', 'better-elementor-addons' ),
+					'right' => __( 'right', 'better-elementor-addons' ),
 				],
 				'default' => 'left',
 				'condition' => [
@@ -134,7 +134,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
         	'better_team5_title',
 			[
-				'label'         => esc_html__('Title', 'better-elementor-widgets'),
+				'label'         => esc_html__('Title', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::TEXT,
 				'label_block'   => true,
 				'default' => 'Our Team.',
@@ -147,7 +147,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
         	'better_team5_sub_title',
 			[
-				'label'         => esc_html__('Sub-Title', 'better-elementor-widgets'),
+				'label'         => esc_html__('Sub-Title', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::TEXT,
 				'label_block'   => true,
 				'default' => 'Employees',
@@ -161,7 +161,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'default' => [
@@ -177,7 +177,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
         	'better_team_title',
 			[
-				'label'         => esc_html__('Name', 'better-elementor-widgets'),
+				'label'         => esc_html__('Name', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::TEXT,
 				'label_block'   => true,
 				'default' => 'John Doe',
@@ -191,7 +191,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
         	'better_team_desg',
 			[
-				'label'         => esc_html__('Designation', 'better-elementor-widgets'),
+				'label'         => esc_html__('Designation', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::TEXT,
 				'label_block'   => true,
 				'default' => 'Web Developer',
@@ -204,12 +204,12 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_hover_style',
 			[
-				'label' => __( 'Hover Style', 'better-el-addons' ),
+				'label' => __( 'Hover Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'square' => __( 'square', 'better-el-addons' ),
-					'circle' => __( 'circle', 'better-el-addons' ),
-					'triangle' => __( 'triangle', 'better-el-addons' ),
+					'square' => __( 'square', 'better-elementor-addons' ),
+					'circle' => __( 'circle', 'better-elementor-addons' ),
+					'triangle' => __( 'triangle', 'better-elementor-addons' ),
 				],
 				'default' => 'square',
 				'condition' => [
@@ -225,7 +225,7 @@ class Better_Team extends Widget_Base {
 		$repeater->add_control(
         	'better_social_title',
 			[
-				'label'         => esc_html__('Social Title', 'better-elementor-widgets'),
+				'label'         => esc_html__('Social Title', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::TEXT,
 				'label_block'   => true,
 				'default' => 'fa fa-star',
@@ -235,7 +235,7 @@ class Better_Team extends Widget_Base {
 		$repeater->add_control(
         	'better_social_icon',
 			[
-				'label'         => esc_html__('Social Icon', 'better-elementor-widgets'),
+				'label'         => esc_html__('Social Icon', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::ICONS,
 				'label_block'   => true,
 				'default' => [
@@ -249,7 +249,7 @@ class Better_Team extends Widget_Base {
 		$repeater->add_control(
 			'better_social_link',
 			[
-				'label'         => esc_html__('Social Link', 'better-elementor-widgets'),
+				'label'         => esc_html__('Social Link', 'better-elementor-addons'),
 				'type'          => \Elementor\Controls_Manager::URL,
 				'label_block'   => true,
 				'default'       => [
@@ -262,7 +262,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_social_list',
 			[
-				'label' => esc_html__( 'Social Profile List', 'better-elementor-widgets' ),
+				'label' => esc_html__( 'Social Profile List', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'condition' => [
 					'better_team_style' => array('1','3','4')
@@ -270,23 +270,23 @@ class Better_Team extends Widget_Base {
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'better_social_title' => __( 'Facebook', 'better-elementor-widgets' ),
+						'better_social_title' => __( 'Facebook', 'better-elementor-addons' ),
 						'better_social_icon' => 'fab fa-facebook-f',
 						'better_social_link' => 'https://www/yourlink.com',
 					],
 					[
-						'better_social_title' => __( 'Twitter', 'better-elementor-widgets' ),
+						'better_social_title' => __( 'Twitter', 'better-elementor-addons' ),
 						'better_social_icon' => 'fa fa-twitter',
 						'better_social_link' => 'https://www/yourlink.com',
 					],
 					[
-						'better_social_title' => __( 'Linkedin', 'better-elementor-widgets' ),
+						'better_social_title' => __( 'Linkedin', 'better-elementor-addons' ),
 						'better_social_icon' => 'fa fa-linkedin',
 						'better_social_link' => 'https://www/yourlink.com',
 					],
 					[
-						'better_social_title' => __( 'Linkedin', 'better-elementor-widgets' ),
-						'better_social_icon' => __( 'Youtube', 'better-elementor-widgets' ),
+						'better_social_title' => __( 'Linkedin', 'better-elementor-addons' ),
+						'better_social_icon' => __( 'Youtube', 'better-elementor-addons' ),
 						'better_social_icon' => 'fa fa-youtube',
 						'better_social_link' => 'https://www/yourlink.com',
 					],
@@ -298,7 +298,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_member_list',
 			[
-				'label' => __( 'Slider List', 'better-el-addons' ),
+				'label' => __( 'Slider List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_team_style' => array('2','5')
@@ -306,21 +306,21 @@ class Better_Team extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'better_team2_title',
-						'label' => __( 'Name', 'better-el-addons' ),
+						'label' => __( 'Name', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'default' => __( 'John Doe' ,  'better-el-addons'  ),
+						'default' => __( 'John Doe' , 'better-elementor-addons'  ),
 					],
 					[
 						'name' => 'better_team2_desg',
-						'label' => __( 'Designation', 'better-el-addons' ),
+						'label' => __( 'Designation', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'default' => __( 'Web Developer' ,  'better-el-addons'  ),
+						'default' => __( 'Web Developer' , 'better-elementor-addons'  ),
 					],
 					[
 						'name' => 'better_team2_image',
-						'label' => __( 'Slider Image', 'better-el-addons' ),
+						'label' => __( 'Slider Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -328,7 +328,7 @@ class Better_Team extends Widget_Base {
 					],
 					[
 						'name' => 'better_team2_social_icon_1',
-						'label' => esc_html__( 'Social Icon #1', 'better-el-addons' ),
+						'label' => esc_html__( 'Social Icon #1', 'better-elementor-addons' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'fab fa-facebook-f',
@@ -337,13 +337,13 @@ class Better_Team extends Widget_Base {
 					],
 					[
 						'name' => 'better_team2_social_link_1',
-						'label' => esc_html__( 'Social link #1', 'better-el-addons' ),
+						'label' => esc_html__( 'Social link #1', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
-						'placeholder' => __('Leave it blank if you don\'t need this button'),
+                        'placeholder' => __('Leave it blank if you don\'t need this button','better-elementor-addons'),
 					],
 					[
 						'name' => 'better_team2_social_icon_2',
-						'label' => esc_html__( 'Social Icon #2', 'better-el-addons' ),
+						'label' => esc_html__( 'Social Icon #2', 'better-elementor-addons' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'fab fa-twitter',
@@ -352,13 +352,13 @@ class Better_Team extends Widget_Base {
 					],
 					[
 						'name' => 'better_team2_social_link_2',
-						'label' => esc_html__( 'Social link #2', 'better-el-addons' ),
+						'label' => esc_html__( 'Social link #2', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
-						'placeholder' => __('Leave it blank if you don\'t need this button'),
+                        'placeholder' => __('Leave it blank if you don\'t need this button','better-elementor-addons'),
 					],
 					[
 						'name' => 'better_team2_social_icon_3',
-						'label' => esc_html__( 'Social Icon #3', 'better-el-addons' ),
+						'label' => esc_html__( 'Social Icon #3', 'better-elementor-addons' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'fab fa-behance',
@@ -367,13 +367,13 @@ class Better_Team extends Widget_Base {
 					],
 					[
 						'name' => 'better_team2_social_link_3',
-						'label' => esc_html__( 'Social link #3', 'better-el-addons' ),
+						'label' => esc_html__( 'Social link #3', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
-						'placeholder' => __('Leave it blank if you don\'t need this button'),
+                        'placeholder' => __('Leave it blank if you don\'t need this button','better-elementor-addons'),
 					],
 					[
 						'name' => 'better_team2_social_icon_4',
-						'label' => esc_html__( 'Social Icon #4', 'better-el-addons' ),
+						'label' => esc_html__( 'Social Icon #4', 'better-elementor-addons' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'fab fa-linkedin-in',
@@ -382,9 +382,9 @@ class Better_Team extends Widget_Base {
 					],
 					[
 						'name' => 'better_team2_social_link_4',
-						'label' => esc_html__( 'Social link #4', 'better-el-addons' ),
+						'label' => esc_html__( 'Social link #4', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
-						'placeholder' => __('Leave it blank if you don\'t need this button'),
+                        'placeholder' => __('Leave it blank if you don\'t need this button','better-elementor-addons'),
 					],
 
 				],
@@ -398,7 +398,7 @@ class Better_Team extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -406,7 +406,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_section_title_color',
 			[
-				'label' => esc_html__( 'Section Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Section Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -422,7 +422,7 @@ class Better_Team extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_team_section_title_typography',
-				'label' => esc_html__( 'Section Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Section Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-team.style-5 h6',
 				'condition' => [
 					'better_team_style' => array('5')
@@ -433,7 +433,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_section_sub_title_color',
 			[
-				'label' => esc_html__( 'Section Sub-Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Section Sub-Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -449,7 +449,7 @@ class Better_Team extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_team_section_sub_title_typography',
-				'label' => esc_html__( 'Section Sub-Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Section Sub-Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-team.style-5 h3',
 				'condition' => [
 					'better_team_style' => array('5')
@@ -461,7 +461,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_title_options',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -471,7 +471,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_title_color',
 			[
-				'label' => esc_html__( 'Item Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Item Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -491,7 +491,7 @@ class Better_Team extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_team_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-team .item .info h6, {{WRAPPER}} .better-team.style-1 .team-hover h4, {{WRAPPER}} .better-team.style-2 .item .info h5, {{WRAPPER}} .better-team.style-5 .item .info h5',
 			]
 		);
@@ -500,7 +500,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_desg_options',
 			[
-				'label' => esc_html__( 'Designation', 'better-el-addons' ),
+				'label' => esc_html__( 'Designation', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -510,7 +510,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_team_designation_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -529,7 +529,7 @@ class Better_Team extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_team_designation_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-team.style-1 .team-hover p, {{WRAPPER}} .better-team.style-2 .item .info span, {{WRAPPER}} .better-team .item .info span',
 			]
 		);
@@ -538,7 +538,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_social_list_options',
 			[
-				'label' => esc_html__( 'Social Link', 'better-el-addons' ),
+				'label' => esc_html__( 'Social Link', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -552,7 +552,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_social_icon_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#db3157',
 				'selectors' => [
@@ -570,7 +570,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_social_icon_background',
 			[
-				'label' => esc_html__( 'Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#fff',
 				'selectors' => [
@@ -587,7 +587,7 @@ class Better_Team extends Widget_Base {
 		$this->add_control(
 			'better_active_dot_color',
 			[
-				'label' => esc_html__( 'Active Dot Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Active Dot Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-team.style-2 .slick-dots li.slick-active' => 'background: {{VALUE}}',

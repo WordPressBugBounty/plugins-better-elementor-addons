@@ -40,7 +40,7 @@ class Better_Gallery extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Gallery', 'better_plg' );
+		return __( 'Gallery', 'better-elementor-addons' );
 	}
 
 	/**
@@ -88,7 +88,7 @@ class Better_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Gallery Settings', 'better_plg' ),
+				'label' => __( 'Gallery Settings', 'better-elementor-addons' ),
 			]
 		);
 
@@ -96,7 +96,7 @@ class Better_Gallery extends Widget_Base {
 		$this->add_control(
 			'gallery_col',
 			[
-				'label' => __( 'Columns number', 'better_plg' ),
+				'label' => __( 'Columns number', 'better-elementor-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => '4',
 			]
@@ -105,7 +105,7 @@ class Better_Gallery extends Widget_Base {
 		$this->add_control(
 			'gallery_list',
 			[
-				'label' => __( 'Gallery List', 'better_plg' ),
+				'label' => __( 'Gallery List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
@@ -121,29 +121,29 @@ class Better_Gallery extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Title', 'better_plg' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Main Title..', 'better_plg' ),
+						'placeholder' => __( 'Main Title..', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'subtitle',
-						'label' => __( 'Sub Title', 'better_plg' ),
+						'label' => __( 'Sub Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Sub Title..', 'better_plg' ),
+						'placeholder' => __( 'Sub Title..', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'link',
-						'label' => __( 'Link', 'better_plg' ),
+						'label' => __( 'Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Add your link here..', 'better_plg' ),
+						'placeholder' => __( 'Add your link here..', 'better-elementor-addons' ),
 					],
 					
 					[
 						'name' => 'image',
-						'label' => __( 'Image', 'better_plg' ),
+						'label' => __( 'Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -157,10 +157,10 @@ class Better_Gallery extends Widget_Base {
 		$this->add_control(
 			'nav_prev',
 			[
-				'label' => __( 'Previous','better_plg' ),
+				'label' => __( 'Previous', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Prev Slide', 'better_plg' ),
+				'default' => __( 'Prev Slide', 'better-elementor-addons' ),
 				'condition' => [
 					'gallery_style' => array('1','2','3','4')
 				],
@@ -169,10 +169,10 @@ class Better_Gallery extends Widget_Base {
 		$this->add_control(
 			'nav_next',
 			[
-				'label' => __( 'Next','better_plg' ),
+				'label' => __( 'Next', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Next Slide', 'better_plg' ),
+				'default' => __( 'Next Slide', 'better-elementor-addons' ),
 				'condition' => [
 					'gallery_style' => array('1','2','3','4')
 				],
@@ -183,7 +183,7 @@ class Better_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_image',
 			[
-				'label' => __( 'Image style', 'better_plg' ),
+				'label' => __( 'Image style', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 
 			]
@@ -192,7 +192,7 @@ class Better_Gallery extends Widget_Base {
 		$this->add_control(
 			'img_height',
 			[
-				'label' => __( 'Image height', 'better_plg' ),
+				'label' => __( 'Image height', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [

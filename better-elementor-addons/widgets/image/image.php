@@ -44,7 +44,7 @@ class Better_Image extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Image','better-el-addons' );
+		return __( 'Image', 'better-elementor-addons' );
 	}
 
 	/**
@@ -92,21 +92,21 @@ class Better_Image extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Settings','better-el-addons' ),
+				'label' => __( 'Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'image_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
-					'5' => __( 'Style 5', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
+					'5' => __( 'Style 5', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -115,7 +115,7 @@ class Better_Image extends Widget_Base {
 		$this->add_control(
             'image',
             [
-                'label' => __( 'Image', 'better-el-addons' ),
+                'label' => __( 'Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 				'url' => Utils::get_placeholder_image_src(),
@@ -132,10 +132,10 @@ class Better_Image extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'This is the heading', 'better-el-addons' ),
+				'default' => __( 'This is the heading', 'better-elementor-addons' ),
 				'condition' => [
 					'image_style' => array( '1','2','3','5' )
 				],
@@ -145,7 +145,7 @@ class Better_Image extends Widget_Base {
 		$this->add_control(
 			'subtitle',
 			[
-				'label' => __( 'Subtitle','better-el-addons' ),
+				'label' => __( 'Subtitle', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -157,7 +157,7 @@ class Better_Image extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Button Link','better-el-addons' ),
+				'label' => __( 'Button Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'Leave video link here',
 				'condition' => [
@@ -171,7 +171,7 @@ class Better_Image extends Widget_Base {
 			'width',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Width', 'better-el-addons' ),
+				'label' => __( 'Width', 'better-elementor-addons' ),
 				'range' => [
 					'px' => [
 						'min' => 100,
@@ -198,7 +198,7 @@ class Better_Image extends Widget_Base {
 			'height',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Height', 'better-el-addons' ),
+				'label' => __( 'Height', 'better-elementor-addons' ),
 				'size_units' => [ 'px', 'vh' ],
 				'range' => [
 					'px' => [

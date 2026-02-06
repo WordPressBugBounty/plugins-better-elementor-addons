@@ -53,7 +53,7 @@ class Better_Menu extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Navigation Menu', 'better-el-addons' );
+		return esc_html__( 'Navigation Menu', 'better-elementor-addons' );
 	}
 
 	/**
@@ -99,7 +99,7 @@ class Better_Menu extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'swiper','better-nav','wow','isotope','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','scrollit','counterup','jquery.twentytwenty','better-el-addons','better-el-addons' ];
+		return [ 'swiper','better-nav','wow','isotope','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','scrollit','counterup','jquery.twentytwenty','better-el-addons' ];
 	}
 
 	/**
@@ -117,7 +117,7 @@ class Better_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'clients_content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
         );
@@ -125,10 +125,10 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_header_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -136,7 +136,7 @@ class Better_Menu extends Widget_Base {
 
 		$this->add_control(
             'menu', [
-                'label' => __( 'Menu', 'saasland-core' ),
+                'label' => __( 'Menu', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => better_navigation_menu_array()
             ]
@@ -148,7 +148,7 @@ class Better_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -156,7 +156,7 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_header_links_color',
 			[
-				'label' => esc_html__( 'links Color', 'better-el-addons' ),
+				'label' => esc_html__( 'links Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navigation-menu.style-1 .navbar-nav .nav-link' => 'color: {{VALUE}}',
@@ -168,7 +168,7 @@ class Better_Menu extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_header_links_typography',
-				'label' => esc_html__( 'links Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'links Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-navigation-menu.style-1 .navbar-nav .nav-link:not(.dropdown-item)',
 			]
 		);
@@ -176,7 +176,7 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_sticky_header_links_color',
 			[
-				'label' => esc_html__( 'Scroll links Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Scroll links Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navigation-menu.style-1.nav-scroll .navbar-nav .nav-link' => 'color: {{VALUE}}',
@@ -187,7 +187,7 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_header_dropdown_color',
 			[
-				'label' => esc_html__( 'Dropdown Menu Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Dropdown Menu Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navigation-menu.style-1 .dropdown-menu' => 'background: {{VALUE}}',
@@ -198,7 +198,7 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_header_dropdown_links_color',
 			[
-				'label' => esc_html__( 'Dropdown links Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Dropdown links Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navigation-menu.style-1 .dropdown-menu' => 'color: {{VALUE}}',
@@ -209,7 +209,7 @@ class Better_Menu extends Widget_Base {
 		$this->add_control(
 			'better_header_dropdown_links_accent_color',
 			[
-				'label' => esc_html__( 'Dropdown links accent Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Dropdown links accent Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navigation-menu.style-1 .dropdown-menu .dropdown-item:after' => 'background: {{VALUE}}',

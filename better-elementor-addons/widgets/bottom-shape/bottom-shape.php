@@ -38,7 +38,7 @@ class Better_Bottom_Shape extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Bottom Shape', 'better-el-addons' );
+		return __( 'Bottom Shape', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,7 +86,7 @@ class Better_Bottom_Shape extends Widget_Base {
         $this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Main', 'better-el-addons' ),
+				'label' => __( 'Main', 'better-elementor-addons' ),
 			]
 		);
 

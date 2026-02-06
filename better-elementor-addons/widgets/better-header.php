@@ -52,7 +52,7 @@ class Better_Header extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Header', 'better-el-addons' );
+		return esc_html__( 'Header', 'better-elementor-addons' );
 	}
 
 	/**
@@ -98,7 +98,7 @@ class Better_Header extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'swiper','wow','isotope','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','scrollit','counterup','jquery.twentytwenty','better-el-addons','better-el-addons' ];
+		return [ 'swiper','wow','isotope','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','scrollit','counterup','jquery.twentytwenty','better-el-addons' ];
 	}
 
 	/**
@@ -116,7 +116,7 @@ class Better_Header extends Widget_Base {
 		$this->start_controls_section(
 			'clients_content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
         );
@@ -124,7 +124,7 @@ class Better_Header extends Widget_Base {
         $this->add_control(
 			'better_logo',
 			[
-				'label' => __( 'White Logo', 'better-el-addons' ),
+				'label' => __( 'White Logo', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -135,7 +135,7 @@ class Better_Header extends Widget_Base {
         $this->add_control(
 			'better_logo_dark',
 			[
-				'label' => __( 'Dark Logo', 'better-el-addons' ),
+				'label' => __( 'Dark Logo', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -145,7 +145,7 @@ class Better_Header extends Widget_Base {
 
 		$this->add_control(
             'menu', [
-                'label' => __( 'Menu', 'saasland-core' ),
+                'label' => __( 'Menu', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => better_get_menu_array()
             ]
@@ -157,7 +157,7 @@ class Better_Header extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -165,7 +165,7 @@ class Better_Header extends Widget_Base {
 		$this->add_control(
 			'better_header_nav_color',
 			[
-				'label' => esc_html__( 'Header Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Header Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-navbar.style-1.nav-scroll' => 'background: {{VALUE}}',
@@ -176,7 +176,7 @@ class Better_Header extends Widget_Base {
 		$this->add_control(
 			'better_header_links_color',
 			[
-				'label' => esc_html__( 'Header links Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Header links Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .navbar .navbar-nav .nav-link' => 'color: {{VALUE}}',
@@ -187,7 +187,7 @@ class Better_Header extends Widget_Base {
 		$this->add_control(
 			'better_sticky_header_links_color',
 			[
-				'label' => esc_html__( 'Scroll Header links Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Scroll Header links Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .nav-scroll .navbar-nav .nav-link' => 'color: {{VALUE}}',

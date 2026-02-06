@@ -40,7 +40,7 @@ class Better_Cart extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Header Cart', 'better-el-addons' );
+		return __( 'Header Cart', 'better-elementor-addons' );
 	}
 
 	/**
@@ -88,7 +88,7 @@ class Better_Cart extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Cart Settings', 'better-el-addons' ),
+				'label' => __( 'Cart Settings', 'better-elementor-addons' ),
 			]
 		);
 		
@@ -97,7 +97,7 @@ class Better_Cart extends Widget_Base {
         $this->add_control(
             'cart_icons',
             [
-                'label' => esc_html__('Select Icon', 'better-el-addons'),
+                'label' => esc_html__('Select Icon', 'better-elementor-addons'),
                 'fa4compatibility' => 'better_search_icon',
 				'default' => [
 					'value' => 'fa fa-shopping-cart',
@@ -115,7 +115,7 @@ class Better_Cart extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_style',
 			[
-				'label' => __( 'Content Settings', 'better-el-addons' ),
+				'label' => __( 'Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -123,7 +123,7 @@ class Better_Cart extends Widget_Base {
 		$this->add_control(
 			'color_icon',
 			[
-				'label' => __( 'Content Background', 'better-el-addons' ),
+				'label' => __( 'Content Background', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#eee',
 				'selectors' => [
@@ -135,7 +135,7 @@ class Better_Cart extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Size', 'better-el-addons' ),
+				'label' => __( 'Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -180,7 +180,7 @@ class Better_Cart extends Widget_Base {
 	    }
 	    ?>
 	    <div class="better-header-cart-icon hidden-xs hidden-sm">
-	        <a class="<?php echo esc_attr( $settings['cart_icons']['value'] ); ?> 3" href="<?php echo esc_url( $cart_link ); ?>" title="<?php echo esc_attr__( 'View your shopping cart', 'better-el-addons' ); ?>">
+	        <a class="<?php echo esc_attr( $settings['cart_icons']['value'] ); ?> 3" href="<?php echo esc_url( $cart_link ); ?>" title="<?php echo esc_attr__( 'View your shopping cart', 'better-elementor-addons' ); ?>">
 	            <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
 	        </a>
 	    </div>

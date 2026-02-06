@@ -40,7 +40,7 @@ class BEA_Admin_Ajax {
 
     public function bea_check_nonce() {
         // Retrieve nonce
-        $nonce = (isset($_POST['nonce'])) ? $_POST['nonce'] : (isset($_GET['nonce']) ? $_GET['nonce'] : '');
+        $nonce = isset($_POST['nonce']) ? sanitize_text_field(wp_unslash($_POST['nonce'])) : (isset($_GET['nonce']) ? sanitize_text_field(wp_unslash($_GET['nonce'])) : '');
 
         // Nonce action for verification
         $action = 'bea_admin_nonce';
@@ -48,13 +48,13 @@ class BEA_Admin_Ajax {
         // Check AJAX nonce
         if (!wp_verify_nonce($nonce, $action)) {
             // Build response for nonce failure
-            wp_send_json($this->ajax_response(false, __('Sorry, your nonce did not verify.', 'better-el-addons')));
+            wp_send_json($this->ajax_response(false, __('Sorry, your nonce did not verify.', 'better-elementor-addons')));
         }
 
         // Check if the current user has the 'manage_options' capability
         if (!current_user_can('manage_options')) {
             // Build response for capability failure
-            wp_send_json($this->ajax_response(false, __('Sorry, you are not allowed to perform this action.', 'better-el-addons')));
+            wp_send_json($this->ajax_response(false, __('Sorry, you are not allowed to perform this action.', 'better-elementor-addons')));
         }
 
         // If nonce and capability checks pass, proceed
@@ -67,12 +67,13 @@ class BEA_Admin_Ajax {
 
         // Now, check if the current user has the 'manage_options' capability
         if (!current_user_can('manage_options')) {
-            wp_send_json($this->ajax_response(false, __('Sorry, you are not allowed to perform this action.', 'better-el-addons')));
+            wp_send_json($this->ajax_response(false, __('Sorry, you are not allowed to perform this action.', 'better-elementor-addons')));
             return; // Exit the function to prevent further execution
         }
 
         // retrieve data
-        $this->ajax_data = (isset($_POST)) ? $_POST : $_GET;
+        // phpcs:ignore WordPress.Security.NonceVerification.Missing, WordPress.Security.NonceVerification.Recommended -- Nonce verified in bea_check_nonce()
+        $this->ajax_data = !empty($_POST) ? $_POST : $_GET;
 
         // retrieve function
         $func = $this->ajax_data['func'];
@@ -86,7 +87,7 @@ class BEA_Admin_Ajax {
                 $response = $this->save_settings_callback();
                 break;
             default:
-                $response = $this->ajax_response(false, __('Sorry, an unknown error occurred...', 'better-el-addons'), null);
+                $response = $this->ajax_response(false, __('Sorry, an unknown error occurred...', 'better-elementor-addons'), null);
                 break;
         }
 
@@ -100,7 +101,7 @@ class BEA_Admin_Ajax {
         // retrieve data from jquery
         $setting_data = $this->ajax_data['setting_data'];
 
-        bea_update_options($setting_data);
+        better_elementor_addons_update_options($setting_data);
 
         $template = false;
         // get new restore global settings panel
@@ -126,14 +127,14 @@ class BEA_Admin_Ajax {
             'box_messages' => array(
 
                 'bea_save_settings' => array(
-                    'before' => __('Saving plugin settings', 'better-el-addons'),
-                    'success' => __('Plugin settings Saved', 'better-el-addons'),
-                    'error' => __('Sorry, an error occurs while saving settings...', 'better-el-addons')
+                    'before' => __('Saving plugin settings', 'better-elementor-addons'),
+                    'success' => __('Plugin settings Saved', 'better-elementor-addons'),
+                    'error' => __('Sorry, an error occurs while saving settings...', 'better-elementor-addons')
                 ),
                 'bea_reset_settings' => array(
-                    'before' => __('Resetting plugin settings', 'better-el-addons'),
-                    'success' => __('Plugin settings resetted', 'better-el-addons'),
-                    'error' => __('Sorry, an error occurred while resetting settings', 'better-el-addons')
+                    'before' => __('Resetting plugin settings', 'better-elementor-addons'),
+                    'success' => __('Plugin settings resetted', 'better-elementor-addons'),
+                    'error' => __('Sorry, an error occurred while resetting settings', 'better-elementor-addons')
                 ),
             )
         );

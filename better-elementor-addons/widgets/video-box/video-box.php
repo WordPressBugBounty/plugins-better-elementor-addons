@@ -40,7 +40,7 @@ class Better_Video_Box extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Video Box', 'better-el-addons' );
+		return esc_html__( 'Video Box', 'better-elementor-addons' );
 	}
 
 	/**
@@ -103,14 +103,14 @@ class Better_Video_Box extends Widget_Base {
         $this->start_controls_section(
 			'section_shortcode',
 			[
-				'label' => esc_html__( 'Shortcode', 'genesis-core' ),
+				'label' => esc_html__( 'Shortcode', 'better-elementor-addons' ),
 			]
         );
         
         $this->add_control(
 			'better_video_background',
 			[
-				'label' => __( 'Video Box Background', 'better-el-addons' ),
+				'label' => __( 'Video Box Background', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -121,7 +121,7 @@ class Better_Video_Box extends Widget_Base {
 		$this->add_control(
 			'better_video_background_mask',
 			[
-				'label' => __( 'Background Mask', 'avo_plg' ),
+				'label' => __( 'Background Mask', 'better-elementor-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 4,
 				
@@ -131,7 +131,7 @@ class Better_Video_Box extends Widget_Base {
 		$this->add_control(
 			'better_video_link',
 			[
-				'label' => esc_html__( 'Video link', 'genesis-core' ),
+				'label' => esc_html__( 'Video link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => esc_url( 'http://your-link.com' ),
 				'default' => [

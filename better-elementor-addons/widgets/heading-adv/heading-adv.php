@@ -44,7 +44,7 @@ class Better_Heading_adv extends Widget_Base
      */
     public function get_title()
     {
-        return __('Heading Advanced', 'BEA');
+        return __('Heading Advanced', 'better-elementor-addons');
     }
 
     /**
@@ -98,47 +98,47 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Title', 'BEA'),
+                'label' => __('Title', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
 			'heading_text',
 			[
-				'label' => esc_html__( 'Title', 'BEA' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'BEA Advanced {{Heading}}', 'BEA' ),
-				'placeholder' => esc_html__( 'Type your Text here', 'BEA' ),
+				'default' => esc_html( 'BEA Advanced {{Heading}}', 'better-elementor-addons' ),
+				'placeholder' => esc_html__( 'Type your Text here', 'better-elementor-addons' ),
 				'label_block' => true,
-				'description' => esc_html__( '"Focused Title" Settings will be worked, If you use this {{something}} format', 'BEA' ),
+				'description' => esc_html__( '"Focused Title" Settings will be worked, If you use this {{something}} format', 'better-elementor-addons' ),
 			]
 		);
 
         $this->add_control(
 			'sub_title',
 			[
-				'label' => esc_html__( 'Sub Title', 'BEA' ),
+				'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'BEA-Lip' ),
+				'default' => esc_html( 'BEA-Lip' ),
 				
 			]
 		);
         $this->add_responsive_control(
 			'heading_align',
 			[
-				'label' => esc_html__( 'Alignment', 'BEA' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'BEA' ),
+						'title' => esc_html__( 'Left', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'BEA' ),
+						'title' => esc_html__( 'Center', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'BEA' ),
+						'title' => esc_html__( 'Right', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -151,15 +151,15 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'sub_title_position',
             [
-                'label' => esc_html__( 'Sub Title Position', 'BEA' ),
+                'label' => esc_html__( 'Sub Title Position', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'top' => [
-                        'title' => esc_html__( 'Before Title', 'BEA' ),
+                        'title' => esc_html__( 'Before Title', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'bottom' => [
-                        'title' => esc_html__( 'After Title', 'BEA' ),
+                        'title' => esc_html__( 'After Title', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -170,7 +170,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
 			'title_tag',
 			[
-				'label' => esc_html__( 'Title HTML Tag', 'BEA' ),
+				'label' => esc_html__( 'Title HTML Tag', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -192,14 +192,14 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'shadow_text_section',
             [
-			    'label' => esc_html__( 'Shadow Text', 'BEA' )
+			    'label' => esc_html__( 'Shadow Text', 'better-elementor-addons' )
 		    ]
         );
 
 		$this->add_control(
             'show_shadow_text', 
             [
-                'label' => esc_html__( 'Show Shadow Text', 'BEA' ),
+                'label' => esc_html__( 'Show Shadow Text', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
                 'default' => 'no',
             ]   
@@ -208,10 +208,10 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_control(
             'shadow_title_content',
             [
-                'label'			 => esc_html__( 'Text', 'BEA' ),
+                'label'			 => esc_html__( 'Text', 'better-elementor-addons' ),
                 'label_block'	 => true,
                 'type'			 => \Elementor\Controls_Manager::TEXT,
-                'default'		 => esc_html__( 'Advanced', 'BEA' ),
+                'default'		 => esc_html__( 'Advanced', 'better-elementor-addons' ),
                 'condition' => [
                     'show_shadow_text' => 'yes'
                 ],
@@ -223,27 +223,27 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'heading_section_seperator',
             [
-                'label' => __('Separator', 'BEA'),
+                'label' => __('Separator', 'better-elementor-addons'),
             ]
         );
 
 		$this->add_control(
 			'heading_show_seperator', [
-				'label'			 =>esc_html__( 'Show Separator', 'BEA' ),
+				'label'			 =>esc_html__( 'Show Separator', 'better-elementor-addons' ),
 				'type'			 => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' =>esc_html__( 'Yes', 'BEA' ),
-				'label_off' =>esc_html__( 'No', 'BEA' ),
+				'label_on' =>esc_html__( 'Yes', 'better-elementor-addons' ),
+				'label_off' =>esc_html__( 'No', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'heading_seperator_style',
 			[
-				'label' => esc_html__( 'Separator Style', 'BEA' ),
+				'label' => esc_html__( 'Separator Style', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'border-divider' => esc_html__( 'Dotted', 'BEA' ),
-					'separator-border' => esc_html__( 'Solid', 'BEA' ),
-					'border_custom' => esc_html__( 'Custom', 'BEA' ),
+					'border-divider' => esc_html__( 'Dotted', 'better-elementor-addons' ),
+					'separator-border' => esc_html__( 'Solid', 'better-elementor-addons' ),
+					'border_custom' => esc_html__( 'Custom', 'better-elementor-addons' ),
 				],
 				'default' => 'border-divider',
 				'condition' => [
@@ -255,13 +255,13 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_control(
 			'heading_seperator_position',
 			[
-				'label' => esc_html__( 'Separator Position', 'BEA' ),
+				'label' => esc_html__( 'Separator Position', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'top' => esc_html__( 'Top', 'BEA' ),
-					'before' => esc_html__( 'Before Title', 'BEA' ),
-					'after' => esc_html__( 'After Title', 'BEA' ),
-					'bottom' => esc_html__( 'Bottom', 'BEA' ),
+					'top' => esc_html__( 'Top', 'better-elementor-addons' ),
+					'before' => esc_html__( 'Before Title', 'better-elementor-addons' ),
+					'after' => esc_html__( 'After Title', 'better-elementor-addons' ),
+					'bottom' => esc_html__( 'Bottom', 'better-elementor-addons' ),
 				],
 				'default' => 'after',
 				'condition' => [
@@ -273,7 +273,7 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_control(
 			'heading_seperator_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'BEA' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'dynamic' => [
 					'active' => true,
@@ -308,7 +308,7 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'heading_title_style',
             [
-                'label' => esc_html__( 'Title', 'BEA' ),
+                'label' => esc_html__( 'Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -322,7 +322,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_title_color', 
             [
-                'label' => esc_html__('Title Color', 'BEA'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .title' => 'color: {{VALUE}};',
@@ -332,7 +332,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_title_color_hover', 
             [
-                'label' => esc_html__('Hover Color', 'BEA'),
+                'label' => esc_html__('Hover Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .title:hover' => 'color: {{VALUE}};',
@@ -365,9 +365,9 @@ class Better_Heading_adv extends Widget_Base
             'title-fill-toggle',
             [
                 'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-                'label' => esc_html__( 'Image & Gradient Mask', 'BEA' ),
-                'label_off' => esc_html__( 'Default', 'BEA' ),
-                'label_on' => esc_html__( 'Custom', 'BEA' ),
+                'label' => esc_html__( 'Image & Gradient Mask', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'Default', 'better-elementor-addons' ),
+                'label_on' => esc_html__( 'Custom', 'better-elementor-addons' ),
                 'return_value' => 'yes',
             ]
         );
@@ -388,7 +388,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control(
             'heading_title_padding',
             [
-                'label'      => esc_html__('Padding', 'BEA'),
+                'label'      => esc_html__('Padding', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -399,7 +399,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control(
             'heading_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -420,7 +420,7 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'heading_focused_title_style',
             [
-                'label' => esc_html__( 'Focused Title', 'BEA' ),
+                'label' => esc_html__( 'Focused Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -433,7 +433,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_focused_title_color', 
             [
-                'label' => esc_html__('Title Color', 'BEA'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .title span' => 'color: {{VALUE}};',
@@ -459,7 +459,7 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'heading_sub_title_style',
             [
-                'label' => esc_html__( 'Sub Title', 'BEA' ),
+                'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -473,7 +473,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_sub_title_color', 
             [
-                'label' => esc_html__('Color', 'BEA'),
+                'label' => esc_html__('Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .sub-title' => 'color: {{VALUE}};',
@@ -483,7 +483,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_sub_title_color_hover', 
             [
-                'label' => esc_html__('Hover Color', 'BEA'),
+                'label' => esc_html__('Hover Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .sub-title:hover' => 'color: {{VALUE}};',
@@ -501,7 +501,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
 			'sub-title-rotate',
 			[
-				'label' => esc_html__( 'Rotate', 'BEA' ),
+				'label' => esc_html__( 'Rotate', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => ['deg'],
 				'range' => [
@@ -519,7 +519,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
 			'sub-title-z-index',
 			[
-				'label' => esc_html__( 'Z-index', 'BEA' ),
+				'label' => esc_html__( 'Z-index', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => ['deg'],
 				'range' => [
@@ -537,7 +537,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control(
             'heading_sub_title_border_radius',
             [
-                'label'      => esc_html__('Border Radius', 'BEA'),
+                'label'      => esc_html__('Border Radius', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -548,7 +548,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control(
             'heading_sub_title_padding',
             [
-                'label'      => esc_html__('Padding', 'BEA'),
+                'label'      => esc_html__('Padding', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -559,7 +559,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control(
             'heading_sub_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -574,7 +574,7 @@ class Better_Heading_adv extends Widget_Base
         $this->start_controls_section(
             'heading_shadow_title_style',
             [
-                'label' => esc_html__( 'Shadow Title', 'BEA' ),
+                'label' => esc_html__( 'Shadow Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
 					'show_shadow_text' => 'yes'
@@ -584,7 +584,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_responsive_control( 
             'shadow_text_position',
             [
-			'label' => esc_html__( 'Position', 'BEA' ),
+			'label' => esc_html__( 'Position', 'better-elementor-addons' ),
 			'type' => Controls_Manager::DIMENSIONS,
             'size_units' => [ 'px', '%','rem', 'custom' ],
 			'allowed_dimensions' => [ 'bottom', 'left' ],
@@ -608,7 +608,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control(
             'heading_shadow_title_color', 
             [
-                'label' => esc_html__('Title Color', 'BEA'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-heading-adv .shadow-title' => 'color: {{VALUE}};',
@@ -619,9 +619,9 @@ class Better_Heading_adv extends Widget_Base
             'popover-Text-stroke',
             [
                 'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-                'label' => esc_html__( 'Text Stroke', 'BEA' ),
-                'label_off' => esc_html__( 'Default', 'BEA' ),
-                'label_on' => esc_html__( 'Custom', 'BEA' ),
+                'label' => esc_html__( 'Text Stroke', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'Default', 'better-elementor-addons' ),
+                'label_on' => esc_html__( 'Custom', 'better-elementor-addons' ),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -633,7 +633,7 @@ class Better_Heading_adv extends Widget_Base
         $this->add_control( 
             'shadow_text_border_width',
             [
-			'label' => __( 'Stroke Width', 'BEA' ),
+			'label' => __( 'Stroke Width', 'better-elementor-addons' ),
 			'type' => Controls_Manager::SLIDER,
             'size_units' => [ 'px', '%','rem', 'custom' ],
 
@@ -654,7 +654,7 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_responsive_control( 
             'shadow_text_border_color',
             [
-			'label'		 =>esc_html__( 'Stroke Color', 'BEA' ),
+			'label'		 =>esc_html__( 'Stroke Color', 'better-elementor-addons' ),
 			'type'		 => Controls_Manager::COLOR,
 			'default' => "#00000042",
 			'selectors'	 => [
@@ -667,7 +667,7 @@ class Better_Heading_adv extends Widget_Base
         $this->end_controls_section();
         $this->start_controls_section(
 			'heading_section_seperator_style', [
-				'label'	 => esc_html__( 'Separator', 'BEA' ),
+				'label'	 => esc_html__( 'Separator', 'better-elementor-addons' ),
 				'tab'	 => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'heading_show_seperator' => 'yes'
@@ -677,7 +677,7 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_responsive_control(
 			'heading_seperator_width',
 			[
-				'label' => esc_html__( 'Width', 'BEA' ),
+				'label' => esc_html__( 'Width', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -702,7 +702,7 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_responsive_control(
 			'heading_seperator_height',
 			[
-				'label' => esc_html__( 'Height', 'BEA' ),
+				'label' => esc_html__( 'Height', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -726,7 +726,7 @@ class Better_Heading_adv extends Widget_Base
 		);
         $this->add_responsive_control(
 			'heading_seperator_color', [
-				'label'		 =>esc_html__( 'Separator color', 'BEA' ),
+				'label'		 =>esc_html__( 'Separator color', 'better-elementor-addons' ),
 				'type'		 => Controls_Manager::COLOR,
 				'selectors'	 => [
 					'{{WRAPPER}} .bea-heading-adv .heading-border-divider' => 'background: {{VALUE}};',
@@ -742,7 +742,7 @@ class Better_Heading_adv extends Widget_Base
 		$this->add_responsive_control(
 			'heading_seperator_margin',
 			[
-				'label' => esc_html__( 'Margin', 'BEA' ),
+				'label' => esc_html__( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
 
@@ -774,7 +774,7 @@ class Better_Heading_adv extends Widget_Base
                 <div class="separetor-wrapper">
 
                     <?php if( $settings["heading_seperator_style"]=="border_custom"){
-                        echo  \Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image');
+                        echo  wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image'));
                     }else{?>
                     <div class="heading-<?php echo esc_attr( $settings["heading_seperator_style"] );?><?php echo esc_attr(' bea-postion-' . $settings["heading_align"]); ?>"></div>
                    <?php }?>
@@ -792,7 +792,7 @@ class Better_Heading_adv extends Widget_Base
             <?php if($settings["heading_seperator_position"]=="before"):?>
                 <div class="separetor-wrapper">
                     <?php if( $settings["heading_seperator_style"]=="border_custom"){
-                        echo  \Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image');
+                        echo  wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image'));
                     }else{?>
                     <div class="heading-<?php echo esc_attr( $settings["heading_seperator_style"] );?><?php echo esc_attr(' bea-postion-' . $settings["heading_align"]); ?>"></div>
                     <?php }?>
@@ -806,7 +806,7 @@ class Better_Heading_adv extends Widget_Base
             <?php if($settings["heading_seperator_position"]=="after"):?>
                 <div class="separetor-wrapper">
                     <?php if( $settings["heading_seperator_style"]=="border_custom"){
-                        echo  \Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image');
+                        echo  wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image'));
                     }else{?>
                     <div class="heading-<?php echo esc_attr( $settings["heading_seperator_style"] );?><?php echo esc_attr(' bea-postion-' . $settings["heading_align"]); ?>"></div>
                     <?php }?>
@@ -818,7 +818,7 @@ class Better_Heading_adv extends Widget_Base
             <?php if($settings["heading_seperator_position"]=="botton"):?>
                 <div class="separetor-wrapper">
                     <?php if( $settings["heading_seperator_style"]=="border_custom"){
-                        echo  \Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image');
+                        echo  wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html($settings, 'heading_seperator_image_size', 'heading_seperator_image'));
                     }else{?>
                     <div class="heading-<?php echo esc_attr( $settings["heading_seperator_style"] );?><?php echo esc_attr(' bea-postion-' . $settings["heading_align"]); ?>"></div>
                     <?php }?>

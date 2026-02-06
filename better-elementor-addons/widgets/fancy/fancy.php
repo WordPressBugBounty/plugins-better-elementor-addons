@@ -39,7 +39,7 @@ class Better_Fancy extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Fancy', 'better_plg' );
+		return __( 'Fancy', 'better-elementor-addons' );
 	}
 
 	//script depend
@@ -91,18 +91,18 @@ class Better_Fancy extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Fancy Settings', 'better-el-addons' ),
+				'label' => __( 'Fancy Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'better_fancy_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -110,7 +110,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'bg_image',
             [
-                'label' => __( 'Bg Image', 'better-el-addons' ),
+                'label' => __( 'Bg Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -120,7 +120,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             't_image',
             [
-                'label' => __( 'Top Image', 'better-el-addons' ),
+                'label' => __( 'Top Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -133,7 +133,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'b_image',
             [
-                'label' => __( 'Bottom Image', 'better-el-addons' ),
+                'label' => __( 'Bottom Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -146,7 +146,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Insert your title..',
@@ -156,9 +156,9 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'title2',
             [
-                'label' => __( 'Title 2', 'better-el-addons'),
+                'label' => __( 'Title 2', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( '21', 'better-el-addons' ),
+				'default' => __( '21', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -169,7 +169,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'subtitle',
 			[
-				'label' => __( 'Subtitle','better-el-addons' ),
+				'label' => __( 'Subtitle', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -183,9 +183,9 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'text1',
             [
-                'label' => __( 'Fancy subtitle 1', 'better-el-addons'),
+                'label' => __( 'Fancy subtitle 1', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( 'Since', 'better-el-addons' ),
+				'default' => __( 'Since', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -195,9 +195,9 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'fancy_symbol1',
             [
-                'label' => __( 'Fancy Symbol 1', 'better-el-addons'),
+                'label' => __( 'Fancy Symbol 1', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( 'K', 'better-el-addons' ),
+				'default' => __( 'K', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -207,9 +207,9 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'text2',
             [
-                'label' => __( 'Fancy subtitle 2', 'better-el-addons'),
+                'label' => __( 'Fancy subtitle 2', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( '1999', 'better-el-addons' ),
+				'default' => __( '1999', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -219,9 +219,9 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
             'fancy_symbol2',
             [
-                'label' => __( 'Fancy Symbol 2', 'better-el-addons'),
+                'label' => __( 'Fancy Symbol 2', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( 'K', 'better-el-addons' ),
+				'default' => __( 'K', 'better-elementor-addons' ),
 				'label_block' => true,
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -236,7 +236,7 @@ class Better_Fancy extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -245,7 +245,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-fancy .ab-exp .years-exp' => 'border-color: {{VALUE}}',
@@ -260,7 +260,7 @@ class Better_Fancy extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_fancy_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-fancy .item h6',
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -271,7 +271,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box1_title_color',
 			[
-				'label' => esc_html__( 'First Box Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'First Box Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .item:first-of-type h6' => 'color: {{VALUE}}',
@@ -285,7 +285,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box2_title_color',
 			[
-				'label' => esc_html__( 'Second Box Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Second Box Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .item h6' => 'color: {{VALUE}}',
@@ -300,7 +300,7 @@ class Better_Fancy extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_fancy_sub_title_typography',
-				'label' => esc_html__( 'Sub Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Sub Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-fancy .item h4',
 				'condition' => [
 					'better_fancy_style' => array('2')
@@ -311,7 +311,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box1_sub_title_color',
 			[
-				'label' => esc_html__( 'First Box Sub Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'First Box Sub Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .item:first-of-type h4' => 'color: {{VALUE}}',
@@ -325,7 +325,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box2_sub_title_color',
 			[
-				'label' => esc_html__( 'Second Box Sub Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Second Box Sub Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .item h4' => 'color: {{VALUE}}',
@@ -339,7 +339,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box1_color',
 			[
-				'label' => esc_html__( 'First Box Color', 'better-el-addons' ),
+				'label' => esc_html__( 'First Box Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .stauts .item:first-of-type' => 'background: {{VALUE}}',
@@ -353,7 +353,7 @@ class Better_Fancy extends Widget_Base {
 		$this->add_control(
 			'better_fancy_box2_color',
 			[
-				'label' => esc_html__( 'Second Box Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Second Box Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
 					'{{WRAPPER}} .better-fancy .stauts .item' => 'background: {{VALUE}}',

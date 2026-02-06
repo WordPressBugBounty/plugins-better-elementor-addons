@@ -41,7 +41,7 @@ class Better_Clients extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Clients', 'better-el-addons' );
+		return esc_html__( 'Clients', 'better-elementor-addons' );
 	}
 
 	/**
@@ -105,7 +105,7 @@ class Better_Clients extends Widget_Base {
 		$this->start_controls_section(
 			'clients_content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -113,10 +113,10 @@ class Better_Clients extends Widget_Base {
 		$this->add_control(
 			'dark_style',
 			[
-				'label' => esc_html__( 'Dark Style', 'genesis-core' ),
+				'label' => esc_html__( 'Dark Style', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'On', 'genesis-core' ),
-				'label_off' => esc_html__( 'Off', 'genesis-core' ),
+				'label_on' => esc_html__( 'On', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'Off', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'no',
 			]
@@ -127,7 +127,7 @@ class Better_Clients extends Widget_Base {
         $repeater->add_control(
 			'client_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => esc_url( Utils::get_placeholder_image_src() ),
@@ -139,10 +139,10 @@ class Better_Clients extends Widget_Base {
 		$repeater->add_control(
 			'client_name',
 			[
-				'label' => esc_html__( 'Client Name', 'better-el-addons' ),
+				'label' => esc_html__( 'Client Name', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Byra', 'better-el-addons' ),
+				'default' => esc_html( 'Byra', 'better-elementor-addons' ),
 			]
 		);
 
@@ -150,7 +150,7 @@ class Better_Clients extends Widget_Base {
 		$repeater->add_control(
 			'client_link', 
 			[
-				'label' => __( 'Client Link', 'better-el-addons' ),
+				'label' => __( 'Client Link', 'better-elementor-addons' ),
 				'type'        => \Elementor\Controls_Manager::URL,
 				'label_block' => true,
 				'default'       => [
@@ -163,7 +163,7 @@ class Better_Clients extends Widget_Base {
 		$this->add_control(
 			'better_clients_list',
 			[
-				'label' => esc_html__( 'Features List', 'better-el-addons' ),
+				'label' => esc_html__( 'Features List', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
@@ -197,7 +197,7 @@ class Better_Clients extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -207,7 +207,7 @@ class Better_Clients extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_client_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-clients.style-1 .item .link',
 			]
 		);
@@ -215,7 +215,7 @@ class Better_Clients extends Widget_Base {
 		$this->add_control(
 			'better_client_title_color',
 			[
-				'label' => esc_html__( 'Contact Link Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Contact Link Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-clients.style-1 .item .link' => 'color: {{VALUE}}',

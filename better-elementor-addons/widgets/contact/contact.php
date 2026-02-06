@@ -40,7 +40,7 @@ class Better_Contact extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Contact Form', 'better-el-addons' );
+		return esc_html__( 'Contact Form', 'better-elementor-addons' );
 	}
 
 	/**
@@ -103,20 +103,20 @@ class Better_Contact extends Widget_Base {
         $this->start_controls_section(
 			'section_shortcode',
 			[
-				'label' => esc_html__( 'Shortcode', 'genesis-core' ),
+				'label' => esc_html__( 'Shortcode', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'contact_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -125,7 +125,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'shortcode',
 			[
-				'label' => esc_html__( 'Insert your shortcode here', 'genesis-core' ),
+				'label' => esc_html__( 'Insert your shortcode here', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'placeholder' => 'Place cintact form shortcode here',
 				'default' => '[contact-form-7 id="51" title="genesis contact form"]',
@@ -135,7 +135,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control( 
         	'style3_mode2',
             [
-                'label' => esc_html__( '4 Column', 'better-el-addons' ),
+                'label' => esc_html__( '4 Column', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'return_value' => 'yes',
@@ -148,7 +148,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'location_link',
 			[
-				'label' => esc_html__( 'Map location link', 'genesis-core' ),
+				'label' => esc_html__( 'Map location link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => esc_url( 'http://your-link.com' ),
 				'default' => [
@@ -165,7 +165,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'contact_title_section',
 			[
-				'label' => __( 'Contact For Title', 'better-el-addons' ),
+				'label' => __( 'Contact For Title', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('4')
 				],
@@ -175,22 +175,22 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'title_style5_1',
 			[
-				'label' => __( 'Title 1','better-el-addons' ),
+				'label' => __( 'Title 1', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'GET IN TOUCH', 'better-el-addons' ),
+				'default' => __( 'GET IN TOUCH', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_style5_2',
 			[
-				'label' => __( 'Title 2','better-el-addons' ),
+				'label' => __( 'Title 2', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Contact Us', 'better-el-addons' ),
+				'default' => __( 'Contact Us', 'better-elementor-addons' ),
 			]
 		);
 
@@ -199,7 +199,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'opening_time',
 			[
-				'label' => __( 'Opening Time', 'better-el-addons' ),
+				'label' => __( 'Opening Time', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('2','4')
 				],
@@ -209,29 +209,29 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'title_1',
 			[
-				'label' => __( 'Title 1','better-el-addons' ),
+				'label' => __( 'Title 1', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Opening Times', 'better-el-addons' ),
+				'default' => __( 'Opening Times', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_2',
 			[
-				'label' => __( 'Title 2','better-el-addons' ),
+				'label' => __( 'Title 2', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Check Availability', 'better-el-addons' ),
+				'default' => __( 'Check Availability', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'opening_time_list',
 			[
-				'label' => __( 'Opening Time List', 'better-el-addons' ),
+				'label' => __( 'Opening Time List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
@@ -247,17 +247,17 @@ class Better_Contact extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'days',
-						'label' => __( 'Title', 'better-el-addons' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'default' => __( 'Sunday to Tuesday ', 'better-el-addons' ),
+						'default' => __( 'Sunday to Tuesday ', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'time',
-						'label' => __( 'Sub Title', 'better-el-addons' ),
+						'label' => __( 'Sub Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'default' => __( '10:00 - 22:00', 'better-el-addons' ),
+						'default' => __( '10:00 - 22:00', 'better-elementor-addons' ),
 					],
 
 				],
@@ -270,7 +270,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'contact_info_section',
 			[
-				'label' => __( 'Contact Info', 'better-el-addons' ),
+				'label' => __( 'Contact Info', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('2')
 				],
@@ -280,22 +280,22 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'contact_info_title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Call Us Now', 'better-el-addons' ),
+				'default' => __( 'Call Us Now', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'contact_info',
 			[
-				'label' => __( 'Info','better-el-addons' ),
+				'label' => __( 'Info', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( '+1 800 603 6035', 'better-el-addons' ),
+				'default' => __( '+1 800 603 6035', 'better-elementor-addons' ),
 			]
 		);
 
@@ -304,7 +304,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'contact_button_section',
 			[
-				'label' => __( 'Contact Button', 'better-el-addons' ),
+				'label' => __( 'Contact Button', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('4')
 				],
@@ -314,18 +314,18 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_contact_title',
 			[
-				'label' => __( 'Button Title','better-el-addons' ),
+				'label' => __( 'Button Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Make a Reservation', 'better-el-addons' ),
+				'default' => __( 'Make a Reservation', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'btn_contact_link',
 			[
-				'label' => __( 'Button Title','better-el-addons' ),
+				'label' => __( 'Button Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'Leave Link here',
 			]
@@ -336,7 +336,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'contact_location_section',
 			[
-				'label' => __( 'Contact Location', 'better-el-addons' ),
+				'label' => __( 'Contact Location', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('4')
 				],
@@ -346,22 +346,22 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'contact_location_title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Our Location', 'better-el-addons' ),
+				'default' => __( 'Our Location', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'contact_location_info',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( '56 12th Ave, New York, NY 10011', 'better-el-addons' ),
+				'default' => __( '56 12th Ave, New York, NY 10011', 'better-elementor-addons' ),
 			]
 		);
 
@@ -370,7 +370,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'contact_contactus_section',
 			[
-				'label' => __( 'Contact Us', 'better-el-addons' ),
+				'label' => __( 'Contact Us', 'better-elementor-addons' ),
 				'condition' => [
 					'contact_style' => array('4')
 				],
@@ -380,33 +380,33 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'contact_contactus_title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'Contact Us', 'better-el-addons' ),
+				'default' => __( 'Contact Us', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'contact_contactus_phone',
 			[
-				'label' => __( 'Phone','better-el-addons' ),
+				'label' => __( 'Phone', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( '800-603-6035 , 914-309-7030', 'better-el-addons' ),
+				'default' => __( '800-603-6035 , 914-309-7030', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'contact_contactus_mail',
 			[
-				'label' => __( 'Mail','better-el-addons' ),
+				'label' => __( 'Mail', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
-				'default' => __( 'mail@companyname.com', 'better-el-addons' ),
+				'default' => __( 'mail@companyname.com', 'better-elementor-addons' ),
 			]
 		);
 
@@ -415,7 +415,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'contact_style' => array('1')
@@ -427,7 +427,7 @@ class Better_Contact extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_heading_sub_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-contact-shortcode .form input, {{WRAPPER}} .better-contact-shortcode .form textarea, {{WRAPPER}} .better-contact-shortcode .form span',
 			]
 		);
@@ -437,7 +437,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'form_settings',
 			[
-				'label' => __( 'Form Setting','better-el-addons' ),
+				'label' => __( 'Form Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'contact_style' => array('2','3','4')
@@ -448,7 +448,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'form_placeholder',
 			[
-				'label' => __( 'Placeholder Color','better-el-addons' ),
+				'label' => __( 'Placeholder Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ::-webkit-input-placeholder' => 'color: {{VALUE}};',
@@ -464,7 +464,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'form_text',
 			[
-				'label' => __( 'Text Color','better-el-addons' ),
+				'label' => __( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}  input:not(.wpcf7-submit) ' => 'color: {{VALUE}};',
@@ -477,7 +477,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'form_bg',
 			[
-				'label' => __( 'Background Color','better-el-addons' ),
+				'label' => __( 'Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}  input' => 'background-color: {{VALUE}};',
@@ -490,7 +490,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'form_border_color',
 			[
-				'label' => __( 'Border Color','better-el-addons' ),
+				'label' => __( 'Border Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}  input' => 'border-color: {{VALUE}};',
@@ -503,7 +503,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'form_border_color_active',
 			[
-				'label' => __( 'Border Color on Focus','better-el-addons' ),
+				'label' => __( 'Border Color on Focus', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} input:focus' => 'border-color: {{VALUE}};',
@@ -517,7 +517,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'btn_settings',
 			[
-				'label' => __( 'Button Setting','better-el-addons' ),
+				'label' => __( 'Button Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'contact_style' => array('2','3','4')
@@ -529,7 +529,7 @@ class Better_Contact extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'btn_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .wpcf7-submit',
 			]
 		);
@@ -537,7 +537,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -549,7 +549,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -561,7 +561,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -575,7 +575,7 @@ class Better_Contact extends Widget_Base {
 		$this->start_controls_section(
 			'btn_color_section',
 			[
-				'label' => __( 'Button Color Scheme Setting','better-el-addons' ),
+				'label' => __( 'Button Color Scheme Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'contact_style' => array('2','3','4')
@@ -586,7 +586,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit' => 'color: {{VALUE}};',
@@ -597,7 +597,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_color_hover',
 			[
-				'label' => __( 'Color on Hover','better-el-addons' ),
+				'label' => __( 'Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit:hover' => 'color: {{VALUE}};',
@@ -608,7 +608,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_bg',
 			[
-				'label' => __( 'Background Color','better-el-addons' ),
+				'label' => __( 'Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit' => 'background-color: {{VALUE}};',
@@ -620,7 +620,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_bg_hover',
 			[
-				'label' => __( 'Background Color on Hover','better-el-addons' ),
+				'label' => __( 'Background Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit:hover' => 'background-color: {{VALUE}};',
@@ -632,7 +632,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border',
 			[
-				'label' => __( 'Border', 'better-el-addons' ),
+				'label' => __( 'Border', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -644,7 +644,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border_hover',
 			[
-				'label' => __( 'Border on Hover', 'better-el-addons' ),
+				'label' => __( 'Border on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -656,7 +656,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_border_color',
 			[
-				'label' => __( 'Border Color','better-el-addons' ),
+				'label' => __( 'Border Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit' => 'border-color: {{VALUE}};',
@@ -667,7 +667,7 @@ class Better_Contact extends Widget_Base {
 		$this->add_control(
 			'btn_border_color_hover',
 			[
-				'label' => __( 'Border Color on  Hover','better-el-addons' ),
+				'label' => __( 'Border Color on  Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .wpcf7-submit:hover' => 'border-color: {{VALUE}};',

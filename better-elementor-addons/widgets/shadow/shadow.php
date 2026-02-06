@@ -38,7 +38,7 @@ class Better_Shadow extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Shadow', 'better-el-addons' );
+		return __( 'Shadow', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,17 +86,17 @@ class Better_Shadow extends Widget_Base {
         $this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Main', 'better-el-addons' ),
+				'label' => __( 'Main', 'better-elementor-addons' ),
 			]
 		);
 
         $this->add_control(
 			'better_shadow_position',
 			[
-				'label' => __( 'Position', 'better-el-addons' ),
+				'label' => __( 'Position', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'initial' => __( 'initial', 'better-el-addons' ),
+					'initial' => __( 'initial', 'better-elementor-addons' ),
 				],
 				'default' => 'initial',
                 'selectors' => [

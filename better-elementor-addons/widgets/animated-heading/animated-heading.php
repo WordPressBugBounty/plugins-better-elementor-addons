@@ -47,7 +47,7 @@ class Better_Animated_Heading extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Animated Heading', 'better-el-addons' );
+		return esc_html__( 'Animated Heading', 'better-elementor-addons' );
 	}
 	
 	/**
@@ -121,34 +121,34 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 			]
 		);
 
         $this->add_control(
 			'title_list',
 			[
-				'label' => __( 'Title List', 'better-el-addons' ),
+				'label' => __( 'Title List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
                 'default' => [
 					[
-						'title' => __( 'Add Your Heading Text Here', 'better-el-addons' ),
+						'title' => __( 'Add Your Heading Text Here', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Add Your Heading Text Here', 'better-el-addons' ),
+						'title' => __( 'Add Your Heading Text Here', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Add Your Heading Text Here', 'better-el-addons' ),
+						'title' => __( 'Add Your Heading Text Here', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Title', 'better-el-addons' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Enter your title', 'better-el-addons' ),
-						'default' => __( 'Add Your Heading Text Here' ,  'better-el-addons'  ),
+						'placeholder' => __( 'Enter your title', 'better-elementor-addons' ),
+						'default' => __( 'Add Your Heading Text Here' , 'better-elementor-addons'  ),
 					],
                 ],
 				'title_field' => '{{{ title }}}',
@@ -158,29 +158,29 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'dynamic' => [
 					'active' => true,
 				],
-				'placeholder' => esc_html__( 'Enter your title', 'better-el-addons' ),
-				'default' => esc_html__( 'Add Your Heading Text Here', 'better-el-addons' ),
+				'placeholder' => esc_html__( 'Enter your title', 'better-elementor-addons' ),
+				'default' => esc_html( 'Add Your Heading Text Here', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'size',
 			[
-				'label' => esc_html__( 'Size', 'better-el-addons' ),
+				'label' => esc_html__( 'Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'default',
 				'options' => [
-					'default' => esc_html__( 'Default', 'better-el-addons' ),
-					'small' => esc_html__( 'Small', 'better-el-addons' ),
-					'medium' => esc_html__( 'Medium', 'better-el-addons' ),
-					'large' => esc_html__( 'Large', 'better-el-addons' ),
-					'xl' => esc_html__( 'XL', 'better-el-addons' ),
-					'xxl' => esc_html__( 'XXL', 'better-el-addons' ),
+					'default' => esc_html( 'Default', 'better-elementor-addons' ),
+					'small' => esc_html__( 'Small', 'better-elementor-addons' ),
+					'medium' => esc_html__( 'Medium', 'better-elementor-addons' ),
+					'large' => esc_html__( 'Large', 'better-elementor-addons' ),
+					'xl' => esc_html__( 'XL', 'better-elementor-addons' ),
+					'xxl' => esc_html__( 'XXL', 'better-elementor-addons' ),
 				],
 			]
 		);
@@ -188,7 +188,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'header_size',
 			[
-				'label' => esc_html__( 'HTML Tag', 'better-el-addons' ),
+				'label' => esc_html__( 'HTML Tag', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -208,23 +208,23 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'better-el-addons' ),
+						'title' => esc_html__( 'Left', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'better-el-addons' ),
+						'title' => esc_html__( 'Center', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'better-el-addons' ),
+						'title' => esc_html__( 'Right', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'justify' => [
-						'title' => esc_html__( 'Justified', 'better-el-addons' ),
+						'title' => esc_html__( 'Justified', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -238,7 +238,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'view',
 			[
-				'label' => esc_html__( 'View', 'better-el-addons' ),
+				'label' => esc_html__( 'View', 'better-elementor-addons' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]
@@ -249,7 +249,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -257,7 +257,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'title_color_type',
 			[
-				'label' => esc_html__( 'Color type', 'better-el-addons' ),
+				'label' => esc_html__( 'Color type', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'solid' => 'Solid',
@@ -271,7 +271,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => esc_html__( 'Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'global' => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -288,10 +288,10 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
             'title_gradient_bg_color1',
             [
-                'label' => _x( 'First Color', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'First Color', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
-                'title' => _x( 'First Color', 'Background Control', 'better-el-addons' ),
+                'title' => _x( 'First Color', 'Background Control', 'better-elementor-addons' ),
                 'render_type' => 'ui',
                 'condition' => [
                     'title_color_type' => [ 'gradient'],
@@ -304,7 +304,7 @@ class Better_Animated_Heading extends Widget_Base {
         $this->add_control(
             'title_gradient_bg_color1_stop', 
             [
-                'label' => _x( 'Location', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Location', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ '%' ],
                 'default' => [
@@ -322,7 +322,7 @@ class Better_Animated_Heading extends Widget_Base {
         $this->add_control(
             'title_gradient_bg_color2',
             [
-                'label' => _x( 'Second Color', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Second Color', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f2295b',
                 'render_type' => 'ui',
@@ -336,7 +336,7 @@ class Better_Animated_Heading extends Widget_Base {
         $this->add_control(
             'title_gradient_bg_color2_stop', 
             [
-                'label' => _x( 'Location', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Location', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ '%' ],
                 'default' => [
@@ -354,11 +354,11 @@ class Better_Animated_Heading extends Widget_Base {
         $this->add_control(
             'title_gradient_type', 
             [
-                'label' => _x( 'Type', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Type', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'linear' => _x( 'Linear', 'Background Control', 'better-el-addons' ),
-                    'radial' => _x( 'Radial', 'Background Control', 'better-el-addons' ),
+                    'linear' => _x( 'Linear', 'Background Control', 'better-elementor-addons' ),
+                    'radial' => _x( 'Radial', 'Background Control', 'better-elementor-addons' ),
                 ],
                 'default' => 'linear',
                 'render_type' => 'ui',
@@ -372,7 +372,7 @@ class Better_Animated_Heading extends Widget_Base {
         $this->add_control(
             'title_gradient_angle', 
             [
-                'label' => _x( 'Angle', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Angle', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'deg' ],
                 'default' => [
@@ -399,7 +399,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'title_stroke_color',
 			[
-				'label' => esc_html__( 'Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'global' => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -416,7 +416,7 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
             'title_stroke_size', 
             [
-                'label' => _x( 'Angle', 'Background Control', 'better-el-addons' ),
+                'label' => _x( 'Angle', 'Background Control', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'default' => [
@@ -467,10 +467,10 @@ class Better_Animated_Heading extends Widget_Base {
 		$this->add_control(
 			'blend_mode',
 			[
-				'label' => esc_html__( 'Blend Mode', 'better-el-addons' ),
+				'label' => esc_html__( 'Blend Mode', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => esc_html__( 'Normal', 'better-el-addons' ),
+					'' => esc_html__( 'Normal', 'better-elementor-addons' ),
 					'multiply' => 'Multiply',
 					'screen' => 'Screen',
 					'overlay' => 'Overlay',

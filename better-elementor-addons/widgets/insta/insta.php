@@ -38,7 +38,7 @@ class Better_Insta extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Insta Images', 'better-el-addons' );
+		return __( 'Insta Images', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,14 +86,14 @@ class Better_Insta extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Logo Settings', 'better-el-addons' ),
+				'label' => __( 'Logo Settings', 'better-elementor-addons' ),
 			]
 		);
 
         $this->add_control(
 			'imgbox_list',
 			[
-				'label' => __( 'Image-box List', 'better-el-addons' ),
+				'label' => __( 'Image-box List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
                 'default' => [
 					[
@@ -103,7 +103,7 @@ class Better_Insta extends Widget_Base {
 				'fields' => [
                     [
                         'name' => 'image',
-                        'label' => __( 'Image', 'better-el-addons' ),
+                        'label' => __( 'Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'default' => [
                             'url' => Utils::get_placeholder_image_src(),
@@ -111,10 +111,10 @@ class Better_Insta extends Widget_Base {
                     ],
                     [
 						'name' => 'image_link',
-						'label' => __( 'Image Link', 'better-el-addons' ),
+						'label' => __( 'Image Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Link', 'better-el-addons' ),
+						'placeholder' => __( 'Link', 'better-elementor-addons' ),
 					],
                 ],
                 'title_field' => '{{ name }}',
@@ -124,21 +124,21 @@ class Better_Insta extends Widget_Base {
         $this->add_control(
 			'text',
             [
-                'label' => __( 'Button text', 'better-el-addons' ),
+                'label' => __( 'Button text', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __( 'Text', 'better-el-addons' ),
-                'default' => __( 'Follow Us', 'better-el-addons' ),
+                'placeholder' => __( 'Text', 'better-elementor-addons' ),
+                'default' => __( 'Follow Us', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
 			'link',
             [
-                'label' => __( 'Button Link', 'better-el-addons' ),
+                'label' => __( 'Button Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
-                'placeholder' => __( 'Link', 'better-el-addons' ),
+                'placeholder' => __( 'Link', 'better-elementor-addons' ),
             ]
         );
 

@@ -9,7 +9,13 @@
                                 <div class="col-lg-9 col-md-11">
                                     <div class="caption text-center bold">
                                         <h4 class="custom-font"><?php echo wp_kses_post($item['subtitle']); ?></h4>
-                                        <<?php echo tag_escape($item['title_html_tag']); ?> class="title"><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($item['title_html_tag']); ?>>
+                                        <?php
+                                    $allowed_tags = [ 'h1','h2','h3','h4','h5','h6','div','span','p' ];
+                                    $title_tag = in_array( $item['title_html_tag'], $allowed_tags, true )
+                                        ? $item['title_html_tag']
+                                        : 'h1';
+                                        ?>
+                                        <<?php echo tag_escape($title_tag); ?> class="title"><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($title_tag); ?>>
                                         <h6><?php echo wp_kses_post($item['text']); ?></h6>
                                         <?php if (!empty($item['btn_link']['url'])): ?>
                                         <a href="<?php echo esc_url($item['btn_link']['url']); ?>" class="better-btn-skew btn-bord mt-30">

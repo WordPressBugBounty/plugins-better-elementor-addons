@@ -34,8 +34,8 @@ class BAE_Admin {
     public function add_plugin_admin_menu() {
 
         add_menu_page(
-            __('Better Addons for Elementor', 'better-el-addons'),
-            __('Better Addons', 'better-el-addons'),
+            __('Better Addons for Elementor', 'better-elementor-addons'),
+            __('Better Addons', 'better-elementor-addons'),
             'manage_options',
             $this->plugin_slug,
             array($this, 'display_settings_page')
@@ -44,8 +44,8 @@ class BAE_Admin {
         // add plugin settings submenu page
         add_submenu_page(
             $this->plugin_slug,
-            __('Widgets Settings', 'better-el-addons'),
-            __('Settings', 'better-el-addons'),
+            __('Widgets Settings', 'better-elementor-addons'),
+            __('Settings', 'better-elementor-addons'),
             'manage_options',
             $this->plugin_slug,
             array($this, 'display_settings_page')
@@ -54,8 +54,8 @@ class BAE_Admin {
         // add import/export submenu page
         add_submenu_page(
             $this->plugin_slug,
-            __('Widgets Documentation', 'better-el-addons'),
-            __('Documentation', 'better-el-addons'),
+            __('Widgets Documentation', 'better-elementor-addons'),
+            __('Documentation', 'better-elementor-addons'),
             'manage_options',
             $this->plugin_slug . '_documentation',
             '__return_false',
@@ -65,13 +65,19 @@ class BAE_Admin {
     }
 
     public function handle_external_redirects() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking admin page parameter, not processing form data
         if (empty($_GET['page'])) {
             return;
         }
 
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking admin page parameter for redirect
         if ($this->plugin_slug . '_documentation' === $_GET['page']) {
-            wp_redirect('https://widgets.betteraddons.com/');
-            die;
+            add_filter('allowed_redirect_hosts', function($hosts) {
+                $hosts[] = 'widgets.betteraddons.com';
+                return $hosts;
+            });
+            wp_safe_redirect('https://widgets.betteraddons.com/');
+            exit;
         }
     }
 

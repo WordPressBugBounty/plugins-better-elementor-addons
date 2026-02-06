@@ -31,7 +31,7 @@ class Better_Portfolio extends Widget_Base {
 		return 'better-portfolio';
 	}
 	//script depend
-	public function get_script_depends() { return ['imagesloaded-pkgd','isotope','better-portfolio','swiper','wow','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','jquery.twentytwenty','better-el-addons','better-el-addons']; }
+	public function get_script_depends() { return ['imagesloaded-pkgd','isotope','better-portfolio','swiper','wow','youtubepopup-js','bootstrap-js','splitting','parallaxie','simpleParallax','justifiedgallery','jquery.twentytwenty','better-el-addons']; }
 
 	/**
 	 * Retrieve the widget title.
@@ -43,7 +43,7 @@ class Better_Portfolio extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Portfolio', 'better-el-addons' );
+		return __( 'Portfolio', 'better-elementor-addons' );
 	}
 
 	/**
@@ -91,24 +91,24 @@ class Better_Portfolio extends Widget_Base {
 		$this->start_controls_section(
 			'section_portfolio_style',
 			[
-				'label' => __( 'Portfolio style', 'bim_plg' ),
+				'label' => __( 'Portfolio style', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'better_portfolio_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
-					'5' => __( 'Style 5', 'better-el-addons' ),
-					'6' => __( 'Style 6', 'better-el-addons' ),
-					'7' => __( 'Style 7', 'better-el-addons' ),
-					'8' => __( 'Style 8', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
+					'5' => __( 'Style 5', 'better-elementor-addons' ),
+					'6' => __( 'Style 6', 'better-elementor-addons' ),
+					'7' => __( 'Style 7', 'better-elementor-addons' ),
+					'8' => __( 'Style 8', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -119,7 +119,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->start_controls_section(
 			'section_category_content',
 			[
-				'label' => __( 'Portfolio Category Settings', 'bim_plg' ),
+				'label' => __( 'Portfolio Category Settings', 'better-elementor-addons' ),
 				'condition' => [
 					'better_portfolio_style' => array('4','6','7')
 				],
@@ -129,10 +129,10 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio6_categories_show',
 			[
-				'label' => __( 'Portfolio Categories Show', 'better-el-addons' ),
+				'label' => __( 'Portfolio Categories Show', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'your-plugin' ),
-				'label_off' => __( 'Hide', 'your-plugin' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'condition' => [
@@ -146,27 +146,27 @@ class Better_Portfolio extends Widget_Base {
         $repeater1->add_control(
             'item_category_title',
             [
-                'label' => __( 'Category Title', 'better-el-addons' ),
+                'label' => __( 'Category Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Web', 'better-el-addons'  ),
+                'default' => esc_html( 'Web', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater1->add_control(
             'item_category_slug',
             [
-                'label' => __( 'Category Slug', 'better-el-addons' ),
+                'label' => __( 'Category Slug', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'web', 'better-el-addons'  ),
+                'default' => esc_html( 'web', 'better-elementor-addons'  ),
             ]
         );
 
 		$this->add_control(
 			'portfolio_categories',
 			[
-				'label' => __( 'Portfolio Categories', 'better-el-addons' ),
+				'label' => __( 'Portfolio Categories', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_portfolio_style' => array('4','6','7'),
@@ -197,18 +197,18 @@ class Better_Portfolio extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Portfolio Settings', 'bim_plg' ),
+				'label' => __( 'Portfolio Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_responsive_control( 
 			'port_title_display',
 			[
-				'label' => __( 'Title Display', 'better-el-addons' ),
+				'label' => __( 'Title Display', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'block' => __( 'Show', 'better-el-addons' ),
-					'none' => __( 'Hide', 'better-el-addons' ),
+					'block' => __( 'Show', 'better-elementor-addons' ),
+					'none' => __( 'Hide', 'better-elementor-addons' ),
 				],
 				'default' => 'block',
 				'condition' => [
@@ -219,7 +219,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'port_title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'default' =>'Works',
 				'condition' => [
@@ -233,27 +233,27 @@ class Better_Portfolio extends Widget_Base {
         $repeater2->add_control(
             'title',
             [
-                'label' => __( 'Main Title', 'better-el-addons' ),
+                'label' => __( 'Main Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Main Title', 'better-el-addons'  ),
+                'default' => esc_html( 'Main Title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater2->add_control(
             'subtitle',
             [
-                'label' => __( 'Sub title', 'better-el-addons' ),
+                'label' => __( 'Sub title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater2->add_control(
             'link',
             [
-                'label' => __( 'Link', 'better-el-addons' ),
+                'label' => __( 'Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -262,17 +262,17 @@ class Better_Portfolio extends Widget_Base {
         $repeater2->add_control(
             'linktext',
             [
-                'label' => __( 'View more', 'better-el-addons' ),
+                'label' => __( 'View more', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'View more', 'better-el-addons'  ),
+                'default' => esc_html( 'View more', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater2->add_control(
             'image',
             [
-                'label' => __( 'Client Image', 'bim_plg' ),
+                'label' => __( 'Client Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -283,7 +283,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_one',
 			[
-				'label' => __( 'Portfolio one', 'better-el-addons' ),
+				'label' => __( 'Portfolio one', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_portfolio_style' => array('1')
@@ -324,37 +324,37 @@ class Better_Portfolio extends Widget_Base {
         $repeater3->add_control(
             'item_title',
             [
-                'label' => __( 'Main Title', 'better-el-addons' ),
+                'label' => __( 'Main Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Main Title', 'better-el-addons'  ),
+                'default' => esc_html( 'Main Title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater3->add_control(
             'item_cat',
             [
-                'label' => __( 'Item Category', 'better-el-addons' ),
+                'label' => __( 'Item Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater3->add_control(
             'item_cat_2',
             [
-                'label' => __( 'Item Category 2', 'better-el-addons' ),
+                'label' => __( 'Item Category 2', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater3->add_control(
             'item_link',
             [
-                'label' => __( 'Item Link', 'better-el-addons' ),
+                'label' => __( 'Item Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -363,7 +363,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater3->add_control(
             'item_cat_link',
             [
-                'label' => __( 'Item Category Link', 'better-el-addons' ),
+                'label' => __( 'Item Category Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -372,7 +372,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater3->add_control(
             'item_cat_link_2',
             [
-                'label' => __( 'Item Category Link', 'better-el-addons' ),
+                'label' => __( 'Item Category Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -381,7 +381,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater3->add_control(
             'item_image',
             [
-                'label' => __( 'Item Image', 'bim_plg' ),
+                'label' => __( 'Item Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -392,7 +392,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_items',
 			[
-				'label' => __( 'Portfolio Items', 'better-el-addons' ),
+				'label' => __( 'Portfolio Items', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_portfolio_style' => array('2','3','5','8')
@@ -429,30 +429,30 @@ class Better_Portfolio extends Widget_Base {
         $repeater4->add_control(
             'portfolio4_item_category_slug_call',
             [
-                'label' => __( 'Category', 'better-el-addons' ),
+                'label' => __( 'Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => esc_html__( 'Enter category slug to put item on it', 'better-el-addons'  ),
+                'placeholder' => esc_html__( 'Enter category slug to put item on it', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater4->add_control(
             'portfolio4_item_title',
             [
-                'label' => __( 'Main Title', 'better-el-addons' ),
+                'label' => __( 'Main Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Main Title', 'better-el-addons'  ),
+                'default' => esc_html( 'Main Title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater4->add_control(
             'portfolio4_item_cat',
             [
-                'label' => __( 'Item Category', 'better-el-addons' ),
+                'label' => __( 'Item Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
@@ -460,7 +460,7 @@ class Better_Portfolio extends Widget_Base {
             'portfolio4_item_link',
             [
                 'name' => '',
-                'label' => __( 'Item Link', 'better-el-addons' ),
+                'label' => __( 'Item Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -469,7 +469,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater4->add_control(
             'portfolio4_item_image',
             [
-                'label' => __( 'Item Image', 'better-el-addons' ),
+                'label' => __( 'Item Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -480,7 +480,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio4_items',
 			[
-				'label' => __( 'Portfolio Items', 'better-el-addons' ),
+				'label' => __( 'Portfolio Items', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_portfolio_style' => array('4')
@@ -515,11 +515,11 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio6_info_style',
 			[
-				'label' => __( 'Portfolio Info Mode', 'better-el-addons' ),
+				'label' => __( 'Portfolio Info Mode', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 				'condition' => [
@@ -533,37 +533,37 @@ class Better_Portfolio extends Widget_Base {
         $repeater5->add_control(
             'portfolio6_item_category_slug_call',
             [
-                'label' => __( 'Category', 'better-el-addons' ),
+                'label' => __( 'Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => esc_html__( 'Enter category slug to put item on it', 'better-el-addons'  ),
+                'placeholder' => esc_html__( 'Enter category slug to put item on it', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater5->add_control(
             'portfolio6_item_title',
             [
-                'label' => __( 'Main Title', 'better-el-addons' ),
+                'label' => __( 'Main Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Main Title', 'better-el-addons'  ),
+                'default' => esc_html( 'Main Title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater5->add_control(
             'portfolio6_item_cat',
             [
-                'label' => __( 'Item Category', 'better-el-addons' ),
+                'label' => __( 'Item Category', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater5->add_control(
             'portfolio6_item_cat_link',
             [
-                'label' => __( 'Category Link', 'better-el-addons' ),
+                'label' => __( 'Category Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -572,17 +572,17 @@ class Better_Portfolio extends Widget_Base {
         $repeater5->add_control(
             'portfolio6_item_cat2',
             [
-                'label' => __( 'Item Category 2', 'better-el-addons' ),
+                'label' => __( 'Item Category 2', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'Sub title', 'better-el-addons'  ),
+                'default' => esc_html( 'Sub title', 'better-elementor-addons'  ),
             ]
         );
 
         $repeater5->add_control(
             'portfolio6_item_cat_link2',
             [
-                'label' => __( 'Category Link 2', 'better-el-addons' ),
+                'label' => __( 'Category Link 2', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -591,7 +591,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater5->add_control(
             'portfolio6_item_link',
             [
-                'label' => __( 'Item Link', 'better-el-addons' ),
+                'label' => __( 'Item Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' => 'Leave link url',
             ]
@@ -600,7 +600,7 @@ class Better_Portfolio extends Widget_Base {
         $repeater5->add_control(
             'portfolio6_item_image',
             [
-                'label' => __( 'Item Image', 'bim_plg' ),
+                'label' => __( 'Item Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -611,7 +611,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio6_items',
 			[
-				'label' => __( 'Portfolio Items', 'better-el-addons' ),
+				'label' => __( 'Portfolio Items', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_portfolio_style' => array('6','7')
@@ -646,11 +646,11 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'info_vis',
 			[
-				'label' => __( 'Show Info Without Hover', 'better-el-addons' ),
+				'label' => __( 'Show Info Without Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
-				'label_on' => __( 'Yes', 'better-el-addons' ),
-				'label_off' => __( 'No', 'better-el-addons' ),
+				'label_on' => __( 'Yes', 'better-elementor-addons' ),
+				'label_off' => __( 'No', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'better_portfolio_style' => array('7')
@@ -661,11 +661,11 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_responsive_control( 
 			'filter_position',
 			[
-				'label' => __( 'Filter', 'better-el-addons' ),
+				'label' => __( 'Filter', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'aboveheading' => __( 'Above Heading', 'better-el-addons' ),
-					'underheading' => __( 'Under Heading', 'better-el-addons' ),
+					'aboveheading' => __( 'Above Heading', 'better-elementor-addons' ),
+					'underheading' => __( 'Under Heading', 'better-elementor-addons' ),
 				],
 				'default' => 'aboveheading',
 				'condition' => [
@@ -677,11 +677,11 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio4_columns',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'6' => __( '2 Columns', 'better-el-addons' ),
-					'4' => __( '3 Columns', 'better-el-addons' ),
+					'6' => __( '2 Columns', 'better-elementor-addons' ),
+					'4' => __( '3 Columns', 'better-elementor-addons' ),
 				],
 				'default' => '6',
 				'condition' => [
@@ -695,7 +695,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Content Style', 'better-el-addons' ),
+				'label' => __( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -704,7 +704,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_image_box_main_title_typography',
-				'label' => esc_html__( 'title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .item .info h5',
 				'condition' => [
 					'better_portfolio_style' => array('1')
@@ -716,7 +716,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_image_box_title_typography',
-				'label' => esc_html__( 'Subtitle Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Subtitle Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .item .info h6',
 				'condition' => [
 					'better_portfolio_style' => array('1')
@@ -728,7 +728,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio_item_title_typography',
-				'label' => esc_html__( 'Item Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Item Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio.style-2 .content .cont h4, {{WRAPPER}} .better-portfolio.style-3 .swiper-slide .caption h1 span',
 				'condition' => [
 					'better_portfolio_style' => array('2','3')
@@ -740,7 +740,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio_section_title_typography',
-				'label' => esc_html__( 'Section Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Section Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .section-head h3',
 				'condition' => [
 					'better_portfolio_style' => array('7','8')
@@ -751,7 +751,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_section_title_color',
 			[
-				'label' => esc_html__( 'Section Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Section Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio .section-head h3' => 'color: {{VALUE}}',
@@ -766,7 +766,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio_item_cat_typography',
-				'label' => esc_html__( 'Item Category Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Item Category Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .gallery .items span a, {{WRAPPER}} .better-portfolio .cont span a, {{WRAPPER}} .better-portfolio.style-2 .content .cont h6, {{WRAPPER}} .better-portfolio.style-3 .swiper-slide .caption .tag, {{WRAPPER}} .better-portfolio .gallery .items .item span a',
 				'condition' => [
 					'better_portfolio_style' => array('2','3','6','7','8')
@@ -777,7 +777,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_item_cat_color',
 			[
-				'label' => esc_html__( 'Item Category Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Item Category Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio.style-2 .content .cont h6 a' => 'color: {{VALUE}}',
@@ -794,7 +794,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_process_bar_color',
 			[
-				'label' => esc_html__( 'Process Bar Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Process Bar Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio.style-2.light .swiper-pagination-progressbar .swiper-pagination-progressbar-fill' => 'background: {{VALUE}}',
@@ -807,7 +807,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_item_nav_color',
 			[
-				'label' => esc_html__( 'Item Category Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Item Category Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio.style-2.light .swiper-nav-ctrl' => 'color: {{VALUE}}',
@@ -826,7 +826,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio4_item_title_typography',
-				'label' => esc_html__( 'Item Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Item Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .cont h5, {{WRAPPER}} .better-portfolio .gallery .items .overlay-info h5, {{WRAPPER}} .better-portfolio.style-6 .gallery .items h6',
 				'condition' => [
 					'better_portfolio_style' => array('4','6','7','8')
@@ -837,7 +837,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio4_item_title_color',
 			[
-				'label' => esc_html__( 'Item Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Item Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-portfolio.gutter .gallery .items .overlay-info h5' => 'color: {{VALUE}}',
@@ -855,7 +855,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio4_item_subtitle_typography',
-				'label' => esc_html__( 'Item Sub-Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Item Sub-Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio.gutter .gallery .items .overlay-info p',
 				'condition' => [
 					'better_portfolio_style' => array('4')
@@ -867,7 +867,7 @@ class Better_Portfolio extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_portfolio4_cat_typography',
-				'label' => esc_html__( 'Category Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Category Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-portfolio .filtering span, {{WRAPPER}} .better-portfolio.style-6 .gallery .items span a',
 				'condition' => [
 					'better_portfolio_style' => array('4','6','7')
@@ -878,7 +878,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_process_cat_color',
 			[
-				'label' => esc_html__( 'Category Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Category Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio .filtering span' => 'color: {{VALUE}}',
@@ -893,7 +893,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_process_cat_active_color',
 			[
-				'label' => esc_html__( 'Active Category Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Active Category Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio .filtering span.active' => 'color: {{VALUE}}',
@@ -908,7 +908,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_control(
 			'better_portfolio_filters_background_color',
 			[
-				'label' => esc_html__( 'Filters Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Filters Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-portfolio .filtering .filter' => 'background: {{VALUE}}',
@@ -924,7 +924,7 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_responsive_control(
 			'better_portfolio_items_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -937,19 +937,19 @@ class Better_Portfolio extends Widget_Base {
 		$this->add_responsive_control(
 			'better_portfolio_filters_alignment',
 			[
-				'label' => esc_html__( 'Filters Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Filters Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

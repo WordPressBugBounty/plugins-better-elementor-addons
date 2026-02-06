@@ -30,7 +30,7 @@ class Better_Slider_Parallax extends Widget_Base
      */
     public function get_title()
     {
-        return esc_html__('Slider Parallax', 'better-el-addons');
+        return esc_html__('Slider Parallax', 'better-elementor-addons');
     }
 
     /**
@@ -67,7 +67,7 @@ class Better_Slider_Parallax extends Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Slides', 'better-el-addons'),
+                'label' => __('Slides', 'better-elementor-addons'),
             ]
         );
 
@@ -76,29 +76,29 @@ class Better_Slider_Parallax extends Widget_Base
         $repeater->add_control(
             'title',
             [
-                'label' => __('Slider Heading Title', 'better-el-addons'),
+                'label' => __('Slider Heading Title', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __('Insert your slider heading title here..', 'better-el-addons'),
-                'default' => __('Slider Heading Title',  'better-el-addons'),
+                'placeholder' => __('Insert your slider heading title here..', 'better-elementor-addons'),
+                'default' => __('Slider Heading Title', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'subtitle',
             [
-                'label' => __('Slider Subtitle', 'better-el-addons'),
+                'label' => __('Slider Subtitle', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __('Insert your slider subtitle here..', 'better-el-addons'),
-                'default' => __('Slider Subtitle',  'better-el-addons'),
+                'placeholder' => __('Insert your slider subtitle here..', 'better-elementor-addons'),
+                'default' => __('Slider Subtitle', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'image',
             [
-                'label' => __('Slider Image', 'better-el-addons'),
+                'label' => __('Slider Image', 'better-elementor-addons'),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -109,30 +109,30 @@ class Better_Slider_Parallax extends Widget_Base
         $repeater->add_control(
             'link',
             [
-                'label' => __('Link', 'better-el-addons'),
+                'label' => __('Link', 'better-elementor-addons'),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
-                'placeholder' => __('Leave it blank if you don\'t need this button', 'better-el-addons'),
+                'placeholder' => __('Leave it blank if you don\'t need this button', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
             'slider_list',
             [
-                'label' => __('Slider List', 'better-el-addons'),
+                'label' => __('Slider List', 'better-elementor-addons'),
                 'type' => Controls_Manager::REPEATER,
                 'default' => [
                     [
-                        'title' => __('Slider Heading Title', 'better-el-addons'),
-                        'subtitle' => __('Slider subtitle', 'better-el-addons'),
+                        'title' => __('Slider Heading Title', 'better-elementor-addons'),
+                        'subtitle' => __('Slider subtitle', 'better-elementor-addons'),
                     ],
                     [
-                        'title' => __('Slider Heading Title', 'better-el-addons'),
-                        'subtitle' => __('Slider subtitle', 'better-el-addons'),
+                        'title' => __('Slider Heading Title', 'better-elementor-addons'),
+                        'subtitle' => __('Slider subtitle', 'better-elementor-addons'),
                     ],
                     [
-                        'title' => __('Slider Heading Title', 'better-el-addons'),
-                        'subtitle' => __('Slider subtitle', 'better-el-addons'),
+                        'title' => __('Slider Heading Title', 'better-elementor-addons'),
+                        'subtitle' => __('Slider subtitle', 'better-elementor-addons'),
                     ],
                 ],
                 'fields' => $repeater->get_controls(),
@@ -146,7 +146,7 @@ class Better_Slider_Parallax extends Widget_Base
         $this->start_controls_section(
             'subtitle_style_section',
             [
-                'label' => esc_html__('SubTitle', 'better-el-addons'),
+                'label' => esc_html__('SubTitle', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -156,7 +156,7 @@ class Better_Slider_Parallax extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'bea_slider_subtitle_typography',
-                'label' => esc_html__('SubTitle Typography', 'better-el-addons'),
+                'label' => esc_html__('SubTitle Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .bea-slider-parallax-1 .slider .parallax-slider .swiper-slide .caption .sub-title',
             ]
         );
@@ -169,7 +169,7 @@ class Better_Slider_Parallax extends Widget_Base
         $this->start_controls_section(
             'title_style_section',
             [
-                'label' => esc_html__('Title', 'better-el-addons'),
+                'label' => esc_html__('Title', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -179,7 +179,7 @@ class Better_Slider_Parallax extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'bea_slider_title_typography',
-                'label' => esc_html__('Title Typography', 'better-el-addons'),
+                'label' => esc_html__('Title Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .bea-slider-parallax-1 .slider .parallax-slider .swiper-slide .caption .title',
             ]
         );
@@ -234,14 +234,14 @@ class Better_Slider_Parallax extends Widget_Base
                     <div class="slider-contro">
                         <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
                             <div>
-                                <span class="next-ctrl"><?php echo esc_html__('Next Slide', 'better-el-addons'); ?></span>
+                                <span class="next-ctrl"><?php echo esc_html__('Next Slide', 'better-elementor-addons'); ?></span>
                             </div>
                             <div><i class="fas fa-chevron-right"></i></div>
                         </div>
                         <div class="swiper-button-prev swiper-nav-ctrl cursor-pointer">
                             <div><i class="fas fa-chevron-left"></i></div>
                             <div>
-                                <span class="prev-ctrl"><?php echo esc_html__('Prev Slide', 'better-el-addons'); ?></span>
+                                <span class="prev-ctrl"><?php echo esc_html__('Prev Slide', 'better-elementor-addons'); ?></span>
                             </div>
                         </div>
                     </div>

@@ -38,7 +38,7 @@ class Better_Woo extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Woo Widgets', 'better-el-addons' );
+		return __( 'Woo Widgets', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,19 +86,19 @@ class Better_Woo extends Widget_Base {
         $this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Main', 'better-el-addons' ),
+				'label' => __( 'Main', 'better-elementor-addons' ),
 			]
 		);
 
         $this->add_control(
 			'woo_widget_type',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'categories' => __( 'Categories', 'better-el-addons' ),
-					'popular-products' => __( 'Popular Products', 'better-el-addons' ),
-                    'tags' => __( 'Tags', 'better-el-addons' ),
+					'categories' => __( 'Categories', 'better-elementor-addons' ),
+					'popular-products' => __( 'Popular Products', 'better-elementor-addons' ),
+                    'tags' => __( 'Tags', 'better-elementor-addons' ),
 
 				],
 				'default' => 'categories',

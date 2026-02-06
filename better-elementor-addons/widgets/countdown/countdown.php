@@ -37,7 +37,7 @@ class Better_Countdown extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __('Countdown', 'better-el-addons');
+		return __('Countdown', 'better-elementor-addons');
 	}
 
 	/**
@@ -85,29 +85,29 @@ class Better_Countdown extends Widget_Base {
 		$this->start_controls_section(
 			'countdown_functionality',
 			[
-				'label' => __('Functionality', 'better-el-addons'),
+				'label' => __('Functionality', 'better-elementor-addons'),
 			]
         );
 
         $this->add_control(
 			'due_date',
 			[
-				'label' => __('Due Date', 'better-el-addons'),
+				'label' => __('Due Date', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::DATE_TIME,
                 'default' => gmdate('Y-m-d H:i', strtotime('+1 month') + (get_option('gmt_offset') * HOUR_IN_SECONDS)),
                 // Translators: %s is a placeholder for the timezone date
-				'description' => __('Date set according to your timezone:', 'better-el-addons'), 
+				'description' => __('Date set according to your timezone:', 'better-elementor-addons'), 
 			]
         );
         
         $this->add_control(
 			'view',
 			[
-				'label' => __('View', 'better-el-addons'),
+				'label' => __('View', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'block' => __('Block', 'better-el-addons'),
-					'inline' => __('Inline', 'better-el-addons'),
+					'block' => __('Block', 'better-elementor-addons'),
+					'inline' => __('Inline', 'better-elementor-addons'),
 				],
 				'default' => 'block'
 			]
@@ -116,10 +116,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'days',
 			[
-				'label' => __('Days', 'better-el-addons'),
+				'label' => __('Days', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'better-el-addons'),
-				'label_off' => __('Hide', 'better-el-addons'),
+				'label_on' => __('Show', 'better-elementor-addons'),
+				'label_off' => __('Hide', 'better-elementor-addons'),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -128,10 +128,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'hours',
 			[
-				'label' => __('Hours', 'better-el-addons'),
+				'label' => __('Hours', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'better-el-addons'),
-				'label_off' => __('Hide', 'better-el-addons'),
+				'label_on' => __('Show', 'better-elementor-addons'),
+				'label_off' => __('Hide', 'better-elementor-addons'),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -140,10 +140,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'minutes',
 			[
-				'label' => __('Minutes', 'better-el-addons'),
+				'label' => __('Minutes', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'better-el-addons'),
-				'label_off' => __('Hide', 'better-el-addons'),
+				'label_on' => __('Show', 'better-elementor-addons'),
+				'label_off' => __('Hide', 'better-elementor-addons'),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -152,10 +152,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'seconds',
 			[
-				'label' => __('Seconds', 'better-el-addons'),
+				'label' => __('Seconds', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'better-el-addons'),
-				'label_off' => __('Hide', 'better-el-addons'),
+				'label_on' => __('Show', 'better-elementor-addons'),
+				'label_off' => __('Hide', 'better-elementor-addons'),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -164,10 +164,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'labels',
 			[
-				'label' => __('Labels', 'better-el-addons'),
+				'label' => __('Labels', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'better-el-addons'),
-				'label_off' => __('Hide', 'better-el-addons'),
+				'label_on' => __('Show', 'better-elementor-addons'),
+				'label_off' => __('Hide', 'better-elementor-addons'),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -176,10 +176,10 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'custom_labels',
 			[
-				'label' => __('Custom Labels', 'better-el-addons'),
+				'label' => __('Custom Labels', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('Yes', 'better-el-addons'),
-				'label_off' => __('No', 'better-el-addons'),
+				'label_on' => __('Yes', 'better-elementor-addons'),
+				'label_off' => __('No', 'better-elementor-addons'),
 				'return_value' => 'yes',
                 'default' => 'no',
                 'condition' => [
@@ -191,9 +191,9 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'custom_labels_days',
 			[
-				'label'   => __('Days', 'better-el-addons'),
+				'label'   => __('Days', 'better-elementor-addons'),
                 'type'    => Controls_Manager::TEXT,
-				'default' => __('Days', 'better-el-addons'),
+				'default' => __('Days', 'better-elementor-addons'),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
@@ -220,9 +220,9 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'custom_labels_hours',
 			[
-				'label'   => __('Hours', 'better-el-addons'),
+				'label'   => __('Hours', 'better-elementor-addons'),
                 'type'    => Controls_Manager::TEXT,
-				'default' => __('Hours', 'better-el-addons'),
+				'default' => __('Hours', 'better-elementor-addons'),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
@@ -249,9 +249,9 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'custom_labels_minutes',
 			[
-				'label'   => __('Minutes', 'better-el-addons'),
+				'label'   => __('Minutes', 'better-elementor-addons'),
                 'type'    => Controls_Manager::TEXT,
-				'default' => __('Minutes', 'better-el-addons'),
+				'default' => __('Minutes', 'better-elementor-addons'),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
@@ -278,9 +278,9 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'custom_labels_seconds',
 			[
-				'label'   => __('Seconds', 'better-el-addons'),
+				'label'   => __('Seconds', 'better-elementor-addons'),
                 'type'    => Controls_Manager::TEXT,
-				'default' => __('Seconds', 'better-el-addons'),
+				'default' => __('Seconds', 'better-elementor-addons'),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
@@ -309,7 +309,7 @@ class Better_Countdown extends Widget_Base {
         $this->start_controls_section(
 			'countdown_boxes',
 			[
-				'label' => __('Boxes', 'better-el-addons'),
+				'label' => __('Boxes', 'better-elementor-addons'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
         );
@@ -317,7 +317,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_responsive_control(
 			'boxes_container_width',
 			[
-                'label' => __('Container Width', 'better-el-addons'),
+                'label' => __('Container Width', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['%', 'px'],
                 'default' => [
@@ -333,7 +333,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'boxes_background_color',
 			[
-				'label' => __('Background Color', 'better-el-addons'),
+				'label' => __('Background Color', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-countdown-wrapper .better-countdown-item' => 'background-color: {{VALUE}}',
@@ -353,7 +353,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'boxes_border_radius',
 			[
-				'label' => __('Border Radius', 'better-el-addons'),
+				'label' => __('Border Radius', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => ['px', '%'],
 				'selectors' => [
@@ -365,7 +365,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_responsive_control(
 			'boxes_space_between',
 			[
-                'label' => __('Space Between', 'better-el-addons'),
+                'label' => __('Space Between', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .better-countdown-wrapper .better-countdown-item:not(:first-of-type)' => 'margin-left: calc( {{SIZE}}{{UNIT}}/2 );',
@@ -377,7 +377,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'boxes_padding',
 			[
-				'label' => __('Padding', 'better-el-addons'),
+				'label' => __('Padding', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => ['px', '%'],
 				'selectors' => [
@@ -391,7 +391,7 @@ class Better_Countdown extends Widget_Base {
         $this->start_controls_section(
 			'countdown_content',
 			[
-				'label' => __('Content', 'better-el-addons'),
+				'label' => __('Content', 'better-elementor-addons'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
         );
@@ -399,7 +399,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'content_numbers_heading',
 			[
-				'label' => __('Numbers', 'better-el-addons'),
+				'label' => __('Numbers', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::HEADING
 			]
         );
@@ -407,7 +407,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'numbers_color',
 			[
-				'label' => __('Color', 'better-el-addons'),
+				'label' => __('Color', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-countdown-wrapper .better-countdown-item .better-countdown-numbers' => 'color: {{VALUE}}',
@@ -426,7 +426,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'content_labels_heading',
 			[
-				'label' => __('Labels', 'better-el-addons'),
+				'label' => __('Labels', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::HEADING,
                 'separator' => 'before'
 			]
@@ -435,7 +435,7 @@ class Better_Countdown extends Widget_Base {
         $this->add_control(
 			'labels_color',
 			[
-				'label' => __('Color', 'better-el-addons'),
+				'label' => __('Color', 'better-elementor-addons'),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-countdown-wrapper .better-countdown-item .better-countdown-label' => 'color: {{VALUE}}',
@@ -471,22 +471,22 @@ class Better_Countdown extends Widget_Base {
 	    $countdown = [
 	        'days' => [
 	            'number' => '%D',
-	            'label' => $settings['custom_labels_days'] ? $settings['custom_labels_days'] : esc_html__('Days', 'better-el-addons'),
+	            'label' => $settings['custom_labels_days'] ? $settings['custom_labels_days'] : esc_html__('Days', 'better-elementor-addons'),
 	            'visibility' => $settings['days']
 	        ],
 	        'hours' => [
 	            'number' => '%H',
-	            'label' => $settings['custom_labels_hours'] ? $settings['custom_labels_hours'] : esc_html__('Hours', 'better-el-addons'),
+	            'label' => $settings['custom_labels_hours'] ? $settings['custom_labels_hours'] : esc_html__('Hours', 'better-elementor-addons'),
 	            'visibility' => $settings['hours']
 	        ],
 	        'minutes' => [
 	            'number' => '%M',
-	            'label' => $settings['custom_labels_minutes'] ? $settings['custom_labels_minutes'] : esc_html__('Minutes', 'better-el-addons'),
+	            'label' => $settings['custom_labels_minutes'] ? $settings['custom_labels_minutes'] : esc_html__('Minutes', 'better-elementor-addons'),
 	            'visibility' => $settings['minutes']
 	        ],
 	        'seconds' => [
 	            'number' => '%S',
-	            'label' => $settings['custom_labels_seconds'] ? $settings['custom_labels_seconds'] : esc_html__('Seconds', 'better-el-addons'),
+	            'label' => $settings['custom_labels_seconds'] ? $settings['custom_labels_seconds'] : esc_html__('Seconds', 'better-elementor-addons'),
 	            'visibility' => $settings['seconds']
 	        ],
 	    ];

@@ -42,7 +42,7 @@ class Better_Button_adv extends Widget_Base
 	 */
 	public function get_title()
 	{
-		return __('Button Advanced', 'BEA');
+		return __('Button Advanced', 'better-elementor-addons');
 	}
 
 	/**
@@ -100,14 +100,14 @@ class Better_Button_adv extends Widget_Base
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __('Button Settings', 'BEA'),
+				'label' => __('Button Settings', 'better-elementor-addons'),
 			]
 		);
 
 		$this->add_control(
 			'btn_text',
 			[
-				'label' => __('Button Text', 'BEA'),
+				'label' => __('Button Text', 'better-elementor-addons'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'default' => 'Click now',
@@ -118,7 +118,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'link',
 			[
-				'label' => __('Button Link', 'BEA'),
+				'label' => __('Button Link', 'better-elementor-addons'),
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'Leave Link here',
 			]
@@ -126,19 +126,19 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'button_alignment',
 			[
-				'label' => __('Button Text Alignment', 'BEA'),
+				'label' => __('Button Text Alignment', 'better-elementor-addons'),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __('Left', 'BEA'),
+						'title' => __('Left', 'better-elementor-addons'),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __('Center', 'BEA'),
+						'title' => __('Center', 'better-elementor-addons'),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __('Right', 'BEA'),
+						'title' => __('Right', 'better-elementor-addons'),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -150,7 +150,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'selected_icon',
 			[
-				'label' => esc_html__('Icon', 'BEA'),
+				'label' => esc_html__('Icon', 'better-elementor-addons'),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'skin' => 'inline',
@@ -161,12 +161,12 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'icon_align',
 			[
-				'label' => esc_html__('Icon Position', 'BEA'),
+				'label' => esc_html__('Icon Position', 'better-elementor-addons'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'left',
 				'options' => [
-					'left' => esc_html__('Before', 'BEA'),
-					'right' => esc_html__('After', 'BEA'),
+					'left' => esc_html__('Before', 'better-elementor-addons'),
+					'right' => esc_html__('After', 'better-elementor-addons'),
 				],
 				'condition' => [
 					'selected_icon[value]!' => '',
@@ -177,7 +177,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'icon_indent',
 			[
-				'label' => esc_html__('Icon Spacing', 'BEA'),
+				'label' => esc_html__('Icon Spacing', 'better-elementor-addons'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -197,17 +197,17 @@ class Better_Button_adv extends Widget_Base
 		$this->start_controls_section(
 			'section-second-text',
 			[
-				'label' => __('Second Text Animation', 'BEA'),
+				'label' => __('Second Text Animation', 'better-elementor-addons'),
 			]
 		);
 		
 		$this->add_control(
 			'show_text_animations',
 			[
-				'label' => esc_html__( 'Second Text Animation', 'BEA' ),
+				'label' => esc_html__( 'Second Text Animation', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'on', 'BEA' ),
-				'label_off' => esc_html__( 'off', 'BEA' ),
+				'label_on' => esc_html__( 'on', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'off', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => '',
 			]
@@ -215,7 +215,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'btn_second_text',
 			[
-				'label' => __('Second Text', 'BEA'),
+				'label' => __('Second Text', 'better-elementor-addons'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'default' => 'Show More',
@@ -232,7 +232,7 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_section(
             'button-style-section',
             [
-                'label' => esc_html__( 'Button', 'BEA' ),
+                'label' => esc_html__( 'Button', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -252,13 +252,13 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_tab(
             'button_normal_tab',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
 			'text_color',
 			[
-				'label' => esc_html__( 'Text Color', 'BEA' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-button .bea-adv-button-text' => 'color: {{VALUE}}',
@@ -293,7 +293,7 @@ class Better_Button_adv extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'border_gradient',
-				'label' => __('Border Gradient Color', 'BEA'),
+				'label' => __('Border Gradient Color', 'better-elementor-addons'),
 				'types' => [ 'gradient' ],
 				'separator' => 'after',
 				'selector' => '{{WRAPPER}} .bea-adv-button',
@@ -326,7 +326,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'button_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'BEA' ),
+				'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -337,7 +337,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'button_padding',
 			[
-				'label' => esc_html__( 'Padding', 'BEA' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -350,13 +350,13 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_tab(
             'button_hover_tab',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
 			'text_color_hover',
 			[
-				'label' => esc_html__( 'Text Color', 'BEA' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-button:hover .bea-adv-button-text' => 'color: {{VALUE}}',
@@ -391,7 +391,7 @@ class Better_Button_adv extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'border_gradient_hover',
-				'label' => __('Border Gradient Color', 'BEA'),
+				'label' => __('Border Gradient Color', 'better-elementor-addons'),
 				'types' => [ 'gradient' ],
 				'separator' => 'after',
 				'selector' => '{{WRAPPER}} .bea-adv-button:hover',
@@ -424,7 +424,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'button_border_radius_hover',
 			[
-				'label' => esc_html__( 'Border Radius', 'BEA' ),
+				'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -435,7 +435,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'button_padding_hover',
 			[
-				'label' => esc_html__( 'Padding', 'BEA' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -451,7 +451,7 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_section(
             'button-icon-style-section',
             [
-                'label' => esc_html__( 'Button Icon', 'BEA' ),
+                'label' => esc_html__( 'Button Icon', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -464,13 +464,13 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_tab(
             'icon_normal_tab',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_responsive_control(
 			'icon-size',
 			[
-				'label' => esc_html__( 'icon Size', 'BEA' ),
+				'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -493,7 +493,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_color',
 			[
-				'label' => esc_html__( 'Color', 'BEA' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-button-icon i ' => 'color: {{VALUE}}',
@@ -519,7 +519,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'BEA' ),
+				'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -530,7 +530,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_padding',
 			[
-				'label' => esc_html__( 'Padding', 'BEA' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -544,13 +544,13 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_tab(
             'icon_hover_tab',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_responsive_control(
 			'icon-size_hover',
 			[
-				'label' => esc_html__( 'icon Size', 'BEA' ),
+				'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -569,7 +569,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_color_hover',
 			[
-				'label' => esc_html__( 'Color', 'BEA' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-button:hover .bea-adv-button-icon i ' => 'color: {{VALUE}}',
@@ -595,7 +595,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_border_radius_hover',
 			[
-				'label' => esc_html__( 'Border Radius', 'BEA' ),
+				'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -606,7 +606,7 @@ class Better_Button_adv extends Widget_Base
         $this->add_control(
 			'icon_padding_hover',
 			[
-				'label' => esc_html__( 'Padding', 'BEA' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -623,36 +623,36 @@ class Better_Button_adv extends Widget_Base
         $this->start_controls_section(
             'animation-section',
             [
-                'label' => esc_html__( 'Animation', 'BEA' ),
+                'label' => esc_html__( 'Animation', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
 		$this->add_control(
 			'animation_style',
 			[
-				'label' => esc_html__( 'Animation', 'BEA' ),
+				'label' => esc_html__( 'Animation', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => esc_html__( 'Default', 'BEA' ),
-					'bg' => esc_html__( 'Background', 'BEA' ),
-					'border'  => esc_html__( 'Border', 'BEA' ),
-					'mouse-interactive'  => esc_html__( 'Mouse Interaction', 'BEA' ),
-					'move-with-cursor'  => esc_html__( 'Move With Cursor', 'BEA' ),
-					'icon-bg'  => esc_html__( 'Icon Background', 'BEA' ),
+					'none' => esc_html__( 'Default', 'better-elementor-addons' ),
+					'bg' => esc_html__( 'Background', 'better-elementor-addons' ),
+					'border'  => esc_html__( 'Border', 'better-elementor-addons' ),
+					'mouse-interactive'  => esc_html__( 'Mouse Interaction', 'better-elementor-addons' ),
+					'move-with-cursor'  => esc_html__( 'Move With Cursor', 'better-elementor-addons' ),
+					'icon-bg'  => esc_html__( 'Icon Background', 'better-elementor-addons' ),
 				],
 			]
 		);
 		$this->add_control(
 			'border_animantion_type',
 			[
-				'label' => esc_html__( 'Type', 'BEA' ),
+				'label' => esc_html__( 'Type', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'corners-out',
 				'options' => [
-					'corners-in' => esc_html__( 'Corners In', 'BEA' ),
-					'corners-out' => esc_html__( 'Corners Out', 'BEA' ),
-					'sequance' => esc_html__( 'Sequance', 'BEA' ),
+					'corners-in' => esc_html__( 'Corners In', 'better-elementor-addons' ),
+					'corners-out' => esc_html__( 'Corners Out', 'better-elementor-addons' ),
+					'sequance' => esc_html__( 'Sequance', 'better-elementor-addons' ),
 				],
 				'condition' => [
 					'animation_style' => 'border',
@@ -663,7 +663,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'border_animantion_color',
 			[
-				'label' => esc_html__( 'Color', 'BEA' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-border-top  , {{WRAPPER}} .bea-adv-border-bottom , {{WRAPPER}} .bea-adv-border-left , {{WRAPPER}} .bea-adv-border-right' => 'background-color: {{VALUE}}',
@@ -676,7 +676,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'border_animantion_height',
 			[
-				'label' => esc_html__( 'border Weight', 'BEA' ),
+				'label' => esc_html__( 'border Weight', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => ['px'],
 				'range' => [
@@ -703,14 +703,14 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'bg_animantion_type',
 			[
-				'label' => esc_html__( 'Type', 'BEA' ),
+				'label' => esc_html__( 'Type', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'slide-left',
 				'options' => [
-					'slide-left' => esc_html__( 'Slide Left', 'BEA' ),
-					'slide-right' => esc_html__( 'Slide right', 'BEA' ),
-					'slide-bottom' => esc_html__( 'Slide bottom', 'BEA' ),
-					'slide-top' => esc_html__( 'Slide top', 'BEA' ),
+					'slide-left' => esc_html__( 'Slide Left', 'better-elementor-addons' ),
+					'slide-right' => esc_html__( 'Slide right', 'better-elementor-addons' ),
+					'slide-bottom' => esc_html__( 'Slide bottom', 'better-elementor-addons' ),
+					'slide-top' => esc_html__( 'Slide top', 'better-elementor-addons' ),
 				],
 				'condition' => [
 					'animation_style' => 'bg',
@@ -720,7 +720,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'bg_animantion_start',
 			[
-				'label' => esc_html__( 'start Weight', 'BEA' ),
+				'label' => esc_html__( 'start Weight', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => ['px'],
 				'range' => [
@@ -746,7 +746,7 @@ class Better_Button_adv extends Widget_Base
 		$this->add_control(
 			'bg_animantion_color',
 			[
-				'label' => esc_html__( 'Color', 'BEA' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bea-adv-button::before ,{{WRAPPER}} .bea-adv-button-circle,{{WRAPPER}} .bea-animated-icon-bg::after' => 'background-color: {{VALUE}}',

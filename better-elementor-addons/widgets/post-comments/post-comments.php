@@ -27,7 +27,7 @@ class Better_Post_Comments extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Post Comments', 'better-el-addons' );
+		return __( 'Post Comments', 'better-elementor-addons' );
 	}
 
 	public function get_icon() {
@@ -47,7 +47,7 @@ class Better_Post_Comments extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Comments', 'better-el-addons' ),
+					__( '%s Comments', 'better-elementor-addons' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -57,9 +57,9 @@ class Better_Post_Comments extends Widget_Base {
 			'info',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'better-el-addons' ) .
+				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'better-elementor-addons' ) .
 						'<br><br>' .
-						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'better-el-addons' ),
+						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'better-elementor-addons' ),
 				'content_classes' => 'elementor-descriptor',
 			]
 		);

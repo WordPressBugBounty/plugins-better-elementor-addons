@@ -39,7 +39,7 @@ class Better_Product extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Product', 'better-el-addons' );
+		return __( 'Product', 'better-elementor-addons' );
 	}
 
 	/**
@@ -87,17 +87,17 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Product Settings.', 'better-el-addons' ),
+				'label' => __( 'Product Settings.', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'port_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style One', 'better-el-addons' ),
+					'1' => __( 'Style One', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -106,11 +106,11 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'filter',
 			[
-				'label' => __( 'Filter', 'better-el-addons' ),
+				'label' => __( 'Filter', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'block' => __( 'Show', 'better-el-addons' ),
-					'none' => __( 'Hide', 'better-el-addons' ),
+					'block' => __( 'Show', 'better-elementor-addons' ),
+					'none' => __( 'Hide', 'better-elementor-addons' ),
 				],
 				'default' => 'block',
 				'selectors' => [
@@ -122,19 +122,19 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'filter_align',
 			[
-				'label' => __( 'Filter Alignment', 'better-el-addons' ),
+				'label' => __( 'Filter Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons'),
+						'title' => __( 'Right', 'better-elementor-addons'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -149,7 +149,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'product_item',
 			[
-				'label' => __( 'Item to display', 'better-el-addons' ),
+				'label' => __( 'Item to display', 'better-elementor-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => '8',
 			]
@@ -158,11 +158,11 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'sort_cat',
 			[
-				'label' => __( 'Sort Product by Product Category', 'better-el-addons' ),
+				'label' => __( 'Sort Product by Product Category', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
-				'label_on' => __( 'Yes', 'better-el-addons' ),
-				'label_off' => __( 'No', 'better-el-addons' ),
+				'label_on' => __( 'Yes', 'better-elementor-addons' ),
+				'label_off' => __( 'No', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -170,7 +170,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'blog_cat',
 			[
-				'label'   => __( 'Category to Show', 'better-el-addons' ),
+				'label'   => __( 'Category to Show', 'better-elementor-addons' ),
 				'type'    => Controls_Manager::SELECT2, 'options' => better_tax_choice(),
 				'condition' => [
 					'sort_cat' => 'yes',
@@ -182,12 +182,12 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'port_order',
 			[
-				'label' => __( 'Orders', 'better-el-addons' ),
+				'label' => __( 'Orders', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'DESC' => __( 'Descending', 'better-el-addons' ),
-					'ASC' => __( 'Ascending', 'better-el-addons' ),
-					'rand' => __( 'Random', 'better-el-addons' ),
+					'DESC' => __( 'Descending', 'better-elementor-addons' ),
+					'ASC' => __( 'Ascending', 'better-elementor-addons' ),
+					'rand' => __( 'Random', 'better-elementor-addons' ),
 				],
 				'default' => 'DESC',
 			]
@@ -197,12 +197,12 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'port_column',
 			[
-				'label' => __( 'Columns', 'better-el-addons' ),
+				'label' => __( 'Columns', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'2' => __( 'Two Columns', 'better-el-addons' ),
-					'3' => __( 'Three Columns', 'better-el-addons' ),
-					'4' => __( 'Four Columns', 'better-el-addons' ),
+					'2' => __( 'Two Columns', 'better-elementor-addons' ),
+					'3' => __( 'Three Columns', 'better-elementor-addons' ),
+					'4' => __( 'Four Columns', 'better-elementor-addons' ),
 				],
 				'default' => '3',
 			]
@@ -211,11 +211,11 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_show',
 			[
-				'label' => __( 'Show Pagination', 'better-el-addons' ),
+				'label' => __( 'Show Pagination', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
-				'label_on' => __( 'Show', 'better-el-addons' ),
-				'label_off' => __( 'Hide', 'better-el-addons' ),
+				'label_on' => __( 'Show', 'better-elementor-addons' ),
+				'label_off' => __( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'condition' => [
 					'sort_cat!' => 'yes',
@@ -226,19 +226,19 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'page_align',
 			[
-				'label' => __( 'Pagination Alignment', 'better-el-addons' ),
+				'label' => __( 'Pagination Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons'),
+						'title' => __( 'Right', 'better-elementor-addons'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -258,7 +258,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'product_styling',
 			[
-				'label' => wp_kses_post( '<div style="padding:10px 0;">Product Item Settings.  <br/><small style="font-weight:normal;">You can click the (All) filter to refresh the layout when you change the Height settings.</small></div>', 'better-el-addons' ),
+				'label' => wp_kses_post( '<div style="padding:10px 0;">Product Item Settings.  <br/><small style="font-weight:normal;">You can click the (All) filter to refresh the layout when you change the Height settings.</small></div>', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -266,7 +266,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'product_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -284,7 +284,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'product_height',
 			[
-				'label' => __( 'Height', 'better-el-addons' ),
+				'label' => __( 'Height', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -303,7 +303,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_style',
 			[
-				'label' => __( 'Content Settings', 'better-el-addons' ),
+				'label' => __( 'Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -313,7 +313,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'port_content',
 			[
-				'label' => __( 'Content Margin', 'better-el-addons' ),
+				'label' => __( 'Content Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -325,7 +325,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'port_padding',
 			[
-				'label' => __( 'Content Padding', 'better-el-addons' ),
+				'label' => __( 'Content Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -338,19 +338,19 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'content_align',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					]
 				],
@@ -366,7 +366,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'title_typo',
 			[
-				'label' => __( 'Title Content Settings', 'better-el-addons' ),
+				'label' => __( 'Title Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -375,7 +375,7 @@ class Better_Product extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'cport_typography',
-				'label'     => __( 'Title Typography', 'better-el-addons' ),
+				'label'     => __( 'Title Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .dbox-relative h3',
 			]
 		);
@@ -383,11 +383,11 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'title_type',
 			[
-				'label' => __( 'Title Display','better-el-addons' ),
+				'label' => __( 'Title Display', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'block' => __( 'Block','better-el-addons' ),
-					'inline-block' => __( 'Inline Block','better-el-addons' ),
+					'block' => __( 'Block', 'better-elementor-addons' ),
+					'inline-block' => __( 'Inline Block', 'better-elementor-addons' ),
 				],
 				'default' => 'block',
 				'selectors' => [
@@ -398,7 +398,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'title_cl',
 			[
-				'label' => __( 'Title Color', 'better-el-addons' ),
+				'label' => __( 'Title Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -409,7 +409,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'title_bgl',
 			[
-				'label' => __( 'Title Background Color', 'better-el-addons' ),
+				'label' => __( 'Title Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -421,7 +421,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'titlep_padding',
 			[
-				'label' => __( 'Title Padding', 'better-el-addons' ),
+				'label' => __( 'Title Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -433,7 +433,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'titlep_margin',
 			[
-				'label' => __( 'Title Margin', 'better-el-addons' ),
+				'label' => __( 'Title Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -448,7 +448,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'sub_typo',
 			[
-				'label' => __( 'Category/Text Content Settings', 'better-el-addons' ),
+				'label' => __( 'Category/Text Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -457,7 +457,7 @@ class Better_Product extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'ctext_typography',
-				'label'     => __( 'Text Typography', 'better-el-addons' ),
+				'label'     => __( 'Text Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .dbox-relative p',
 			]
 		);
@@ -465,11 +465,11 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'text_type',
 			[
-				'label' => __( 'Text Display','better-el-addons' ),
+				'label' => __( 'Text Display', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'block' => __( 'Block','better-el-addons' ),
-					'inline-block' => __( 'Inline Block','better-el-addons' ),
+					'block' => __( 'Block', 'better-elementor-addons' ),
+					'inline-block' => __( 'Inline Block', 'better-elementor-addons' ),
 				],
 				'default' => 'block',
 				'selectors' => [
@@ -481,7 +481,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'txt_cl',
 			[
-				'label' => __( 'Text Color', 'better-el-addons' ),
+				'label' => __( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -493,7 +493,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'txt_bg',
 			[
-				'label' => __( 'Text Background Color', 'better-el-addons' ),
+				'label' => __( 'Text Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -505,7 +505,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'tx_padding',
 			[
-				'label' => __( 'Text Padding', 'better-el-addons' ),
+				'label' => __( 'Text Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -517,7 +517,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'tx_margin',
 			[
-				'label' => __( 'Text Margin', 'better-el-addons' ),
+				'label' => __( 'Text Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -534,7 +534,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => __( 'Filter Settings', 'better-el-addons' ),
+				'label' => __( 'Filter Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -543,7 +543,7 @@ class Better_Product extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'filter_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .port-filter a',
 			]
 		);
@@ -551,7 +551,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'filter_margin',
 			[
-				'label' => __( 'Filter Container Margin', 'better-el-addons' ),
+				'label' => __( 'Filter Container Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -563,7 +563,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'filter_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -577,7 +577,7 @@ class Better_Product extends Widget_Base {
 		$this->add_responsive_control(
 			'filter_linkmargin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -589,7 +589,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'filter_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -601,7 +601,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'color_def',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -613,7 +613,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'color_bgdef',
 			[
-				'label' => __( 'Background Color', 'better-el-addons' ),
+				'label' => __( 'Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -625,7 +625,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'color_hov',
 			[
-				'label' => __( 'Color on Hover & Active', 'better-el-addons' ),
+				'label' => __( 'Color on Hover & Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -638,7 +638,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'color_bgdefhover',
 			[
-				'label' => __( 'Background Color on Hover & Active', 'better-el-addons' ),
+				'label' => __( 'Background Color on Hover & Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -666,7 +666,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'color_borderhover',
 			[
-				'label' => __( 'Border Color on Hover & Active', 'better-el-addons' ),
+				'label' => __( 'Border Color on Hover & Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -681,7 +681,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'port_mask',
 			[
-				'label' => __( 'Product Mask Settings', 'better-el-addons' ),
+				'label' => __( 'Product Mask Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -690,7 +690,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'mask_color',
 			[
-				'label' => __( 'Mask Color', 'better-el-addons' ),
+				'label' => __( 'Mask Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -702,7 +702,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'mask_color2',
 			[
-				'label' => __( 'Second Mask Color', 'better-el-addons' ),
+				'label' => __( 'Second Mask Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -714,7 +714,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'mask_post2',
 			[
-				'label' => __( 'Second Mask Top Posisition (on hover)', 'better-el-addons' ),
+				'label' => __( 'Second Mask Top Posisition (on hover)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -732,7 +732,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'mask_color_opacity',
 			[
-				'label' => __( 'Mask Color Opacity (on hover)', 'better-el-addons' ),
+				'label' => __( 'Mask Color Opacity (on hover)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -752,7 +752,7 @@ class Better_Product extends Widget_Base {
 		$this->start_controls_section(
 			'pagination_setting',
 			[
-				'label' => __( 'Pagination Setting','better-el-addons' ),
+				'label' => __( 'Pagination Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -760,7 +760,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color',
 			[
-				'label' => __( 'Pagination Color','better-el-addons' ),
+				'label' => __( 'Pagination Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a' => 'color: {{VALUE}};',
@@ -771,7 +771,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color_hover',
 			[
-				'label' => __( 'Pagination Color on Hover','better-el-addons' ),
+				'label' => __( 'Pagination Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a:hover' => 'color: {{VALUE}};',
@@ -782,7 +782,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color_bg',
 			[
-				'label' => __( 'Pagination Background Color','better-el-addons' ),
+				'label' => __( 'Pagination Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -793,7 +793,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color_hover_bg',
 			[
-				'label' => __( 'Pagination Background Color on Hover','better-el-addons' ),
+				'label' => __( 'Pagination Background Color on Hover', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > li > a:hover' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -804,7 +804,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color_active',
 			[
-				'label' => __( 'Pagination Color on Active','better-el-addons' ),
+				'label' => __( 'Pagination Color on Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > .active > a' => 'color: {{VALUE}};',
@@ -815,7 +815,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'page_color_hover_bg_active',
 			[
-				'label' => __( 'Pagination Background Color on Active','better-el-addons' ),
+				'label' => __( 'Pagination Background Color on Active', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .pagination > .active > a' => 'background-color: {{VALUE}};border-color:{{VALUE}};',
@@ -826,7 +826,7 @@ class Better_Product extends Widget_Base {
 		$this->add_control(
 			'pagi_margin',
 			[
-				'label' => __( 'Margin', 'better-el-addons' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [

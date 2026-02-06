@@ -37,21 +37,22 @@ function better_pagination($pages = '', $range = 2) {
         <div class="products-shop">
             <div class="topline">
                 <div class="pagesviews better-valign">
-                    <p><?php printf(esc_attr('Showing all %s results', 'better-el-addons'), intval($settings['product_item'])); ?></p>
+                    <p><?php printf(esc_attr('Showing all %s results', 'better-elementor-addons'), intval($settings['product_item'])); ?></p>
                 </div>
                 <?php
                 $show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
                 $catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
-                    'menu_order' => __( 'Default sorting', 'woocommerce' ),
-                    'popularity' => __( 'Sort by popularity', 'woocommerce' ),
-                    'rating'     => __( 'Sort by average rating', 'woocommerce' ),
-                    'date'       => __( 'Sort by newness', 'woocommerce' ),
-                    'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
-                    'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
+                    'menu_order' => __( 'Default sorting', 'better-elementor-addons' ),
+                    'popularity' => __( 'Sort by popularity', 'better-elementor-addons' ),
+                    'rating'     => __( 'Sort by average rating', 'better-elementor-addons' ),
+                    'date'       => __( 'Sort by newness', 'better-elementor-addons' ),
+                    'price'      => __( 'Sort by price: low to high', 'better-elementor-addons' ),
+                    'price-desc' => __( 'Sort by price: high to low', 'better-elementor-addons' ),
                 ) );
         
                 $default_orderby = wc_get_loop_prop( 'is_search' ) ? 'relevance' : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-                $orderby         = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : $default_orderby; // WPCS: sanitization ok, input var ok, CSRF ok.
+                // phpcs:ignore WordPress.Security.NonceVerification.Recommended, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- WooCommerce orderby parameter, sanitized with wc_clean()
+                $orderby = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : $default_orderby;
         
                 if ( 'no' === get_option( 'woocommerce_enable_review_rating' ) ) {
                     unset( $catalog_orderby_options['rating'] );
@@ -63,7 +64,7 @@ function better_pagination($pages = '', $range = 2) {
         
                 ?>
                 <form class="woocommerce-ordering" method="get">
-                    <select name="orderby" class="orderby" aria-label="<?php esc_attr_e( 'Shop order', 'woocommerce' ); ?>">
+                    <select name="orderby" class="orderby" aria-label="<?php esc_attr_e( 'Shop order', 'better-elementor-addons' ); ?>">
                         <?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
                             <option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
                         <?php endforeach; ?>
@@ -108,7 +109,7 @@ function better_pagination($pages = '', $range = 2) {
             
             $loop = new \WP_Query(array(
                 'posts_per_page'   => $settings['product_item'],
-                'post_type' =>  'product', 'better-el-addons',
+                'post_type' =>  'product', 'better-elementor-addons',
                 'show_catalog_ordering' => 'yes',
                 'orderby'                 => $orderby_val,
                 'meta_key' => $meta_key,
@@ -179,7 +180,7 @@ function better_pagination($pages = '', $range = 2) {
                     
             else: ?>
             
-            <div class="alert alert-warning"><?php esc_html__('There is no Product Post Found. You need to  choose the product category to show or create at least 1 product post first.','better-el-addons'); ?></div>
+            <div class="alert alert-warning"><?php esc_html__('There is no Product Post Found. You need to  choose the product category to show or create at least 1 product post first.', 'better-elementor-addons'); ?></div>
             <?php endif;  wp_reset_postdata();  ?>
 
         </div>

@@ -29,7 +29,7 @@ class Better_Post_Date extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Post Date', 'better-el-addons' );
+		return __( 'Post Date', 'better-elementor-addons' );
 	}
 
 	public function get_icon() {
@@ -47,18 +47,18 @@ class Better_Post_Date extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Data setings', 'better-el-addons' ),
+				'label' => __( 'Data setings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'date_type',
 			[
-				'label' => __( 'Date Type', 'better-el-addons' ),
+				'label' => __( 'Date Type', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'publish' => __( 'Publish Date', 'better-el-addons' ),
-					'modified' => __( 'Last Modified Date', 'better-el-addons' ),
+					'publish' => __( 'Publish Date', 'better-elementor-addons' ),
+					'modified' => __( 'Last Modified Date', 'better-elementor-addons' ),
 				],
 				'default' => 'publish',
 			]
@@ -67,7 +67,7 @@ class Better_Post_Date extends Widget_Base {
 		$this->add_control(
 			'html_tag',
 			[
-				'label' => __( 'HTML Tag', 'better-el-addons' ),
+				'label' => __( 'HTML Tag', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -87,23 +87,23 @@ class Better_Post_Date extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'better-el-addons' ),
+						'title' => __( 'Justified', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -119,7 +119,7 @@ class Better_Post_Date extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Setings', 'better-el-addons' ),
+				'label' => __( 'Setings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -127,7 +127,7 @@ class Better_Post_Date extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'better-el-addons' ),
+				'label' => __( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-widgets-date' => 'color: {{VALUE}};',
@@ -155,7 +155,7 @@ class Better_Post_Date extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'better-el-addons' ),
+				'label' => __( 'Hover Animation', 'better-elementor-addons' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);

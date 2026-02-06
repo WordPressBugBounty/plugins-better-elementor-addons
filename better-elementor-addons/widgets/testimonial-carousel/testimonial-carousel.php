@@ -37,7 +37,7 @@ class Better_Testimonial_Carousel extends Widget_Base
     //script depend
     public function get_script_depends()
     {
-        return ['better-slick', 'better-lib', 'better-testimonial', 'better-el-addons'];
+        return ['better-slick', 'better-lib', 'better-testimonial', 'better-elementor-addons'];
     }
 
     /**
@@ -51,7 +51,7 @@ class Better_Testimonial_Carousel extends Widget_Base
      */
     public function get_title()
     {
-        return __('Testimonials Carousel', 'better_plg');
+        return __('Testimonials Carousel', 'better-elementor-addons');
     }
 
     /**
@@ -102,23 +102,23 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Testimonial Settings', 'better_plg'),
+                'label' => __('Testimonial Settings', 'better-elementor-addons'),
             ]
         );
         $this->add_control(
             'better_testimonial_style',
             [
-                'label' => __('Style', 'bim_plg'),
+                'label' => __('Style', 'better-elementor-addons'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'style1' => __('Style 1', 'bim_plg'),
-                    'style2' => __('Style 2', 'bim_plg'),
-                    'style3' => __('Style 3', 'bim_plg'),
-                    'style4' => __('Style 4', 'bim_plg'),
-                    'style5' => __('Style 5', 'bim_plg'),
-                    'style6' => __('Style 6', 'bim_plg'),
-                    'style7' => __('Style 7', 'bim_plg'),
-                    'style8' => __('Style 8', 'bim_plg'),
+                    'style1' => __('Style 1', 'better-elementor-addons'),
+                    'style2' => __('Style 2', 'better-elementor-addons'),
+                    'style3' => __('Style 3', 'better-elementor-addons'),
+                    'style4' => __('Style 4', 'better-elementor-addons'),
+                    'style5' => __('Style 5', 'better-elementor-addons'),
+                    'style6' => __('Style 6', 'better-elementor-addons'),
+                    'style7' => __('Style 7', 'better-elementor-addons'),
+                    'style8' => __('Style 8', 'better-elementor-addons'),
                 ],
                 'default' => 'style1',
             ]
@@ -127,10 +127,10 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'dark_mode',
             [
-                'label' => esc_html__('Dark Background', 'better-el-addons'),
+                'label' => esc_html__('Dark Background', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__('Yes', 'better-el-addons'),
-                'label_off' => esc_html__('No', 'better-el-addons'),
+                'label_on' => esc_html__('Yes', 'better-elementor-addons'),
+                'label_off' => esc_html__('No', 'better-elementor-addons'),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'condition' => [
@@ -142,10 +142,10 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'section_title',
             [
-                'label' => esc_html__('Title', 'better-el-addons'),
+                'label' => esc_html__('Title', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => esc_html__('Enter your title', 'better-el-addons'),
-                'default' => esc_html__('What People Says.', 'better-el-addons'),
+                'placeholder' => esc_html__('Enter your title', 'better-elementor-addons'),
+                'default' => esc_html('What People Says.', 'better-elementor-addons'),
                 'condition' => [
                     'better_testimonial_style' => array('style3')
                 ],
@@ -155,10 +155,10 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'section_subtitle',
             [
-                'label' => esc_html__('Sub-Title Text', 'better-el-addons'),
+                'label' => esc_html__('Sub-Title Text', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => esc_html__('Enter your sub-title', 'better-el-addons'),
-                'default' => esc_html__('Testimonials', 'better-el-addons'),
+                'placeholder' => esc_html__('Enter your sub-title', 'better-elementor-addons'),
+                'default' => esc_html('Testimonials', 'better-elementor-addons'),
                 'condition' => [
                     'better_testimonial_style' => array('style3')
                 ],
@@ -170,37 +170,37 @@ class Better_Testimonial_Carousel extends Widget_Base
         $repeater->add_control(
             'number',
             [
-                'label' => __('Testimonial Number', 'better_plg'),
+                'label' => __('Testimonial Number', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __('Testimonial Number..', 'better_plg'),
+                'placeholder' => __('Testimonial Number..', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'title',
             [
-                'label' => __('Testimonial Name', 'better_plg'),
+                'label' => __('Testimonial Name', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __('Testimonial Name..', 'better_plg'),
+                'placeholder' => __('Testimonial Name..', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'position',
             [
-                'label' => __('Testimonial Position', 'better_plg'),
+                'label' => __('Testimonial Position', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __('Testimonial Position..', 'better_plg'),
+                'placeholder' => __('Testimonial Position..', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'image',
             [
-                'label' => __('Client Image', 'better_plg'),
+                'label' => __('Client Image', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -211,17 +211,17 @@ class Better_Testimonial_Carousel extends Widget_Base
         $repeater->add_control(
             'text',
             [
-                'label' => __('Testimonial Text', 'better_plg'),
+                'label' => __('Testimonial Text', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'label_block' => true,
-                'placeholder' => __('Testimonial Text..', 'better_plg'),
+                'placeholder' => __('Testimonial Text..', 'better-elementor-addons'),
             ]
         );
 
         $repeater->add_control(
             'rate',
             [
-                'label' => __('Testimonial Rate', 'better_plg'),
+                'label' => __('Testimonial Rate', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'label_block' => true,
             ]
@@ -230,7 +230,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'testi_list',
             [
-                'label' => __('Testimonial List', 'better_plg'),
+                'label' => __('Testimonial List', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
@@ -261,7 +261,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'item_settting',
             [
-                'label' => __('Item Setting', 'better_plg'),
+                'label' => __('Item Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -272,7 +272,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'item_bg_color',
             [
-                'label' => __('Background Color', 'better_plg'),
+                'label' => __('Background Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -287,7 +287,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'title_settting',
             [
-                'label' => __('Text Setting', 'better_plg'),
+                'label' => __('Text Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -298,7 +298,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'title_color',
             [
-                'label' => __('Color', 'better_plg'),
+                'label' => __('Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -314,7 +314,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'title_typography',
-                'label'     => __('Typography', 'better_plg'),
+                'label'     => __('Typography', 'better-elementor-addons'),
                 'selector'  => '{{WRAPPER}} .better-testimonial .testi-text',
             ]
         );
@@ -324,7 +324,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'name_settings',
             [
-                'label' => __('Name Setting', 'better_plg'),
+                'label' => __('Name Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -335,7 +335,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'name_color',
             [
-                'label' => __('Color', 'better_plg'),
+                'label' => __('Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -348,7 +348,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'name_typography',
-                'label'     => __('Name Typography', 'better_plg'),
+                'label'     => __('Name Typography', 'better-elementor-addons'),
                 'selector'  => '{{WRAPPER}} .better-testimonial h3',
             ]
         );
@@ -358,7 +358,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'post_settting',
             [
-                'label' => __('Position Setting', 'better_plg'),
+                'label' => __('Position Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -369,7 +369,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'post_color',
             [
-                'label' => __('Color', 'better_plg'),
+                'label' => __('Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -382,7 +382,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'post_typography',
-                'label'     => __('Typography', 'better_plg'),
+                'label'     => __('Typography', 'better-elementor-addons'),
                 'selector'  => '{{WRAPPER}} .better-testimonial .testi-from',
             ]
         );
@@ -392,7 +392,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'quote_settting',
             [
-                'label' => __('Quote Setting', 'better_plg'),
+                'label' => __('Quote Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -403,7 +403,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'quote_color',
             [
-                'label' => __('Color', 'better_plg'),
+                'label' => __('Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -415,7 +415,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'quotebg_color',
             [
-                'label' => __('Background Color', 'better_plg'),
+                'label' => __('Background Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -427,7 +427,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_responsive_control(
             'quote_radius',
             [
-                'label' => __('Border Radius', 'better_plg'),
+                'label' => __('Border Radius', 'better-elementor-addons'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -441,7 +441,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'border_settting',
             [
-                'label' => __('Border Setting', 'better_plg'),
+                'label' => __('Border Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -452,7 +452,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'border_color',
             [
-                'label' => __('Color', 'better_plg'),
+                'label' => __('Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -463,7 +463,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'border_width',
             [
-                'label' => __('Border Width', 'better_plg'),
+                'label' => __('Border Width', 'better-elementor-addons'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -483,7 +483,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'rating_settting',
             [
-                'label' => __('Rating Setting', 'better_plg'),
+                'label' => __('Rating Setting', 'better-elementor-addons'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style1', 'style2')
@@ -494,7 +494,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'rating_bg_color',
             [
-                'label' => __('Rating Color', 'better_plg'),
+                'label' => __('Rating Color', 'better-elementor-addons'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -509,7 +509,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'style_section',
             [
-                'label' => __('Content Style', 'better-el-addons'),
+                'label' => __('Content Style', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style3', 'style4', 'style5')
@@ -521,7 +521,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'testi_background',
-                'label' => __('Background', 'better-el-addons'),
+                'label' => __('Background', 'better-elementor-addons'),
                 'types' => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .better-testimonial',
             ]
@@ -531,7 +531,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'testi_box_background',
-                'label' => __('Box Background', 'better-el-addons'),
+                'label' => __('Box Background', 'better-elementor-addons'),
                 'types' => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .better-testimonial .box',
             ]
@@ -542,7 +542,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_title_typography',
-                'label' => esc_html__('Title Typography', 'better-el-addons'),
+                'label' => esc_html__('Title Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-heading.style-2 h3',
             ]
         );
@@ -550,7 +550,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_title_color',
             [
-                'label' => esc_html__('Title Color', 'better-el-addons'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-heading.style-2 h3' => 'color: {{VALUE}}',
@@ -564,7 +564,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_sub_title_typography',
-                'label' => esc_html__('Sub-Title Typography', 'better-el-addons'),
+                'label' => esc_html__('Sub-Title Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-heading.style-2 h6',
             ]
         );
@@ -572,7 +572,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_sub_title_color',
             [
-                'label' => esc_html__('Sub-Title Color', 'better-el-addons'),
+                'label' => esc_html__('Sub-Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-heading.style-2 h6' => 'color: {{VALUE}}',
@@ -585,7 +585,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_testimonial_name_typography',
-                'label' => esc_html__('Testimonial Name Typography', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Name Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial.style-3 .item .info .author-name,{{WRAPPER}} .better-testimonial .item .info .author-name, {{WRAPPER}} .better-testimonial.style-6 h6',
             ]
         );
@@ -593,7 +593,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_name_color',
             [
-                'label' => esc_html__('Testimonial Name Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Name Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .item .info .author-name,{{WRAPPER}} .better-testimonial .item .info .author-name, {{WRAPPER}} .better-testimonial.style-6 h6' => 'color: {{VALUE}}',
@@ -606,7 +606,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_testimonial_position_typography',
-                'label' => esc_html__('Testimonial Position Typography', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Position Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial.style-3 .item .info .author-details,{{WRAPPER}} .better-testimonial .item .info .author-details',
             ]
         );
@@ -614,7 +614,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_position_color',
             [
-                'label' => esc_html__('Testimonial position Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial position Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .item .info .author-details,{{WRAPPER}} .better-testimonial .item .info .author-details' => 'color: {{VALUE}}',
@@ -627,7 +627,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_testimonial_text_typography',
-                'label' => esc_html__('Testimonial Text Typography', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Text Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial.style-3 .item p,{{WRAPPER}} .better-testimonial .item p',
             ]
         );
@@ -635,7 +635,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_text_color',
             [
-                'label' => esc_html__('Testimonial Text Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .item p,{{WRAPPER}} .better-testimonial .item p' => 'color: {{VALUE}}',
@@ -647,7 +647,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_active_dot_color',
             [
-                'label' => esc_html__('Testimonial Active Dot Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Active Dot Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .slick-dots li.slick-active' => 'background: {{VALUE}}',
@@ -660,7 +660,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_img_border_color',
             [
-                'label' => esc_html__('Testimonial Image Border Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Image Border Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .item .info .img' => 'border-color: {{VALUE}}',
@@ -672,7 +672,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'better_testimonial_qoute_icon_background_color',
             [
-                'label' => esc_html__('Qoute Icon Background Color', 'better-el-addons'),
+                'label' => esc_html__('Qoute Icon Background Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial.style-3 .box .qoute-icon' => 'background: {{VALUE}}',
@@ -685,7 +685,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->start_controls_section(
             'style6_section',
             [
-                'label' => __('Content Style', 'better-el-addons'),
+                'label' => __('Content Style', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'better_testimonial_style' => array('style6', 'style7', 'style8')
@@ -698,7 +698,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'style6_better_name_typography',
-                'label' => esc_html__('Name Typography', 'better-el-addons'),
+                'label' => esc_html__('Name Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial .item h6, {{WRAPPER}} .better-testimonial .item h6.author-details',
             ]
         );
@@ -708,7 +708,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'style6_better_name_background',
-                'label' => esc_html__('Name Background Color', 'better-el-addons'),
+                'label' => esc_html__('Name Background Color', 'better-elementor-addons'),
                 'types' => ['gradient'],
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selector' => '{{WRAPPER}} .better-testimonial .item h6',
@@ -722,7 +722,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'style6_better_name_color',
             [
-                'label' => esc_html__('Name Color', 'better-el-addons'),
+                'label' => esc_html__('Name Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial .item h6.author-name' => 'color: {{VALUE}}',
@@ -738,7 +738,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'style6_better_position_typography',
-                'label' => esc_html__('Position Typography', 'better-el-addons'),
+                'label' => esc_html__('Position Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial .item span.author-details, {{WRAPPER}} .better-testimonial .item span',
                 'condition' => [
                     'better_testimonial_style' => array('style7', 'style8')
@@ -749,7 +749,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'style6_better_position_color',
             [
-                'label' => esc_html__('Position Color', 'better-el-addons'),
+                'label' => esc_html__('Position Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial .item span.author-details' => 'color: {{VALUE}}',
@@ -766,7 +766,7 @@ class Better_Testimonial_Carousel extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'style6_better_text_typography',
-                'label' => esc_html__('Text Typography', 'better-el-addons'),
+                'label' => esc_html__('Text Typography', 'better-elementor-addons'),
                 'selector' => '{{WRAPPER}} .better-testimonial .item p',
             ]
         );
@@ -774,7 +774,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'style6_better_text_color',
             [
-                'label' => esc_html__('Text Color', 'better-el-addons'),
+                'label' => esc_html__('Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial .item p' => 'color: {{VALUE}}',
@@ -785,19 +785,19 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_responsive_control(
             'style6_better_text_alignment',
             [
-                'label' => __('Text Alignment', 'themescamp-core'),
+                'label' => __('Text Alignment', 'better-elementor-addons'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'themescamp-core'),
+                        'title' => __('Left', 'better-elementor-addons'),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'themescamp-core'),
+                        'title' => __('Center', 'better-elementor-addons'),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'themescamp-core'),
+                        'title' => __('Right', 'better-elementor-addons'),
                         'icon' => 'eicon-text-align-right',
                     ],
                 ],
@@ -813,7 +813,7 @@ class Better_Testimonial_Carousel extends Widget_Base
         $this->add_control(
             'style6_better_testimonial_active_dot_color',
             [
-                'label' => esc_html__('Testimonial Active Dot Color', 'better-el-addons'),
+                'label' => esc_html__('Testimonial Active Dot Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .better-testimonial .slick-dots li.slick-active' => 'background: {{VALUE}}',

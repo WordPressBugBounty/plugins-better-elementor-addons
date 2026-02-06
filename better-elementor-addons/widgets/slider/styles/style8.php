@@ -9,9 +9,15 @@
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-1">
                                     <div class="caption hmone">
-                                        <<?php echo tag_escape($item['title_html_tag']); ?> class="title" data-splitting>
+                                        <?php
+                                    $allowed_tags = [ 'h1','h2','h3','h4','h5','h6','div','span','p' ];
+                                    $title_tag = in_array( $item['title_html_tag'], $allowed_tags, true )
+                                        ? $item['title_html_tag']
+                                        : 'h1';
+                                        ?>
+                                        <<?php echo tag_escape($title_tag); ?> class="title" data-splitting>
                                             <a href="<?php echo esc_url($item['btn_link']['url']); ?>"><?php echo wp_kses_post($item['title']); ?></a>
-                                        </<?php echo tag_escape($item['title_html_tag']); ?>>
+                                        </<?php echo tag_escape($title_tag); ?>>
                                         <p class="mt-10"><?php echo wp_kses_post($item['text']); ?></p>
                                         <?php if (!empty($item['btn_link']['url'])): ?>
                                         <a href="<?php echo esc_url($item['btn_link']['url']); ?>" class="better-btn-architec btn-bord btn-lit mt-30">

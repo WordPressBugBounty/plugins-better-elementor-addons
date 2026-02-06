@@ -38,7 +38,7 @@ class Better_Logo extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Site Logo/Branding', 'better-el-addons' );
+		return __( 'Site Logo/Branding', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,14 +86,14 @@ class Better_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Logo Settings', 'better-el-addons' ),
+				'label' => __( 'Logo Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'logo_img',
 			[
-				'label' => __( 'Image', 'better-el-addons' ),
+				'label' => __( 'Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -106,19 +106,19 @@ class Better_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					]
 				],
@@ -132,7 +132,7 @@ class Better_Logo extends Widget_Base {
 		$this->add_control(
 			'height',
 			[
-				'label' => __( 'Logo Image max Height', 'better-el-addons' ),
+				'label' => __( 'Logo Image max Height', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					    'px' => [
@@ -154,7 +154,7 @@ class Better_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'logo_settings',
 			[
-				'label' => __( 'Logo Setting', 'better-el-addons' ),
+				'label' => __( 'Logo Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -162,7 +162,7 @@ class Better_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'logo_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -173,7 +173,7 @@ class Better_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'logo_margin',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [

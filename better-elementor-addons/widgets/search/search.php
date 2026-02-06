@@ -49,7 +49,7 @@ class Better_Header_Search extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Header search', 'better-el-addons' );
+		return __( 'Header search', 'better-elementor-addons' );
 	}
 
 	/**
@@ -97,7 +97,7 @@ class Better_Header_Search extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Search Settings', 'better-el-addons' ),
+				'label' => __( 'Search Settings', 'better-elementor-addons' ),
 			]
 		);
 		
@@ -106,7 +106,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_control(
             'search_icons',
             [
-                'label' => esc_html__('Select Icon', 'better-el-addons'),
+                'label' => esc_html__('Select Icon', 'better-elementor-addons'),
                 'fa4compatibility' => 'better_search_icon',
 				'default' => [
 					'value' => 'fa fa-search',
@@ -124,7 +124,7 @@ class Better_Header_Search extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_style',
 			[
-				'label' => __( 'Content Settings', 'better-el-addons' ),
+				'label' => __( 'Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -133,7 +133,7 @@ class Better_Header_Search extends Widget_Base {
 		$this->add_control(
 			'color_icon',
 			[
-				'label' => __( 'Content Background', 'better-el-addons' ),
+				'label' => __( 'Content Background', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#eee',
 				'selectors' => [
@@ -144,7 +144,7 @@ class Better_Header_Search extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Size', 'better-el-addons' ),
+				'label' => __( 'Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -164,7 +164,7 @@ class Better_Header_Search extends Widget_Base {
         $this->start_controls_section(
             'header_search_section_tab_style',
             [
-                'label' => esc_html__('Header Search', 'better-el-addons'),
+                'label' => esc_html__('Header Search', 'better-elementor-addons'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -180,7 +180,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_control(
             'header_border_radius',
             [
-                'label' => esc_html__( 'Border radius', 'better-el-addons' ),
+                'label' => esc_html__( 'Border radius', 'better-elementor-addons' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'default' => [
@@ -199,7 +199,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_responsive_control(
             'search_margin',
             [
-                'label'         => esc_html__('Margin', 'better-el-addons'),
+                'label'         => esc_html__('Margin', 'better-elementor-addons'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em'],
                 'default' => [
@@ -217,7 +217,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_control(
 			'search_padding',
 			[
-				'label' => esc_html__( 'Padding', 'better-el-addons' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'default' => [
@@ -236,10 +236,10 @@ class Better_Header_Search extends Widget_Base {
         $this->add_control(
 			'better-header-search-icon a.search',
 			[
-				'label' => esc_html__( 'Use Height Width', 'better-el-addons' ),
+				'label' => esc_html__( 'Use Height Width', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'better-el-addons' ),
-				'label_off' => esc_html__( 'Hide', 'better-el-addons' ),
+				'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -248,7 +248,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_responsive_control(
             'search_width',
             [
-                'label'         => esc_html__('Width', 'better-el-addons'),
+                'label'         => esc_html__('Width', 'better-elementor-addons'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'default' => [
@@ -266,7 +266,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_responsive_control(
             'search_height',
             [
-                'label'         => esc_html__('Height', 'better-el-addons'),
+                'label'         => esc_html__('Height', 'better-elementor-addons'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'default' => [
@@ -284,7 +284,7 @@ class Better_Header_Search extends Widget_Base {
         $this->add_responsive_control(
             'search_line_height',
             [
-                'label'         => esc_html__('Line Height', 'better-el-addons'),
+                'label'         => esc_html__('Line Height', 'better-elementor-addons'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'default' => [
@@ -302,19 +302,19 @@ class Better_Header_Search extends Widget_Base {
         $this->add_responsive_control(
             'search_icon_text_align',
             [
-                'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+                'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'better-el-addons' ),
+                        'title' => esc_html__( 'Left', 'better-elementor-addons' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'better-el-addons' ),
+                        'title' => esc_html__( 'Center', 'better-elementor-addons' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'better-el-addons' ),
+                        'title' => esc_html__( 'Right', 'better-elementor-addons' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -356,8 +356,8 @@ class Better_Header_Search extends Widget_Base {
 	                    <div>
 	                        <?php $better_unique_id = uniqid('search-form-'); // Use uniqid PHP function for unique ID generation. ?>
 	                        <form role="search" method="get" id="<?php echo esc_attr($better_unique_id); ?>" class="searchform" action="<?php echo esc_url(home_url('/')); ?>">
-	                            <input type="search" class="focus-input" placeholder="<?php echo esc_attr_x('Type search keyword...', 'placeholder', 'better-el-addons'); ?>" value="<?php echo get_search_query(); ?>" name="s">
-	                            <button type="submit" class="searchsubmit" aria-label="<?php esc_attr_e('Search', 'better-el-addons'); ?>"><i class="fa fa-search"></i></button>
+	                            <input type="search" class="focus-input" placeholder="<?php echo esc_attr_x('Type search keyword...', 'placeholder', 'better-elementor-addons'); ?>" value="<?php echo get_search_query(); ?>" name="s">
+	                            <button type="submit" class="searchsubmit" aria-label="<?php esc_attr_e('Search', 'better-elementor-addons'); ?>"><i class="fa fa-search"></i></button>
 	                        </form>
 	                    </div>
 	                </div>

@@ -8,7 +8,13 @@
                             <div class="row">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
-                                        <<?php echo tag_escape($item['title_html_tag']); ?> class="title" data-splitting><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($item['title_html_tag']); ?>>
+                                        <?php
+                                    $allowed_tags = [ 'h1','h2','h3','h4','h5','h6','div','span','p' ];
+                                    $title_tag = in_array( $item['title_html_tag'], $allowed_tags, true )
+                                        ? $item['title_html_tag']
+                                        : 'h1';
+                                        ?>
+                                        <<?php echo tag_escape($title_tag); ?> class="title" data-splitting><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($title_tag); ?>>
                                         <p><?php echo wp_kses_post($item['text']); ?></p>
                                         <?php if (!empty($item['btn_link']['url'])): ?>
                                         <a href="<?php echo esc_url($item['btn_link']['url']); ?>" class="better-btn-curve btn-lit mt-30">

@@ -44,7 +44,7 @@ class Better_Flip_Box extends Widget_Base
      */
     public function get_title()
     {
-        return __('Flip Box', 'BEA');
+        return __('Flip Box', 'better-elementor-addons');
     }
 
     /**
@@ -98,24 +98,24 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'section_settings',
             [
-                'label' => __('Flip Box', 'BEA'),
+                'label' => __('Flip Box', 'better-elementor-addons'),
             ]
         );
         $this->add_control(
 			'flip_box_style',
 			[
-				'label'=> esc_html__('Flip Style', 'BEA'),
+				'label'=> esc_html__('Flip Style', 'better-elementor-addons'),
 				'type'=> \Elementor\Controls_Manager::SELECT,
 				'default' => 'flip-animate',
 				'options'=> [
-					'flip-animate' => esc_html__('Flip', 'BEA'),
-					'slide-animate' => esc_html__('Slide', 'BEA'),
-                    'zoom-animate' => esc_html__('Zoom', 'BEA'),
-                    'flip-3d-animate' => esc_html__('3D', 'BEA'),
-                    'push-animate' => esc_html__('Push', 'BEA'),
-                    'transform-flip-animate' => esc_html__('Transform', 'BEA'),
-                    'fade-animate' => esc_html__('Fade', 'BEA'),
-                    'angle-flip' => esc_html__('Angle ', 'BEA'),
+					'flip-animate' => esc_html__('Flip', 'better-elementor-addons'),
+					'slide-animate' => esc_html__('Slide', 'better-elementor-addons'),
+                    'zoom-animate' => esc_html__('Zoom', 'better-elementor-addons'),
+                    'flip-3d-animate' => esc_html__('3D', 'better-elementor-addons'),
+                    'push-animate' => esc_html__('Push', 'better-elementor-addons'),
+                    'transform-flip-animate' => esc_html__('Transform', 'better-elementor-addons'),
+                    'fade-animate' => esc_html__('Fade', 'better-elementor-addons'),
+                    'angle-flip' => esc_html__('Angle ', 'better-elementor-addons'),
 				],
 			]
 		);
@@ -123,14 +123,14 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_box_direction',
 			[
-				'label' => esc_html__( 'Direction', 'BEA' ),
+				'label' => esc_html__( 'Direction', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'left-to-right',
 				'options' => [
-					'left-to-right'  => esc_html__( 'Left To Right', 'BEA' ),
-					'right-to-left' => esc_html__( 'Right To Left', 'BEA' ),
-					'top-to-bottom' => esc_html__( 'Top To Bottom', 'BEA' ),
-					'bottom-to-top' => esc_html__( 'Bottom To Top', 'BEA' ),
+					'left-to-right'  => esc_html__( 'Left To Right', 'better-elementor-addons' ),
+					'right-to-left' => esc_html__( 'Right To Left', 'better-elementor-addons' ),
+					'top-to-bottom' => esc_html__( 'Top To Bottom', 'better-elementor-addons' ),
+					'bottom-to-top' => esc_html__( 'Bottom To Top', 'better-elementor-addons' ),
 				],
                 'condition' => [
                     'flip_box_style!' => [ 'zoom-animate', 'fade-animate','angle-flip'],
@@ -141,12 +141,12 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_box_zoom_direction',
 			[
-				'label' => esc_html__( 'Direction', 'BEA' ),
+				'label' => esc_html__( 'Direction', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'zoom-up',
 				'options' => [
-                    'zoom-up' => esc_html__( 'Zoom In', 'BEA' ),
-                    'zoom-out' => esc_html__( 'Zoom Out', 'BEA' ),
+                    'zoom-up' => esc_html__( 'Zoom In', 'better-elementor-addons' ),
+                    'zoom-out' => esc_html__( 'Zoom Out', 'better-elementor-addons' ),
 				],
                 'condition' => [
                     'flip_box_style' => 'zoom-animate',
@@ -156,14 +156,14 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_box_angle_direction',
 			[
-				'label' => esc_html__( 'Direction', 'BEA' ),
+				'label' => esc_html__( 'Direction', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'normal',
 				'options' => [
-                    'normal' => esc_html__( 'Normal', 'BEA' ),
-                    'reverse' => esc_html__( 'Reverse', 'BEA' ),
-                    'rotate' => esc_html__( 'Rotate', 'BEA' ),
-                    'rotate-reverse' => esc_html__( 'Reverse Rotate', 'BEA' ),
+                    'normal' => esc_html__( 'Normal', 'better-elementor-addons' ),
+                    'reverse' => esc_html__( 'Reverse', 'better-elementor-addons' ),
+                    'rotate' => esc_html__( 'Rotate', 'better-elementor-addons' ),
+                    'rotate-reverse' => esc_html__( 'Reverse Rotate', 'better-elementor-addons' ),
 				],
                 'condition' => [
                     'flip_box_style' => 'angle-flip',
@@ -178,22 +178,22 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
         
         $this->add_control(
             'front_media_position',
             [
-                'label' => esc_html__( 'Media Position', 'BEA' ),
+                'label' => esc_html__( 'Media Position', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'top' => [
-                        'title' => esc_html__( 'Top', 'BEA' ),
+                        'title' => esc_html__( 'Top', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'bottom' => [
-                        'title' => esc_html__( 'Bottom', 'BEA' ),
+                        'title' => esc_html__( 'Bottom', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -204,20 +204,20 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_media_type', 
             [
-                'label'       => esc_html__( 'Media Type', 'BEA' ),
+                'label'       => esc_html__( 'Media Type', 'better-elementor-addons' ),
                 'type'        => \Elementor\Controls_Manager::CHOOSE,
                 'label_block' => false,
                 'options'     => [
                     'none' => [
-                        'title' => esc_html__( 'None', 'BEA' ),
+                        'title' => esc_html__( 'None', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-ban',
                     ],
                     'icon' => [
-                        'title' => esc_html__( 'Icon', 'BEA' ),
+                        'title' => esc_html__( 'Icon', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-paint-brush',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'BEA' ),
+                        'title' => esc_html__( 'Image', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-image',
                     ],
                 ],
@@ -230,7 +230,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_icon',
             [
-                'label' => esc_html__( 'Icon', 'BEA' ),
+                'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
                 'default' => [
@@ -247,7 +247,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_front_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'BEA' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -273,15 +273,15 @@ class Better_Flip_Box extends Widget_Base
             'flip_front_title',
             [
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'label' => esc_html__( 'Title', 'BEA' ),
-                'default' => esc_html__('BEA Flip Box', 'BEA'),
+                'label' => esc_html__( 'Title', 'better-elementor-addons' ),
+                'default' => esc_html('BEA Flip Box', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
 			'flip_front_title_tag',
 			[
-				'label' => esc_html__( 'Title HTML Tag', 'BEA' ),
+				'label' => esc_html__( 'Title HTML Tag', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -302,8 +302,8 @@ class Better_Flip_Box extends Widget_Base
             'flip_front_sub_title',
             [
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'label' => esc_html__( 'Sub Title', 'BEA' ),
-                'default' => esc_html__('Amazingly on mouse hover', 'BEA'),
+                'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
+                'default' => esc_html('Amazingly on mouse hover', 'better-elementor-addons'),
                 'rows' => 2,
                 'label_block' => true,
             ]
@@ -312,12 +312,12 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_front_description',
 			[
-				'label' => esc_html__( 'Flip Description', 'BEA' ),
+				'label' => esc_html__( 'Flip Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'rows' => 3,
 				'label_block'	 => true,
-				'default'	 => esc_html__( 'A flip box is a box that flips over when you hover over it.', 'BEA' ),
-				'placeholder' => esc_html__( 'Box Description', 'BEA' ),
+				'default'	 => esc_html__( 'A flip box is a box that flips over when you hover over it.', 'better-elementor-addons' ),
+				'placeholder' => esc_html__( 'Box Description', 'better-elementor-addons' ),
 			]
 		);
 
@@ -326,21 +326,21 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'back_media_position',
             [
-                'label' => esc_html__( 'Media Position', 'BEA' ),
+                'label' => esc_html__( 'Media Position', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'top' => [
-                        'title' => esc_html__( 'Top', 'BEA' ),
+                        'title' => esc_html__( 'Top', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'bottom' => [
-                        'title' => esc_html__( 'Bottom', 'BEA' ),
+                        'title' => esc_html__( 'Bottom', 'better-elementor-addons' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -352,20 +352,20 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_media_type', 
             [
-                'label'=> esc_html__( 'Media Type', 'BEA' ),
+                'label'=> esc_html__( 'Media Type', 'better-elementor-addons' ),
                 'type'=> Controls_Manager::CHOOSE,
                 'label_block' => false,
                 'options'=> [
                     'none' => [
-                        'title' => esc_html__( 'None', 'BEA' ),
+                        'title' => esc_html__( 'None', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-ban',
                     ],
                     'icon' => [
-                        'title' => esc_html__( 'Icon', 'BEA' ),
+                        'title' => esc_html__( 'Icon', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-paint-brush',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'BEA' ),
+                        'title' => esc_html__( 'Image', 'better-elementor-addons' ),
                         'icon'  => 'fa fa-image',
                     ],
                 ],
@@ -377,7 +377,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_icon',
             [
-                'label' => esc_html__( 'Icon', 'BEA' ),
+                'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
                 'label_block' => true,
@@ -390,7 +390,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_back_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'BEA' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -416,15 +416,15 @@ class Better_Flip_Box extends Widget_Base
             'flip_back_title',
             [
                 'type' => Controls_Manager::TEXT,
-                'label' => esc_html__( 'Title', 'BEA' ),
-                'default' => esc_html__('BEA-LIP', 'BEA'),
+                'label' => esc_html__( 'Title', 'better-elementor-addons' ),
+                'default' => esc_html('BEA-LIP', 'better-elementor-addons'),
             ]
         );
 
         $this->add_control(
 			'flip_back_title_tag',
 			[
-				'label' => esc_html__( 'Title HTML Tag', 'BEA' ),
+				'label' => esc_html__( 'Title HTML Tag', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -445,8 +445,8 @@ class Better_Flip_Box extends Widget_Base
             'flip_back_sub_title',
             [
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'label' => esc_html__( 'Sub Title', 'BEA' ),
-                'default' => esc_html__('Create Your Website', 'BEA'),
+                'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
+                'default' => esc_html('Create Your Website', 'better-elementor-addons'),
                 'rows' => 2,
                 'label_block' => true,
             ]
@@ -455,11 +455,11 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'flip_back_description',
 			[
-				'label' => esc_html__( 'Flip Description', 'BEA' ),
+				'label' => esc_html__( 'Flip Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'rows' => 3,
 				'label_block'=> true,
-				'placeholder' => esc_html__( 'Title Description', 'BEA' ),
+				'placeholder' => esc_html__( 'Title Description', 'better-elementor-addons' ),
 			]
 		);
 
@@ -477,16 +477,16 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'button_section',
             [
-                'label' => __('Button', 'BEA'),
+                'label' => __('Button', 'better-elementor-addons'),
             ]
         );
         $this->add_control(
             'show_button',
             [
-                'label' => esc_html__( 'Read More', 'BEA' ),
+                'label' => esc_html__( 'Read More', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'BEA' ),
-                'label_off' => esc_html__( 'Hide', 'BEA' ),
+                'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -494,10 +494,10 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button_text',
             [
-                'label' => esc_html__( 'Text', 'BEA' ),
+                'label' => esc_html__( 'Text', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => esc_html__( 'Show More', 'BEA' ),
-                'placeholder' => esc_html__( 'Type your button text', 'BEA' ),
+                'default' => esc_html( 'Show More', 'better-elementor-addons' ),
+                'placeholder' => esc_html__( 'Type your button text', 'better-elementor-addons' ),
                 'condition' => [
                     'show_button' => 'yes',
                 ],
@@ -506,7 +506,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'box_link',
             [
-                'label' => esc_html__( 'Box Link', 'BEA' ),
+                'label' => esc_html__( 'Box Link', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::URL,
                 'options' => [ 'url', 'is_external', 'nofollow' ],
                 'label_block' => true,
@@ -523,10 +523,10 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'show_button_icon',
             [
-                'label' => esc_html__( 'Icon', 'BEA' ),
+                'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'BEA' ),
-                'label_off' => esc_html__( 'Hide', 'BEA' ),
+                'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
                 'return_value' => 'yes',
                 'default' => '',
                 'condition' => [
@@ -537,7 +537,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button_icon',
             [
-                'label' => esc_html__('Icon', 'BEA'),
+                'label' => esc_html__('Icon', 'better-elementor-addons'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'icon',
                 'label_block' => false,
@@ -552,7 +552,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'icon_indent',
 			[
-				'label' => esc_html__('Icon Spacing', 'BEA'),
+				'label' => esc_html__('Icon Spacing', 'better-elementor-addons'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -576,10 +576,10 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'animated_button',
             [
-                'label' => esc_html__( 'Animated Button', 'BEA' ),
+                'label' => esc_html__( 'Animated Button', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'on', 'BEA' ),
-                'label_off' => esc_html__( 'off', 'BEA' ),
+                'label_on' => esc_html__( 'on', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'off', 'better-elementor-addons' ),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'condition' => [
@@ -597,16 +597,16 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'social_links_section',
             [
-                'label' => __('Social links', 'BEA'),
+                'label' => __('Social links', 'better-elementor-addons'),
             ]
         );
         $this->add_control(
             'show_social_links',
             [
-                'label' => esc_html__( 'Social Links', 'BEA' ),
+                'label' => esc_html__( 'Social Links', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'BEA' ),
-                'label_off' => esc_html__( 'Hide', 'BEA' ),
+                'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+                'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -615,7 +615,7 @@ class Better_Flip_Box extends Widget_Base
         $repeater->add_control(
 			'social_links_icon',
 			[
-				'label' => esc_html__( 'Icon', 'BEA' ),
+				'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'fa4compatibility' => 'social',
                 'recommended' => [
@@ -691,7 +691,7 @@ class Better_Flip_Box extends Widget_Base
         $repeater->add_control(
 			'social_links_icon_link',
 			[
-				'label' => esc_html__( 'Link', 'BEA' ),
+				'label' => esc_html__( 'Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'default' => [
 					'is_external' => 'true',
@@ -702,7 +702,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
 			'social_links_list',
 			[
-				'label' => esc_html__( 'Items', 'BEA' ),
+				'label' => esc_html__( 'Items', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'title_field' => '<# var migrated = "undefined" !== typeof __fa4_migrated, social = ( "undefined" === typeof social ) ? false : social; #>{{{ elementor.helpers.getSocialNetworkNameFromIcon( social_links_icon, social, true, migrated, true ) }}}',
@@ -740,7 +740,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_box_layout_style',
             [
-                'label' => esc_html__( 'Wrapper', 'BEA' ),
+                'label' => esc_html__( 'Wrapper', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -748,7 +748,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_height',
             [
-                'label' => esc_html__( 'Flip Box Height', 'BEA' ),
+                'label' => esc_html__( 'Flip Box Height', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -776,26 +776,26 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_box_front_bg_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
 			'flip_box_front_align',
 			[
-				'label' => esc_html__( 'Alignment', 'BEA' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'BEA' ),
+						'title' => esc_html__( 'Left', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'BEA' ),
+						'title' => esc_html__( 'Center', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'BEA' ),
+						'title' => esc_html__( 'Right', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -809,19 +809,19 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_front_justify',
             [
-                'label' => __('Vertical Alignment', 'BEA'),
+                'label' => __('Vertical Alignment', 'better-elementor-addons'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => __('top', 'BEA'),
+                        'title' => __('top', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => __('Center', 'BEA'),
+                        'title' => __('Center', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'flex-end' => [
-                        'title' => __('Bottom', 'BEA'),
+                        'title' => __('Bottom', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -834,7 +834,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'flip_box_front_bg',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => [ 'classic', 'gradient'],
                 'exclude' => ['video'],
                 'selector' => '{{WRAPPER}} .bea-flip-box-front',
@@ -853,7 +853,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name' => 'flip_box_front_border_group',
-                'label' => esc_html__( 'Border', 'BEA' ),
+                'label' => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector' => '{{WRAPPER}} .bea-wid-con .bea-flip-box-inner .bea-flip-box-front',
             ]
         );
@@ -861,7 +861,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_front_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ,'custom' ],
                 'default' => [
@@ -879,7 +879,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_front_padding',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default' =>     [
@@ -900,26 +900,26 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_box_back_bg_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
 			'flip_box_back_align',
 			[
-				'label' => esc_html__( 'Alignment', 'BEA' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'BEA' ),
+						'title' => esc_html__( 'Left', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'BEA' ),
+						'title' => esc_html__( 'Center', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'BEA' ),
+						'title' => esc_html__( 'Right', 'better-elementor-addons' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -933,19 +933,19 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_back_justify',
             [
-                'label' => __('Vertical Alignment', 'BEA'),
+                'label' => __('Vertical Alignment', 'better-elementor-addons'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => __('top', 'BEA'),
+                        'title' => __('top', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => __('Center', 'BEA'),
+                        'title' => __('Center', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'flex-end' => [
-                        'title' => __('Bottom', 'BEA'),
+                        'title' => __('Bottom', 'better-elementor-addons'),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -960,7 +960,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'flip_box_back_bg',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => [ 'classic', 'gradient'],
                 'exclude' => ['video'],
                 'selector' => '{{WRAPPER}} .bea-flip-box-back',
@@ -978,7 +978,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name' => 'flip_box_back_border_group',
-                'label' => esc_html__( 'Border', 'BEA' ),
+                'label' => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector' => '{{WRAPPER}} .bea-wid-con .bea-flip-box-inner .bea-flip-box-back',
             ]
         );
@@ -986,7 +986,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_back_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ,'custom' ],
                 'default' => [
@@ -1003,7 +1003,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_box_back_padding',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default' =>[
@@ -1026,7 +1026,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_icon_style',
             [
-                'label' => esc_html__( 'Icon', 'BEA' ),
+                'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'conditions' => [
                     'relation' => 'or',
@@ -1053,14 +1053,14 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_icon_front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'flip_front_icon_size',
             [
-                'label'=> esc_html__('Icon Font Size', 'BEA'),
+                'label'=> esc_html__('Icon Font Size', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -1084,7 +1084,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_icon_color', 
             [
-                'label' => esc_html__('Color', 'BEA'),
+                'label' => esc_html__('Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .front-icon i' => 'color: {{VALUE}};',
@@ -1097,7 +1097,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'flip_front_icon_style_bg_group',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => [ 'classic', 'gradient'],
                 'exclude' => [ 'image'],
                 'selector' => '{{WRAPPER}} .bea-flip-box .front-icon',
@@ -1108,14 +1108,14 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name' => 'flip_front_icon_border',
-                'label' => esc_html__( 'Border', 'BEA' ),
+                'label' => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector' => '{{WRAPPER}} .bea-flip-box .front-icon',
             ]
         );
         $this->add_responsive_control(
             'flip_front_icon_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' =>[ 'px', '%','rem', 'custom' ],
                 'default' => [
@@ -1134,7 +1134,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_icon_padding',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default' =>     [
@@ -1153,7 +1153,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_icon_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'default'    => [
@@ -1178,14 +1178,14 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_icon_back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'flip_back_icon_size',
             [
-                'label'=> esc_html__('Icon Font Size', 'BEA'),
+                'label'=> esc_html__('Icon Font Size', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -1209,7 +1209,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_icon_color', 
             [
-                'label' => esc_html__('Color', 'BEA'),
+                'label' => esc_html__('Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .back-icon i' => 'color: {{VALUE}};',
@@ -1222,7 +1222,7 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'flip_back_icon_style_bg_group',
-                'label' => esc_html__( 'Background', 'BEA' ),
+                'label' => esc_html__( 'Background', 'better-elementor-addons' ),
                 'types' => [ 'classic', 'gradient'],
                 'exclude' => [ 'image'],
                 'selector' => '{{WRAPPER}} .bea-flip-box .back-icon',
@@ -1233,14 +1233,14 @@ class Better_Flip_Box extends Widget_Base
             \Elementor\Group_Control_Border::get_type(),
             [
                 'name' => 'flip_back_icon_border',
-                'label' => esc_html__( 'Border', 'BEA' ),
+                'label' => esc_html__( 'Border', 'better-elementor-addons' ),
                 'selector' => '{{WRAPPER}} .bea-flip-box .back-icon',
             ]
         );
         $this->add_responsive_control(
             'flip_back_icon_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default' => [
@@ -1259,7 +1259,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_icon_padding',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default' =>     [
@@ -1278,7 +1278,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_icon_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'default'    => [
@@ -1303,7 +1303,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_image_style',
             [
-                'label' => esc_html__( 'Image', 'BEA' ),
+                'label' => esc_html__( 'Image', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1316,14 +1316,14 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_image_front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'flip_front_image_width',
             [
-                'label'=> esc_html__('Width', 'BEA'),
+                'label'=> esc_html__('Width', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range'      => [
@@ -1345,7 +1345,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_image_height',
             [
-                'label'=> esc_html__('Height', 'BEA'),
+                'label'=> esc_html__('Height', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range'      => [
@@ -1363,7 +1363,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_image_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1375,7 +1375,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_image_padding',
             [
-                'label'=> esc_html__('Padding', 'BEA'),
+                'label'=> esc_html__('Padding', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -1390,14 +1390,14 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_image_back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
 
         $this->add_control(
             'flip_back_image_width',
             [
-                'label'=> esc_html__('Width', 'BEA'),
+                'label'=> esc_html__('Width', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range'      => [
@@ -1419,7 +1419,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_image_height',
             [
-                'label'=> esc_html__('Height', 'BEA'),
+                'label'=> esc_html__('Height', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range'      => [
@@ -1437,7 +1437,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_image_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1449,7 +1449,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_image_padding',
             [
-                'label'=> esc_html__('Padding', 'BEA'),
+                'label'=> esc_html__('Padding', 'better-elementor-addons'),
                 'type'=> \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors'  => [
@@ -1466,7 +1466,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_title_style',
             [
-                'label' => esc_html__( 'Title', 'BEA' ),
+                'label' => esc_html__( 'Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1479,7 +1479,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_title_front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
 
@@ -1493,7 +1493,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_title_color', 
             [
-                'label' => esc_html__('Title Color', 'BEA'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .front-title' => 'color: {{VALUE}};',
@@ -1504,7 +1504,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1528,7 +1528,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_title_back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
 
@@ -1542,7 +1542,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_title_color', 
             [
-                'label' => esc_html__('Title Color', 'BEA'),
+                'label' => esc_html__('Title Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .back-title' => 'color: {{VALUE}};',
@@ -1553,7 +1553,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1583,7 +1583,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_sub_title_style',
             [
-                'label' => esc_html__( 'Sub Title', 'BEA' ),
+                'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1596,7 +1596,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_sub_title_front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
 
@@ -1610,7 +1610,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_sub_title_color', 
             [
-                'label' => esc_html__('Text Color', 'BEA'),
+                'label' => esc_html__('Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .front-sub-title' => 'color: {{VALUE}};',
@@ -1621,7 +1621,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_sub_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1645,7 +1645,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_sub-title_back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
 
@@ -1659,7 +1659,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_sub_title_color', 
             [
-                'label' => esc_html__('Text Color', 'BEA'),
+                'label' => esc_html__('Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .back-sub-title' => 'color: {{VALUE}};',
@@ -1670,7 +1670,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_sub_title_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1697,7 +1697,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'flip_description_style',
             [
-                'label' => esc_html__( 'Description', 'BEA' ),
+                'label' => esc_html__( 'Description', 'better-elementor-addons' ),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1710,13 +1710,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_description_front_tab',
             [
-                'label' => esc_html__( 'Front', 'BEA' ),
+                'label' => esc_html__( 'Front', 'better-elementor-addons' ),
             ]
         );
         $this->add_responsive_control(
             'flip_description_front_width',
             [
-                'label' => esc_html__( 'Wrapper Width', 'BEA' ),
+                'label' => esc_html__( 'Wrapper Width', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -1750,7 +1750,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_front_description_color', 
             [
-                'label' => esc_html__('Text Color', 'BEA'),
+                'label' => esc_html__('Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .front-description' => 'color: {{VALUE}};',
@@ -1761,7 +1761,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_front_description_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1785,13 +1785,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'flip_description_back_tab',
             [
-                'label' => esc_html__( 'Back', 'BEA' ),
+                'label' => esc_html__( 'Back', 'better-elementor-addons' ),
             ]
         );
         $this->add_responsive_control(
             'flip_description_back_width',
             [
-                'label' => esc_html__( 'Wrapper Width', 'BEA' ),
+                'label' => esc_html__( 'Wrapper Width', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'range' => [
@@ -1825,7 +1825,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'flip_back_description_color', 
             [
-                'label' => esc_html__('Text Color', 'BEA'),
+                'label' => esc_html__('Text Color', 'better-elementor-addons'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .bea-flip-box .back-description' => 'color: {{VALUE}};',
@@ -1836,7 +1836,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'flip_back_description_margin',
             [
-                'label'      => esc_html__('Margin', 'BEA'),
+                'label'      => esc_html__('Margin', 'better-elementor-addons'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1861,7 +1861,7 @@ class Better_Flip_Box extends Widget_Base
          $this->start_controls_section(
             'button_section_style',
             [
-                'label' => __('Button', 'BEA'),
+                'label' => __('Button', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'show_button' => 'yes',
@@ -1879,7 +1879,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button-icon-size',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1907,13 +1907,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'btn_normal_tab',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'button_color',
             [
-                'label' => esc_html__( 'Text Color', 'BEA' ),
+                'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors' => [
@@ -1924,7 +1924,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button_icon_color',
             [
-                'label' => esc_html__( 'icon Color', 'BEA' ),
+                'label' => esc_html__( 'icon Color', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors' => [
@@ -1958,7 +1958,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button-border-radius',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -1977,7 +1977,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'button-padding',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' =>[ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -1988,7 +1988,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'button-margin',
             [
-                'label' => esc_html__( 'Margin', 'BEA' ),
+                'label' => esc_html__( 'Margin', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'default'    => [
@@ -2012,13 +2012,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'btn_hover_tab',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'button_color_hover',
             [
-                'label' => esc_html__( 'Text Color', 'BEA' ),
+                'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
                 'default' => "#000",
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
@@ -2029,7 +2029,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button_icon_color_hover',
             [
-                'label' => esc_html__( 'icon Color', 'BEA' ),
+                'label' => esc_html__( 'icon Color', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors' => [
@@ -2063,7 +2063,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'button-border-radius-hover',
             [
-                'label' => esc_html__( 'Border Radius', 'BEA' ),
+                'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
               
@@ -2075,7 +2075,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'button-padding-hover',
             [
-                'label' => esc_html__( 'Padding', 'BEA' ),
+                'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                
@@ -2087,7 +2087,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'button-margin-hover',
             [
-                'label' => esc_html__( 'Margin', 'BEA' ),
+                'label' => esc_html__( 'Margin', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -2102,7 +2102,7 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_section(
             'social_links_style_section',
             [
-                'label' => __('Social links', 'BEA'),
+                'label' => __('Social links', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'show_social_links' => 'yes',
@@ -2119,13 +2119,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'social_links_normal_tab',
             [
-                'label' => esc_html__( 'Normal', 'BEA' ),
+                'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'social_links-icon-size',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -2148,7 +2148,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'social_links_icon_color',
             [
-                'label' => esc_html__( 'Color', 'BEA' ),
+                'label' => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors' => [
@@ -2165,13 +2165,13 @@ class Better_Flip_Box extends Widget_Base
         $this->start_controls_tab(
             'social_links_hover_tab',
             [
-                'label' => esc_html__( 'Hover', 'BEA' ),
+                'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
             ]
         );
         $this->add_control(
             'social_links-icon-size-hover',
             [
-                'label' => esc_html__( 'icon Size', 'BEA' ),
+                'label' => esc_html__( 'icon Size', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -2194,7 +2194,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_control(
             'social_links_icon_color-hover',
             [
-                'label' => esc_html__( 'Color', 'BEA' ),
+                'label' => esc_html__( 'Color', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => "#000",
                 'selectors' => [
@@ -2211,7 +2211,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'social_links_margin_wrapper',
             [
-                'label' => esc_html__( 'Wrapper Margin', 'BEA' ),
+                'label' => esc_html__( 'Wrapper Margin', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'separator' => 'before',
@@ -2223,7 +2223,7 @@ class Better_Flip_Box extends Widget_Base
         $this->add_responsive_control(
             'social_links_margin_item',
             [
-                'label' => esc_html__( 'Items Margin', 'BEA' ),
+                'label' => esc_html__( 'Items Margin', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%','rem', 'custom' ],
                 'selectors' => [
@@ -2275,7 +2275,7 @@ class Better_Flip_Box extends Widget_Base
                                     <?php endif;
                                     if($settings['flip_front_media_type']== "image"):?>
                                         <div class="front-image">
-                                            <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_front_thumbnail', 'flip_front_image' );?>
+                                            <?php echo wp_kses_post( \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_front_thumbnail', 'flip_front_image' ) ); ?>
                                         </div>
                                     <?php endif;
                                 endif;
@@ -2298,7 +2298,7 @@ class Better_Flip_Box extends Widget_Base
                                     <?php endif;
                                     if($settings['flip_front_media_type']== "image"):?>
                                         <div class="front-image">
-                                            <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_front_thumbnail', 'flip_front_image' );?>
+                                            <?php echo wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_front_thumbnail', 'flip_front_image' ));?>
                                         </div>
                                     <?php endif;
                                 endif; ?>
@@ -2316,7 +2316,7 @@ class Better_Flip_Box extends Widget_Base
                                         <?php endif;
                                         if($settings['flip_back_media_type']== "image"):?>
                                             <div class="back-image">
-                                                <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_back_thumbnail', 'flip_back_image' );?>
+                                                <?php echo wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_back_thumbnail', 'flip_back_image' ));?>
                                             </div>
                                         <?php endif;
                                     endif;
@@ -2339,7 +2339,7 @@ class Better_Flip_Box extends Widget_Base
                                         <?php endif;
                                         if($settings['flip_back_media_type']== "image"):?>
                                             <div class="back-image">
-                                                <?php echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_back_thumbnail', 'flip_back_image' );?>
+                                                <?php echo wp_kses_post(\Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'flip_back_thumbnail', 'flip_back_image' ));?>
                                             </div>
                                         <?php endif;
                                     endif; 

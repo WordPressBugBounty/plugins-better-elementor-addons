@@ -37,7 +37,7 @@ class Better_Showcase extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Showcase', 'better-el-addons' );
+		return __( 'Showcase', 'better-elementor-addons' );
 	}
 
     //script depend
@@ -89,7 +89,7 @@ class Better_Showcase extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Showcase Settings', 'better-el-addons' ),
+				'label' => __( 'Showcase Settings', 'better-elementor-addons' ),
 			]
 		);
 
@@ -97,18 +97,18 @@ class Better_Showcase extends Widget_Base {
 
 		$repeater->add_control(
 			'title', [
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Title' , 'better-el-addons' ),
+				'default' => esc_html( 'List Title' , 'better-elementor-addons' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'subtitle', [
-				'label' => esc_html__( 'Sub-Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Content' , 'better-el-addons' ),
+				'default' => esc_html( 'List Content' , 'better-elementor-addons' ),
 				'show_label' => true,
                 'label_block' => true,
 			]
@@ -116,18 +116,18 @@ class Better_Showcase extends Widget_Base {
 
         $repeater->add_control(
 			'link', [
-				'label' => esc_html__( 'Link', 'better-el-addons' ),
+				'label' => esc_html__( 'Link', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__( 'Add your link here..' , 'better-el-addons' ),
+				'placeholder' => esc_html__( 'Add your link here..' , 'better-elementor-addons' ),
 				'show_label' => false,
 			]
 		);
 
 		$repeater->add_control(
 			'btn_text', [
-				'label' => esc_html__( 'Button Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Text', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'Explore <br> More' , 'better-el-addons' ),
+				'default' => __( 'Explore <br> More' , 'better-elementor-addons' ),
 				'show_label' => true,
                 'label_block' => true,
 			]
@@ -135,9 +135,9 @@ class Better_Showcase extends Widget_Base {
 
         $repeater->add_control(
 			'image', [
-				'label' => esc_html__( 'Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => esc_html__( 'List Content' , 'better-el-addons' ),
+				'default' => esc_html( 'List Content' , 'better-elementor-addons' ),
 				'default' => [
                     'url' => Utils::get_placeholder_image_src(),
                 ],
@@ -147,19 +147,19 @@ class Better_Showcase extends Widget_Base {
 		$this->add_control(
 			'showcase_list',
 			[
-				'label' => esc_html__( 'Showcase List', 'better-el-addons' ),
+				'label' => esc_html__( 'Showcase List', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'title' => esc_html__( 'Title', 'better-el-addons' ),
-						'subtitle' => esc_html__( 'Sub Title', 'better-el-addons' ),
-						'btn_text' => __( 'Explore <br> More', 'better-el-addons' ),
+						'title' => esc_html__( 'Title', 'better-elementor-addons' ),
+						'subtitle' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
+						'btn_text' => __( 'Explore <br> More', 'better-elementor-addons' ),
 					],
 					[
-						'title' => esc_html__( 'Title', 'better-el-addons' ),
-						'subtitle' => esc_html__( 'Sub Title', 'better-el-addons' ),
-						'btn_text' => __( 'Explore <br> More', 'better-el-addons' ),
+						'title' => esc_html__( 'Title', 'better-elementor-addons' ),
+						'subtitle' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
+						'btn_text' => __( 'Explore <br> More', 'better-elementor-addons' ),
 					],
 				],
 				'title_field' => '{{{ title }}}',
@@ -169,10 +169,10 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'show_dots',
 			[
-				'label' => esc_html__( 'Show Dots', 'better-el-addons' ),
+				'label' => esc_html__( 'Show Dots', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'better-el-addons' ),
-				'label_off' => esc_html__( 'Hide', 'better-el-addons' ),
+				'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -181,10 +181,10 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'show_nav_btn',
 			[
-				'label' => esc_html__( 'Show Nav Buttons', 'better-el-addons' ),
+				'label' => esc_html__( 'Show Nav Buttons', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'better-el-addons' ),
-				'label_off' => esc_html__( 'Hide', 'better-el-addons' ),
+				'label_on' => esc_html__( 'Show', 'better-elementor-addons' ),
+				'label_off' => esc_html__( 'Hide', 'better-elementor-addons' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -193,10 +193,10 @@ class Better_Showcase extends Widget_Base {
 		$this->add_control(
 			'nav_prev',
 			[
-				'label' => __( 'Previous','better-el-addons' ),
+				'label' => __( 'Previous', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Prev Slide', 'better-el-addons' ),
+				'default' => __( 'Prev Slide', 'better-elementor-addons' ),
 				'condition' => [
                     'show_nav_btn' => 'yes'
 				],
@@ -206,10 +206,10 @@ class Better_Showcase extends Widget_Base {
 		$this->add_control(
 			'nav_next',
 			[
-				'label' => __( 'Next','better-el-addons' ),
+				'label' => __( 'Next', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Next Slide', 'better-el-addons' ),
+				'default' => __( 'Next Slide', 'better-elementor-addons' ),
 				'condition' => [
                     'show_nav_btn' => 'yes'
 				],
@@ -221,7 +221,7 @@ class Better_Showcase extends Widget_Base {
         $this->start_controls_section(
 			'content_style_section',
 			[
-				'label' => __( 'Content Style', 'better-el-addons' ),
+				'label' => __( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -230,7 +230,7 @@ class Better_Showcase extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_title_typography',
-				'label' => esc_html__( 'title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption h1 .stroke',
 			]
 		);
@@ -238,7 +238,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				    '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption h1 .stroke' => 'color: {{VALUE}}',
@@ -250,7 +250,7 @@ class Better_Showcase extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_subtitle_typography',
-				'label' => esc_html__( 'Sub-title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption h1 span',
 			]
 		);
@@ -258,7 +258,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_subtitle_color',
 			[
-				'label' => esc_html__( 'Sub-Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				    '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption h1  span' => 'color: {{VALUE}}',
@@ -271,7 +271,7 @@ class Better_Showcase extends Widget_Base {
         $this->start_controls_section(
 			'nav_style_section',
 			[
-				'label' => __( 'Navigation Style', 'better-el-addons' ),
+				'label' => __( 'Navigation Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -280,7 +280,7 @@ class Better_Showcase extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_arrow_typography',
-				'label' => esc_html__( 'arrow Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'arrow Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-prev, {{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-next',
 			]
 		);
@@ -288,7 +288,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_arrow_color',
 			[
-				'label' => esc_html__( 'Arrow Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Arrow Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				    '{{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-prev, {{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-next' => 'color: {{VALUE}}',
@@ -299,7 +299,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_arrow_icon_color',
 			[
-				'label' => esc_html__( 'Arrow Icon Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Arrow Icon Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				    '{{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-prev i, {{WRAPPER}} .better-showcase.style-0 .txt-botm .swiper-nav-ctrl.swiper-button-next i' => 'color: {{VALUE}}',
@@ -310,7 +310,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_icon_size',
 			[
-				'label' => esc_html__( 'Icon Size', 'better-el-addons' ),
+				'label' => esc_html__( 'Icon Size', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -331,7 +331,7 @@ class Better_Showcase extends Widget_Base {
         $this->start_controls_section(
 			'button_style_section',
 			[
-				'label' => __( 'Button Style', 'better-el-addons' ),
+				'label' => __( 'Button Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -340,7 +340,7 @@ class Better_Showcase extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_button_typography',
-				'label' => esc_html__( 'Button Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption .discover span',
 			]
 		);
@@ -348,7 +348,7 @@ class Better_Showcase extends Widget_Base {
         $this->add_control(
 			'better_button_color',
 			[
-				'label' => esc_html__( 'Button Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				    '{{WRAPPER}} .better-showcase.style-0 .parallax-slider .caption .discover span' => 'color: {{VALUE}}',

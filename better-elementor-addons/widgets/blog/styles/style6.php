@@ -24,9 +24,9 @@
                         <!-- Escape the URL and title for secure output -->
                         <p><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></p>  
                         <span class="date gr-text">
-                            <?php 
+                            <?php echo esc_html(get_the_excerpt());
                             // Properly escaped date output
-                            echo esc_html(get_the_date(__('d M Y'))); 
+                            echo esc_html(get_the_date('d M Y')); 
                             ?>
                         </span>
                     </div>

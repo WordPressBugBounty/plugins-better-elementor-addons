@@ -28,7 +28,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		return 'better-image-box-slider';
 	}
 		//script depend
-	public function get_script_depends() { return [ 'better-slick','better-imgbox-slider', 'better-el-addons' ]; }
+	public function get_script_depends() { return [ 'better-slick','better-imgbox-slider', 'better-elementor-addons' ]; }
 
 	/**
 	 * Retrieve the widget title.
@@ -40,7 +40,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'image slider', 'better-el-addons' );
+		return __( 'image slider', 'better-elementor-addons' );
 	}
 
 	/**
@@ -88,17 +88,17 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Image-box Settings', 'better-el-addons' ),
+				'label' => __( 'Image-box Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'box_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'style1' => __( 'Style 1', 'better-el-addons' ),
+					'style1' => __( 'Style 1', 'better-elementor-addons' ),
 				],
 				'default' => 'style1',
 			]
@@ -107,7 +107,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'imgbox_list',
 			[
-				'label' => __( 'Image-box List', 'better-el-addons' ),
+				'label' => __( 'Image-box List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
@@ -126,22 +126,22 @@ class Better_Image_Box_Slider extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Image-box Title', 'better-el-addons' ),
+						'label' => __( 'Image-box Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Image-box Title', 'better-el-addons' ),
+						'placeholder' => __( 'Image-box Title', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'price',
-						'label' => __( 'Image-box Price', 'better-el-addons' ),
+						'label' => __( 'Image-box Price', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Image-box Price', 'better-el-addons' ),
+						'placeholder' => __( 'Image-box Price', 'better-elementor-addons' ),
 					],
 					
 					[
 						'name' => 'image',
-						'label' => __( 'Image', 'better-el-addons' ),
+						'label' => __( 'Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -149,72 +149,72 @@ class Better_Image_Box_Slider extends Widget_Base {
 					],
 					[
 						'name' => 'tags',
-						'label' => __( 'Tags', 'better-el-addons' ),
+						'label' => __( 'Tags', 'better-elementor-addons' ),
 						'type' => Controls_Manager::SELECT,
 						'options' => [
-							'tag_1' => __( 'Tag 1', 'better-el-addons' ),
-							'tag_2' => __( 'Tag 2', 'better-el-addons' ),
-							'tag_3' => __( 'Tag 3', 'better-el-addons' ),
+							'tag_1' => __( 'Tag 1', 'better-elementor-addons' ),
+							'tag_2' => __( 'Tag 2', 'better-elementor-addons' ),
+							'tag_3' => __( 'Tag 3', 'better-elementor-addons' ),
 		
 						],
 						'default' => '',
 					],
 					[
 						'name' => 'tag_text_1',
-						'label' => __( 'Tag text', 'better-el-addons' ),
+						'label' => __( 'Tag text', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Text', 'better-el-addons' ),
+						'placeholder' => __( 'Text', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_1'
 						]
 					],
 					[
 						'name' => 'tag_link_1',
-						'label' => __( 'Tag Link', 'better-el-addons' ),
+						'label' => __( 'Tag Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Link', 'better-el-addons' ),
+						'placeholder' => __( 'Link', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_1'
 						]
 					],
 					[
 						'name' => 'tag_text_2',
-						'label' => __( 'Tag text', 'better-el-addons' ),
+						'label' => __( 'Tag text', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Text', 'better-el-addons' ),
+						'placeholder' => __( 'Text', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_2'
 						]
 					],
 					[
 						'name' => 'tag_link_2',
-						'label' => __( 'Tag Link', 'better-el-addons' ),
+						'label' => __( 'Tag Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Link', 'better-el-addons' ),
+						'placeholder' => __( 'Link', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_2'
 						]
 					],
 					[
 						'name' => 'tag_text_3',
-						'label' => __( 'Tag text', 'better-el-addons' ),
+						'label' => __( 'Tag text', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Text', 'better-el-addons' ),
+						'placeholder' => __( 'Text', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_3'
 						]
 					],
 					[
 						'name' => 'tag_link_3',
-						'label' => __( 'Tag Link', 'better-el-addons' ),
+						'label' => __( 'Tag Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Link', 'better-el-addons' ),
+						'placeholder' => __( 'Link', 'better-elementor-addons' ),
 						'condition'	=> [
 							'tags'	=> 'tag_3'
 						]
@@ -227,11 +227,11 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'show_arrows',
 			[
-				'label' => __( 'Arrows','better-el-addons' ),
+				'label' => __( 'Arrows', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'true' => __( 'Show','better-el-addons' ),
-					'false' => __( 'Hide','better-el-addons' ),
+					'true' => __( 'Show', 'better-elementor-addons' ),
+					'false' => __( 'Hide', 'better-elementor-addons' ),
 				],
 				'default' => 'false',
 				'condition' => [
@@ -245,7 +245,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'title_settting',
 			[
-				'label' => __( 'Text Setting','better-el-addons' ),
+				'label' => __( 'Text Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -253,7 +253,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -266,7 +266,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'title_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-img-box-slider .h6',
 			]
 		);
@@ -277,7 +277,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'tags_settings',
 			[
-				'label' => __( 'Tags Setting','better-el-addons' ),
+				'label' => __( 'Tags Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -285,7 +285,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'tags_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -298,7 +298,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'tags_typography',
-				'label'     => __( 'Tags Typography', 'better-el-addons' ),
+				'label'     => __( 'Tags Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-img-box-slider .tags a',
 			]
 		);
@@ -308,7 +308,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'price_settting',
 			[
-				'label' => __( 'Price Setting','better-el-addons' ),
+				'label' => __( 'Price Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -316,7 +316,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'price_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -329,7 +329,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'price_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-img-box-slider .price',
 			]
 		);
@@ -340,7 +340,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'item_settting',
 			[
-				'label' => __( 'Item Setting','better-el-addons' ),
+				'label' => __( 'Item Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -348,7 +348,7 @@ class Better_Image_Box_Slider extends Widget_Base {
 		$this->add_control(
 			'border_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -360,7 +360,7 @@ class Better_Image_Box_Slider extends Widget_Base {
         $this->add_control(
 			'background_color',
 			[
-				'label' => __( 'Background Color', 'better-el-addons' ),
+				'label' => __( 'Background Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

@@ -43,7 +43,7 @@ class Better_About extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'About', 'better-el-addons' );
+		return __( 'About', 'better-elementor-addons' );
 	}
 
 	/**
@@ -92,18 +92,18 @@ class Better_About extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Section Style', 'bim_plg' ),
+				'label' => __( 'Section Style', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'better_about_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -114,37 +114,37 @@ class Better_About extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'About Settings', 'bim_plg' ),
+				'label' => __( 'About Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
-                'placeholder' => esc_html__( 'Enter your title', 'better-el-addons' ),
-				'default' => esc_html__('We Make Creative Solutions', 'better-el-addons' ),
+                'placeholder' => esc_html__( 'Enter your title', 'better-elementor-addons' ),
+				'default' => esc_html('We Make Creative Solutions', 'better-elementor-addons' ),
 			]
         );
 
 		$this->add_control(
 			'section_subtitle',
 			[
-				'label' => esc_html__( 'Sub-Title Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::WYSIWYG,
-                'placeholder' => esc_html__( 'Enter your sub-title', 'better-el-addons' ),
-                'default' => esc_html__('Quisque massa ipsum, luctus at tempus eleifend congue quis
+                'placeholder' => esc_html__( 'Enter your sub-title', 'better-elementor-addons' ),
+                'default' => esc_html('Quisque massa ipsum, luctus at tempus eleifend congue quis
 				lectus. Morbi bibendum nisl id
 				porttitor ultrices odio elit vestibulum metus, ac semper velit quam sed nulla aenean eu
-				hendreritt.', 'better-el-addons' )
+				hendreritt.', 'better-elementor-addons' )
 			]
 		);
 
 		$this->add_control(
 			'image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => esc_url(\Elementor\Utils::get_placeholder_image_src()),
@@ -158,10 +158,10 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'section_number',
 			[
-				'label' => esc_html__( 'Number', 'better-el-addons' ),
+				'label' => esc_html__( 'Number', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
-                'placeholder' => esc_html__( 'Enter Number', 'better-el-addons' ),
-				'default' => esc_html__('25', 'better-el-addons' ),
+                'placeholder' => esc_html__( 'Enter Number', 'better-elementor-addons' ),
+				'default' => esc_html('25', 'better-elementor-addons' ),
 				'condition' => [
 					'better_about_style' => array('1')
 				],
@@ -171,10 +171,10 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'section_text',
 			[
-				'label' => esc_html__( 'Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
-                'placeholder' => esc_html__( 'Enter your text', 'better-el-addons' ),
-				'default' => esc_html__('years Of Experiences', 'better-el-addons' ),
+                'placeholder' => esc_html__( 'Enter your text', 'better-elementor-addons' ),
+				'default' => esc_html('years Of Experiences', 'better-elementor-addons' ),
 				'condition' => [
 					'better_about_style' => array('1')
 				],
@@ -184,7 +184,7 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'number_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => esc_url(\Elementor\Utils::get_placeholder_image_src()),
@@ -198,45 +198,45 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'images_list',
 			[
-				'label' => __( 'Slider List', 'better-el-addons' ),
+				'label' => __( 'Slider List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_about_style' => array('1')
 				],
 				'default' => [
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'number' => __( '01', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'number' => __( '01', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'number' => __( '02', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'number' => __( '02', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'number' => __( '03', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'number' => __( '03', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Slider Heading Title', 'better-el-addons' ),
+						'label' => __( 'Slider Heading Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Insert your slider heading title here..', 'better-el-addons' ),
-						'default' => __( 'Slider Heading Title' ,  'better-el-addons'  ),
+						'placeholder' => __( 'Insert your slider heading title here..', 'better-elementor-addons' ),
+						'default' => __( 'Slider Heading Title' , 'better-elementor-addons'  ),
 					],
 					[
 						'name' => 'number',
-						'label' => __( 'Slider Subtitle', 'better-el-addons' ),
+						'label' => __( 'Slider Subtitle', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Insert your slider subtitle here..', 'better-el-addons' ),
-						'default' => __( 'Slider Subtitle' ,  'better-el-addons'  ),
+						'placeholder' => __( 'Insert your slider subtitle here..', 'better-elementor-addons' ),
+						'default' => __( 'Slider Subtitle' , 'better-elementor-addons'  ),
 					],
 					[
 						'name' => 'item_image',
-						'label' => __( 'Slider Image', 'better-el-addons' ),
+						'label' => __( 'Slider Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -244,11 +244,11 @@ class Better_About extends Widget_Base {
 					],
 					[
 						'name' => 'column',
-						'label' => esc_html__( 'Grid Column', 'better-el-addons' ),
+						'label' => esc_html__( 'Grid Column', 'better-elementor-addons' ),
 						'type' => Controls_Manager::SELECT,
 						'options' => [
-							'6' => esc_html__( 'Two Column', 'better-el-addons' ),
-							'3' => esc_html__( 'Four Column', 'better-el-addons' ),
+							'6' => esc_html__( 'Two Column', 'better-elementor-addons' ),
+							'3' => esc_html__( 'Four Column', 'better-elementor-addons' ),
 						],
 						'default' => '3'
 					],
@@ -263,7 +263,7 @@ class Better_About extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Content Style', 'better-el-addons' ),
+				'label' => __( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -273,7 +273,7 @@ class Better_About extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-about .main-tit h2,{{WRAPPER}} .better-about .img-wrapper .title h3',
 			]
 		);
@@ -283,7 +283,7 @@ class Better_About extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_sub_title_typography',
-				'label' => esc_html__( 'Sub-Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Sub-Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-about .content p,{{WRAPPER}} .better-about .cont h4',
 			]
 		);
@@ -291,7 +291,7 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'better_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-about .img-wrapper .title h3' => '-webkit-text-stroke-color: {{VALUE}}',
@@ -306,7 +306,7 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'better_sub_title_main_color',
 			[
-				'label' => esc_html__( 'Sub-Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-about .cont h4' => 'color: {{VALUE}}',
@@ -320,7 +320,7 @@ class Better_About extends Widget_Base {
         $this->add_control(
 			'better_sub_title_color',
 			[
-				'label' => esc_html__( 'Sub-Title Accent Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Accent Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-about .cont h4 .stroke' => '-webkit-text-stroke-color: {{VALUE}}',
@@ -336,7 +336,7 @@ class Better_About extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_text_typography',
-				'label' => esc_html__( 'Text Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Text Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-about .content .exp h5',
 				'condition' => [
 					'better_about_style' => array('1')
@@ -347,7 +347,7 @@ class Better_About extends Widget_Base {
 		$this->add_control(
 			'better_text_color',
 			[
-				'label' => esc_html__( 'Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-about.style-1 .content .exp h5' => 'color: {{VALUE}}',

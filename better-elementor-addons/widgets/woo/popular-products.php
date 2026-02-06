@@ -1,7 +1,7 @@
 <div class="better-woo-widgets">
     <div class="item">
         <div class="tit">
-            <h4><?php echo esc_html__('Popular Products', 'better-el-addons'); ?></h4>
+            <h4><?php echo esc_html__('Popular Products', 'better-elementor-addons'); ?></h4>
         </div>
         <?php if ( class_exists( 'WooCommerce' ) ) { ?>
             <div class="pop-prod">

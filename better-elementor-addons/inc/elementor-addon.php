@@ -18,7 +18,7 @@ function better_tax_choice() {
 	};
 }
 
-function blog_adv_cat_array($term = 'category') {
+function better_elementor_addons_blog_adv_cat_array($term = 'category') {
     $cats = get_terms( array(
         'taxonomy' => $term,
         'hide_empty' => true
@@ -31,7 +31,7 @@ function blog_adv_cat_array($term = 'category') {
 }
 
 
-function Bea_contact_forms(){
+function better_elementor_addons_contact_forms(){
 	$formlist = array();
 	$forms_args = array( 'posts_per_page' => -1, 'post_type'=> 'wpcf7_contact_form' );
 	$forms = get_posts( $forms_args );
@@ -40,7 +40,7 @@ function Bea_contact_forms(){
 			$formlist[$form->ID] = $form->post_title;
 		}
 	}else{
-		$formlist['0'] = __('Form not found', 'swak_plg');
+		$formlist['0'] = __('Form not found', 'better-elementor-addons');
 	}
 	return $formlist;
 }

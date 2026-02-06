@@ -179,7 +179,7 @@ function better_unique_id( $prefix = '' ) {
             ?>
             <div class="cart">
                 <div class="cart-icon">
-                    <a class="icon pe-7s-cart cursor-pointer" href="<?php echo esc_url( $cart_link ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'better-el-addons' ); ?>"></a>
+                    <a class="icon pe-7s-cart cursor-pointer" href="<?php echo esc_url( $cart_link ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'better-elementor-addons' ); ?>"></a>
                     <div class="mad-count"><?php echo esc_html( $count ); ?></div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ function better_unique_id( $prefix = '' ) {
                 <div class="search-form text-center">
                     <?php $better_unique_id = better_unique_id( 'search-form-' ); ?>
                     <form role="search" method="get" id="<?php echo esc_attr( $better_unique_id ); ?>" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <input type="search" class="focus-input" placeholder="<?php esc_attr_e( 'Type search keyword...', 'better-el-addons' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
+                        <input type="search" class="focus-input" placeholder="<?php esc_attr_e( 'Type search keyword...', 'better-elementor-addons' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
                     </form>
                     <span class="close pe-7s-close cursor-pointer"></span>
                 </div>

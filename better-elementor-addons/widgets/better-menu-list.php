@@ -38,7 +38,7 @@ class Better_Menu_List extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Menu List', 'better_plg' );
+		return __( 'Menu List', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,19 +86,19 @@ class Better_Menu_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Menu list Settings', 'better_plg' ),
+				'label' => __( 'Menu list Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'menu_list_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
 
 				],
 				'default' => '1',
@@ -108,7 +108,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_control(
 			'menu_menu_list_1',
 			[
-				'label' => __( 'Menu List', 'better_plg' ),
+				'label' => __( 'Menu List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'menu_list_style' => '1',
@@ -133,22 +133,22 @@ class Better_Menu_List extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Title', 'better_plg' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Title', 'better_plg' ),
+						'placeholder' => __( 'Title', 'better-elementor-addons' ),
 					],
 					
 					[
 						'name' => 'price',
-						'label' => __( 'Price', 'better_plg' ),
+						'label' => __( 'Price', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Price', 'better_plg' ),
+						'placeholder' => __( 'Price', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'image',
-						'label' => __( 'Client Image', 'better_plg' ),
+						'label' => __( 'Client Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -156,10 +156,10 @@ class Better_Menu_List extends Widget_Base {
 					],
 					[
 						'name' => 'description',
-						'label' => __( 'Description', 'better_plg' ),
+						'label' => __( 'Description', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXTAREA,
 						'label_block' => true,
-						'placeholder' => __( 'Testimonial Text..', 'better_plg' ),
+						'placeholder' => __( 'Testimonial Text..', 'better-elementor-addons' ),
 					],
 				],
 				'title_field' => '{{ title }}',
@@ -169,7 +169,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_control(
 			'menu_menu_list',
 			[
-				'label' => __( 'Menu List', 'better-el-addons' ),
+				'label' => __( 'Menu List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
                 'condition' => [
 					'menu_list_style' => array('2','3'),
@@ -183,38 +183,38 @@ class Better_Menu_List extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Title', 'better-el-addons' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Title', 'better-el-addons' ),
+						'placeholder' => __( 'Title', 'better-elementor-addons' ),
 					],
                     [
 						'name' => 'number',
-						'label' => __( 'Number', 'better-el-addons' ),
+						'label' => __( 'Number', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Number', 'better-el-addons' ),
+						'placeholder' => __( 'Number', 'better-elementor-addons' ),
 					],
                     [
                         'name' => 'menu_list_items',
-                        'label' => __( 'Style', 'better-el-addons' ),
+                        'label' => __( 'Style', 'better-elementor-addons' ),
                         'type' => Controls_Manager::SELECT,
                         'options' => [
-                            '1' => __( 'Item 1', 'better-el-addons' ),
-                            '2' => __( 'Item 2', 'better-el-addons' ),
-                            '3' => __( 'Item 3', 'better-el-addons' ),
-                            '4' => __( 'Item 4', 'better-el-addons' ),
-                            '5' => __( 'Item 5', 'better-el-addons' ),
-                            '6' => __( 'Item 6', 'better-el-addons' ),
-                            '7' => __( 'Item 7', 'better-el-addons' ),
-                            '8' => __( 'Item 8', 'better-el-addons' ),
+                            '1' => __( 'Item 1', 'better-elementor-addons' ),
+                            '2' => __( 'Item 2', 'better-elementor-addons' ),
+                            '3' => __( 'Item 3', 'better-elementor-addons' ),
+                            '4' => __( 'Item 4', 'better-elementor-addons' ),
+                            '5' => __( 'Item 5', 'better-elementor-addons' ),
+                            '6' => __( 'Item 6', 'better-elementor-addons' ),
+                            '7' => __( 'Item 7', 'better-elementor-addons' ),
+                            '8' => __( 'Item 8', 'better-elementor-addons' ),
 
                         ],
                         'default' => '1',
                     ],
                     [
                         'name' => 'title1',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -224,7 +224,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image1',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -238,7 +238,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price1',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -248,7 +248,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description1',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -258,7 +258,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title2',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -268,7 +268,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image2',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -282,7 +282,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price2',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -292,7 +292,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description2',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -302,7 +302,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title3',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -312,7 +312,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image3',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -326,7 +326,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price3',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -336,7 +336,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description3',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -346,7 +346,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title4',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -356,7 +356,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image4',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -370,7 +370,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price4',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -380,7 +380,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description4',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -390,7 +390,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title5',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -400,7 +400,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image5',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -414,7 +414,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price5',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -424,7 +424,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description5',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -434,7 +434,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title6',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -444,7 +444,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image6',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -458,7 +458,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price6',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -468,7 +468,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description6',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -478,7 +478,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title7',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -488,7 +488,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image7',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -502,7 +502,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price7',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -512,7 +512,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description7',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -522,7 +522,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'title8',
-                        'label' => __( 'Title','better-el-addons' ),
+                        'label' => __( 'Title', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Leave it blank if you don\'t need this item',
@@ -532,7 +532,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'image8',
-                        'label' => __( 'Choose Image', 'better-el-addons' ),
+                        'label' => __( 'Choose Image', 'better-elementor-addons' ),
                         'type' => Controls_Manager::MEDIA,
                         'dynamic' => [
                             'active' => true,
@@ -546,7 +546,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'price8',
-                        'label' => __( 'Price','better-el-addons' ),
+                        'label' => __( 'Price', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your price..',
@@ -556,7 +556,7 @@ class Better_Menu_List extends Widget_Base {
                     ],
                     [
                         'name' => 'description8',
-                        'label' => __( 'Description','better-el-addons' ),
+                        'label' => __( 'Description', 'better-elementor-addons' ),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
                         'placeholder' => 'Insert your description..',
@@ -572,7 +572,7 @@ class Better_Menu_List extends Widget_Base {
         $this->add_responsive_control(
             'btn_text',
             [
-                'label' => __( 'Button Text','better-el-addons' ),
+                'label' => __( 'Button Text', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
                 'placeholder' => 'Insert your Text..',
@@ -585,7 +585,7 @@ class Better_Menu_List extends Widget_Base {
         $this->add_responsive_control(
             'btn_link',
             [
-                'label' => __( 'Button Link','better-el-addons' ),
+                'label' => __( 'Button Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
                 'placeholder' => 'Insert your LInk..',
@@ -600,7 +600,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->start_controls_section(
 			'block_settting',
 			[
-				'label' => __( 'Text Setting','better_plg' ),
+				'label' => __( 'Text Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -608,7 +608,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_responsive_control(
 			'block_content',
 			[
-				'label' => __( 'Block Margin', 'canteen-essential' ),
+				'label' => __( 'Block Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -622,7 +622,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->start_controls_section(
 			'title_settting',
 			[
-				'label' => __( 'Text Setting','better_plg' ),
+				'label' => __( 'Text Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -630,7 +630,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'better_plg' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -643,7 +643,7 @@ class Better_Menu_List extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'title_typography',
-				'label'     => __( 'Typography', 'better_plg' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-menu-list.style-1 .menu-block .item-inner h3.list-title',
 			]
 		);
@@ -653,7 +653,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->start_controls_section(
 			'price_settings',
 			[
-				'label' => __( 'Price Setting','better_plg' ),
+				'label' => __( 'Price Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -661,7 +661,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_control(
 			'price_color',
 			[
-				'label' => __( 'Color', 'better_plg' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -674,7 +674,7 @@ class Better_Menu_List extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'name_typography',
-				'label'     => __( 'Name Typography', 'better_plg' ),
+				'label'     => __( 'Name Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-menu-list.style-1 .menu-block .item-inner h3.list-price',
 			]
 		);
@@ -684,7 +684,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->start_controls_section(
 			'desc_settting',
 			[
-				'label' => __( 'Description Setting','better_plg' ),
+				'label' => __( 'Description Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -692,7 +692,7 @@ class Better_Menu_List extends Widget_Base {
 		$this->add_control(
 			'post_color',
 			[
-				'label' => __( 'Color', 'better_plg' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -705,7 +705,7 @@ class Better_Menu_List extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'post_typography',
-				'label'     => __( 'Typography', 'better_plg' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .better-menu-list.style-1 .menu-block .item-inner p',
 			]
 		);

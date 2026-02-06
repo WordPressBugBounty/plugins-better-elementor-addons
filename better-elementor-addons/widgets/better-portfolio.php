@@ -49,7 +49,7 @@ class Better_Portfolio extends Widget_Base
      */
     public function get_title()
     {
-        return __('Portfolio', 'better-el-addons');
+        return __('Portfolio', 'better-elementor-addons');
     }
 
     /**
@@ -100,7 +100,7 @@ class Better_Portfolio extends Widget_Base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Portfolio Settings', 'bim_plg'),
+                'label' => __('Portfolio Settings', 'better-elementor-addons'),
             ]
         );
 
@@ -109,7 +109,7 @@ class Better_Portfolio extends Widget_Base
         $this->add_control(
             'portfolio_one',
             [
-                'label' => __('Portfolio one', 'better-el-addons'),
+                'label' => __('Portfolio one', 'better-elementor-addons'),
                 'type' => Controls_Manager::REPEATER,
                 'default' => [
                     [
@@ -140,35 +140,35 @@ class Better_Portfolio extends Widget_Base
                 'fields' => [
                     [
                         'name' => 'title',
-                        'label' => __('Main Title', 'better-el-addons'),
+                        'label' => __('Main Title', 'better-elementor-addons'),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
-                        'default' => esc_html__('Main Title', 'better-el-addons'),
+                        'default' => esc_html('Main Title', 'better-elementor-addons'),
                     ],
 
                     [
                         'name' => 'subtitle',
-                        'label' => __('Sub title', 'better-el-addons'),
+                        'label' => __('Sub title', 'better-elementor-addons'),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
-                        'default' => esc_html__('Sub title', 'better-el-addons'),
+                        'default' => esc_html('Sub title', 'better-elementor-addons'),
                     ],
                     [
                         'name' => 'link',
-                        'label' => __('Link', 'better-el-addons'),
+                        'label' => __('Link', 'better-elementor-addons'),
                         'type' => Controls_Manager::URL,
                         'placeholder' => 'Leave link url',
                     ],
                     [
                         'name' => 'linktext',
-                        'label' => __('View more', 'better-el-addons'),
+                        'label' => __('View more', 'better-elementor-addons'),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
-                        'default' => esc_html__('View more', 'better-el-addons'),
+                        'default' => esc_html('View more', 'better-elementor-addons'),
                     ],
                     [
                         'name' => 'image',
-                        'label' => __('Client Image', 'bim_plg'),
+                        'label' => __('Client Image', 'better-elementor-addons'),
                         'type' => Controls_Manager::MEDIA,
                         'default' => [
                             'url' => Utils::get_placeholder_image_src(),
@@ -183,7 +183,7 @@ class Better_Portfolio extends Widget_Base
         $this->start_controls_section(
             'style_section',
             [
-                'label' => __('Content Style', 'better-el-addons'),
+                'label' => __('Content Style', 'better-elementor-addons'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -192,7 +192,7 @@ class Better_Portfolio extends Widget_Base
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'better_image_box_title_typography',
-                'label' => esc_html__('Subtitle Typography', 'better-el-addons'), 
+                'label' => esc_html__('Subtitle Typography', 'better-elementor-addons'), 
                 'selector' => '{{WRAPPER}} .better-portfolio.style-1 .item .info h6',
             ]
         );

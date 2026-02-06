@@ -41,7 +41,7 @@ class Plugin
         return self::$_instance;
     }
     
-    public  $basic_elements = array(
+    public  $better_elementor_addons_basic_elements = array(
         'countdown',
         'image-box',
         'featured',
@@ -498,11 +498,11 @@ class Plugin
      */
     private function include_widgets_files()
     {
-        foreach ( $this->basic_elements as $element_name ) {
-            $element_name__ = str_replace( '-', '_', $element_name );
-            ${'deactivate_element_' . $element_name__} = bea_get_option( 'bea_deactivate_element_' . $element_name__, false );
-            if ( !${'deactivate_element_' . $element_name__} ) {
-                require_once __DIR__ . '/widgets/' . $element_name . '/' . $element_name . '.php';
+        foreach ( $this->better_elementor_addons_basic_elements as $better_elementor_addons_element_name ) {
+            $better_elementor_addons_element_name__ = str_replace( '-', '_', $better_elementor_addons_element_name );
+            ${'deactivate_element_' . $better_elementor_addons_element_name__} = better_elementor_addons_get_option( 'bea_deactivate_element_' . $better_elementor_addons_element_name__, false );
+            if ( !${'deactivate_element_' . $better_elementor_addons_element_name__} ) {
+                require_once __DIR__ . '/widgets/' . $better_elementor_addons_element_name . '/' . $better_elementor_addons_element_name . '.php';
             }
         }
     }
@@ -520,12 +520,12 @@ class Plugin
         // Its is now safe to include Widgets files
         $this->include_widgets_files();
         // Register Widgets
-        foreach ( $this->basic_elements as $element_name ) {
-            $element_name__ = str_replace( '-', '_', $element_name );
-            ${'deactivate_element_' . $element_name__} = bea_get_option( 'bea_deactivate_element_' . $element_name__, false );
+        foreach ( $this->better_elementor_addons_basic_elements as $better_elementor_addons_element_name ) {
+            $better_elementor_addons_element_name__ = str_replace( '-', '_', $better_elementor_addons_element_name );
+            ${'deactivate_element_' . $better_elementor_addons_element_name__} = better_elementor_addons_get_option( 'bea_deactivate_element_' . $better_elementor_addons_element_name__, false );
             
-            if ( !${'deactivate_element_' . $element_name__} ) {
-                $class_name = str_replace( '_', ' ', $element_name__ );
+            if ( !${'deactivate_element_' . $better_elementor_addons_element_name__} ) {
+                $class_name = str_replace( '_', ' ', $better_elementor_addons_element_name__ );
                 $class_name = ucwords( strtolower( $class_name ) );
                 $class_name = str_replace( ' ', '_', $class_name );
                 $class_name = 'BetterWidgets\\Widgets\\Better_' . $class_name;

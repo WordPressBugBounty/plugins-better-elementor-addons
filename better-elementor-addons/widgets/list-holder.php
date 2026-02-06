@@ -41,7 +41,7 @@ class Better_List_Holder extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'List Holder', 'better-el-addons' );
+		return esc_html__( 'List Holder', 'better-elementor-addons' );
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Better_List_Holder extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -99,20 +99,20 @@ class Better_List_Holder extends Widget_Base {
 		$this->add_control(
 			'better_list_holder_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Main title' ),
+				'default' => esc_html( 'Main title' ),
 			]
 		);
 		// Heading Title
 		$this->add_control(
 			'better_list_holder_btn',
 			[
-				'label' => esc_html__( 'Button text', 'better-el-addons' ),
+				'label' => esc_html__( 'Button text', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Related items' ),
+				'default' => esc_html( 'Related items' ),
 			]
 		);
 
@@ -120,7 +120,7 @@ class Better_List_Holder extends Widget_Base {
 		$this->add_control(
 			'item_list',
 			[
-				'label' => __( 'Item List', 'better_plg' ),
+				'label' => __( 'Item List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
@@ -142,22 +142,22 @@ class Better_List_Holder extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'title',
-						'label' => __( 'Title', 'better_plg' ),
+						'label' => __( 'Title', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Title', 'better_plg' ),
+						'placeholder' => __( 'Title', 'better-elementor-addons' ),
 					],
 					
 					[
 						'name' => 'tag',
-						'label' => __( 'Tag', 'better_plg' ),
+						'label' => __( 'Tag', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Tag', 'better_plg' ),
+						'placeholder' => __( 'Tag', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'image',
-						'label' => __( 'Client Image', 'better_plg' ),
+						'label' => __( 'Client Image', 'better-elementor-addons' ),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -165,17 +165,17 @@ class Better_List_Holder extends Widget_Base {
 					],
 					[
 						'name' => 'price',
-						'label' => __( 'Price', 'better_plg' ),
+						'label' => __( 'Price', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
 						'label_block' => true,
-						'placeholder' => __( 'Price..', 'better_plg' ),
+						'placeholder' => __( 'Price..', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'link',
-						'label' => __( 'Link', 'better_plg' ),
+						'label' => __( 'Link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Link..', 'better_plg' ),
+						'placeholder' => __( 'Link..', 'better-elementor-addons' ),
 					],
 				],
 				'title_field' => '{{ title }}',

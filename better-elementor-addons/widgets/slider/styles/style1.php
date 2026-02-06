@@ -16,7 +16,13 @@
                                         <span class="bottom-corn"></span>
                                         <div class="custom-font">
                                             <h5 class="subtitle thin custom-font"><?php echo wp_kses_post($item['subtitle']); ?></h5>
-                                            <<?php echo tag_escape($item['title_html_tag']); ?> class="title" data-splitting><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($item['title_html_tag']); ?>>
+                                            <?php
+                                            $allowed_tags = [ 'h1','h2','h3','h4','h5','h6','div','span','p' ];
+                                            $title_tag = in_array( $item['title_html_tag'], $allowed_tags, true )
+                                                ? $item['title_html_tag']
+                                                : 'h1';
+                                                ?>
+                                            <<?php echo tag_escape($title_tag); ?> class="title" data-splitting><?php echo wp_kses_post($item['title']); ?></<?php echo tag_escape($title_tag); ?>>
                                         </div>
                                         <p class="text"><?php echo wp_kses_post($item['text']); ?></p>
                                         <?php if (!empty($item['btn_link']['url'])): ?>

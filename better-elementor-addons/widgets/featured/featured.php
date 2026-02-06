@@ -38,7 +38,7 @@ class Better_Featured extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Featured', 'better_plg' );
+		return __( 'Featured', 'better-elementor-addons' );
 	}
 
 	/**
@@ -86,16 +86,16 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Featured Settings', 'better_plg' ),
+				'label' => __( 'Featured Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
             'title',
             [
-                'label' => __( 'Name', 'better_plg'),
+                'label' => __( 'Name', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
-				'default' => __( 'Featured Name', 'better_plg' ),
+				'default' => __( 'Featured Name', 'better-elementor-addons' ),
 				'label_block' => true,
             ]
         );
@@ -103,7 +103,7 @@ class Better_Featured extends Widget_Base {
         $this->add_control(
             'description',
             [
-                'label' => __( 'Description', 'better_plg'),
+                'label' => __( 'Description', 'better-elementor-addons'),
                 'type' => Controls_Manager::TEXT,
 				'label_block' => true,
             ]
@@ -113,7 +113,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
             'image',
             [
-                'label' => __( 'Featured Image', 'better_plg' ),
+                'label' => __( 'Featured Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -127,7 +127,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'featured_icon',
 			[
-				'label' => __( 'Featured Social Icon', 'better_plg' ),
+				'label' => __( 'Featured Social Icon', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
@@ -143,22 +143,22 @@ class Better_Featured extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'link',
-						'label' => __( 'Icon link', 'better_plg' ),
+						'label' => __( 'Icon link', 'better-elementor-addons' ),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
-						'placeholder' => __( 'Your icon link..', 'better_plg' ),
+						'placeholder' => __( 'Your icon link..', 'better-elementor-addons' ),
 					],
 					[
 						'name' => 'mention',
-						'label' => __( 'Mention', 'better_plg' ),
+						'label' => __( 'Mention', 'better-elementor-addons' ),
 						'type' => Controls_Manager::TEXT,
-						'default' => __( 'Mention', 'better_plg' ),
+						'default' => __( 'Mention', 'better-elementor-addons' ),
 						'label_block' => true,
 					],
 					
 					[
 						'name' => 'icon',
-						'label' => __( 'Icon', 'better_plg' ),
+						'label' => __( 'Icon', 'better-elementor-addons' ),
 						'type' => Controls_Manager::ICON,
 						'label_block' => true,
 						'default' => 'fa fa-download',
@@ -174,7 +174,7 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_style',
 			[
-				'label' => __( 'Content Settings', 'better_plg' ),
+				'label' => __( 'Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -184,7 +184,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'port_content',
 			[
-				'label' => __( 'Content Margin (on hover)', 'better_plg' ),
+				'label' => __( 'Content Margin (on hover)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -196,7 +196,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'port_padding',
 			[
-				'label' => __( 'Content Padding (on hover)', 'better_plg' ),
+				'label' => __( 'Content Padding (on hover)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -208,7 +208,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'bg_content',
 			[
-				'label' => __( 'Content Background', 'better_plg' ),
+				'label' => __( 'Content Background', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -220,19 +220,19 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'content_align',
 			[
-				'label' => __( 'Alignment', 'better_plg' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better_plg' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better_plg' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better_plg' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					]
 				],
@@ -248,7 +248,7 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'title_typo',
 			[
-				'label' => __( 'Title Content Settings', 'better_plg' ),
+				'label' => __( 'Title Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -257,7 +257,7 @@ class Better_Featured extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'cport_typography',
-				'label'     => __( 'Title Typography', 'better_plg' ),
+				'label'     => __( 'Title Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .dbox-relative h3',
 			]
 		);
@@ -265,7 +265,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'title_cl',
 			[
-				'label' => __( 'Title Color', 'better_plg' ),
+				'label' => __( 'Title Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -280,7 +280,7 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'sub_typo',
 			[
-				'label' => __( 'Text Content Settings', 'better_plg' ),
+				'label' => __( 'Text Content Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -289,7 +289,7 @@ class Better_Featured extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'ctext_typography',
-				'label'     => __( 'Text Typography', 'better_plg' ),
+				'label'     => __( 'Text Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .dbox-relative p',
 			]
 		);
@@ -297,7 +297,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'txt_cl',
 			[
-				'label' => __( 'Text Color', 'better_plg' ),
+				'label' => __( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -311,7 +311,7 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'icon_section_setting',
 			[
-				'label' => __( 'Icon Settings', 'better_plg' ),
+				'label' => __( 'Icon Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -319,7 +319,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'better_plg' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -331,7 +331,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'icon_bg',
 			[
-				'label' => __( 'Background', 'better_plg' ),
+				'label' => __( 'Background', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -343,7 +343,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_radius',
 			[
-				'label' => __( 'Border Radius', 'better_plg' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -355,7 +355,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Size', 'better_plg' ),
+				'label' => __( 'Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -373,7 +373,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_padding',
 			[
-				'label' => __( 'Padding', 'better_plg' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -385,7 +385,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_margin',
 			[
-				'label' => __( 'Margin', 'better_plg' ),
+				'label' => __( 'Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -399,7 +399,7 @@ class Better_Featured extends Widget_Base {
 		$this->start_controls_section(
 			'port_mask',
 			[
-				'label' => __( 'Mask Settings', 'better_plg' ),
+				'label' => __( 'Mask Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -408,7 +408,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'mask_color',
 			[
-				'label' => __( 'Mask Color', 'better_plg' ),
+				'label' => __( 'Mask Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -420,7 +420,7 @@ class Better_Featured extends Widget_Base {
 		$this->add_control(
 			'mask_color_opacity',
 			[
-				'label' => __( 'Mask Color Opacity(on hover)', 'better_plg' ),
+				'label' => __( 'Mask Color Opacity(on hover)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [

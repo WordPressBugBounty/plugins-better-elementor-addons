@@ -44,7 +44,7 @@ class Better_Button extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Button', 'better-el-addons' );
+		return __( 'Button', 'better-elementor-addons' );
 	}
 
 	/**
@@ -92,24 +92,24 @@ class Better_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Button Settings', 'better-el-addons' ),
+				'label' => __( 'Button Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'button_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
-					'5' => __( 'Style 5', 'better-el-addons' ),
-					'6' => __( 'Style 6', 'better-el-addons' ),
-					'7' => __( 'Style 7', 'better-el-addons' ),
-					'8' => __( 'Style 8', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
+					'5' => __( 'Style 5', 'better-elementor-addons' ),
+					'6' => __( 'Style 6', 'better-elementor-addons' ),
+					'7' => __( 'Style 7', 'better-elementor-addons' ),
+					'8' => __( 'Style 8', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -118,7 +118,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'btn_text',
 			[
-				'label' => __( 'Button Text','better-el-addons' ),
+				'label' => __( 'Button Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
@@ -133,7 +133,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Button Link','better-el-addons' ),
+				'label' => __( 'Button Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'Leave Link here',
 				'condition' => [
@@ -145,19 +145,19 @@ class Better_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'button_align',
 			[
-				'label' => __( 'Button Alignment', 'better-el-addons' ),
+				'label' => __( 'Button Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons'),
+						'title' => __( 'Right', 'better-elementor-addons'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -175,11 +175,11 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'button5_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 				'condition' => [
@@ -195,7 +195,7 @@ class Better_Button extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -204,7 +204,7 @@ class Better_Button extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'button_border',
-				'label' => __( 'Border', 'better-el-addons' ),
+				'label' => __( 'Border', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-button.style-4 a',
 				'condition' => [
 					'button_style' => array('4')
@@ -215,7 +215,7 @@ class Better_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'button_padding',
 			[
-				'label' => __( 'Padding', 'better-el-addons' ),
+				'label' => __( 'Padding', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -232,7 +232,7 @@ class Better_Button extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_button_text_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-button span, {{WRAPPER}} .better-button.style-1 span, {{WRAPPER}} .better-button.style-2 a, {{WRAPPER}} .better-button.style-3 span, {{WRAPPER}} .better-button.style-4 span',
 				'condition' => [
 					'button_style!' => '5'
@@ -243,7 +243,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'better_button_background_color',
 			[
-				'label' => esc_html__( 'Background Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Background Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-button a' => 'background: {{VALUE}};',
@@ -258,7 +258,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'better_button_text_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-button span' => 'color: {{VALUE}};',
@@ -273,7 +273,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'better_button_background_color_hover',
 			[
-				'label' => esc_html__( 'Background Color Hover', 'better-el-addons' ),
+				'label' => esc_html__( 'Background Color Hover', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-button a:hover' => 'background: {{VALUE}};',
@@ -288,7 +288,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'better_button_text_color_hover',
 			[
-				'label' => esc_html__( 'Color Hover', 'better-el-addons' ),
+				'label' => esc_html__( 'Color Hover', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-button:hover span' => 'color: {{VALUE}};',
@@ -301,7 +301,7 @@ class Better_Button extends Widget_Base {
 		$this->add_control(
 			'better_button_icon_color',
 			[
-				'label' => esc_html__( 'Color Hover', 'better-el-addons' ),
+				'label' => esc_html__( 'Color Hover', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-button.style-5 .vid span' => 'color: {{VALUE}};',

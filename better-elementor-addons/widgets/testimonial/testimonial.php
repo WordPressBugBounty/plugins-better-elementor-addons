@@ -38,7 +38,7 @@ class Better_Testimonial extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Testimonials', 'better-el-addons' );
+		return __( 'Testimonials', 'better-elementor-addons' );
 	}
 
 	/**
@@ -87,7 +87,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -96,10 +96,10 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_description',
 			[
-				'label' => esc_html__( 'Description', 'better-el-addons' ),
+				'label' => esc_html__( 'Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'default' => esc_html__( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
+				'default' => esc_html( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
 			]
 		);
 
@@ -107,7 +107,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'default' => [
@@ -120,10 +120,10 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_name',
 			[
-				'label' => esc_html__( 'Author Name', 'better-el-addons' ),
+				'label' => esc_html__( 'Author Name', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'John Doe' ),
+				'default' => esc_html( 'John Doe' ),
 			]
 		);
 
@@ -131,10 +131,10 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_designation',
 			[
-				'label' => esc_html__( 'Author Designation', 'better-el-addons' ),
+				'label' => esc_html__( 'Author Designation', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Web Developer' ),
+				'default' => esc_html( 'Web Developer' ),
 			]
 		);
 
@@ -145,7 +145,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -154,7 +154,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_icon_options',
 			[
-				'label' => esc_html__( 'Icon', 'better-el-addons' ),
+				'label' => esc_html__( 'Icon', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -164,7 +164,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_icon_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -177,7 +177,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_icon_size',
 			[
-				'label' => __( 'Icon Size', 'elementor' ),
+				'label' => __( 'Icon Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -199,7 +199,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_description_options',
 			[
-				'label' => esc_html__( 'Description', 'better-el-addons' ),
+				'label' => esc_html__( 'Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -209,7 +209,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_description_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -223,7 +223,7 @@ class Better_Testimonial extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_testimonial_description_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .single-testimonial p',
 			]
 		);
@@ -232,7 +232,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_options',
 			[
-				'label' => esc_html__( 'Author', 'better-el-addons' ),
+				'label' => esc_html__( 'Author', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -242,7 +242,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -256,7 +256,7 @@ class Better_Testimonial extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_testimonial_author_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .authro-info h4',
 			]
 		);		
@@ -265,7 +265,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_author_des_color',
 			[
-				'label' => esc_html__( 'Designation Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Designation Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -279,7 +279,7 @@ class Better_Testimonial extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_testimonial_author_des_typography',
-				'label' => esc_html__( 'Designation Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Designation Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .authro-info h4 span',
 			]
 		);
@@ -288,7 +288,7 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_control(
 			'better_testimonial_options',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -298,19 +298,19 @@ class Better_Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'better_testimonial_alignment',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

@@ -42,7 +42,7 @@ class Better_Slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Slider', 'better_plg' );
+		return __( 'Slider', 'better-elementor-addons' );
 	}
 
 	//script depend
@@ -94,28 +94,28 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Slides', 'better-el-addons' ),
+				'label' => __( 'Slides', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'better_slider_style',
 			[
-				'label' => __( 'Type', 'better-el-addons' ),
+				'label' => __( 'Type', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'0' => __( 'Custom', 'better-el-addons' ),
-					'1' => __( 'Preset 1', 'better-el-addons' ),
-					'2' => __( 'Preset 2', 'better-el-addons' ),
-					'3' => __( 'Preset 3', 'better-el-addons' ),
-					'4' => __( 'Preset 4', 'better-el-addons' ),
-					'5' => __( 'Preset 5', 'better-el-addons' ),
-					'6' => __( 'Preset 6', 'better-el-addons' ),
-					'7' => __( 'Preset 7', 'better-el-addons' ),
-					'8' => __( 'Preset 8', 'better-el-addons' ),
-					'9' => __( 'Preset 9', 'better-el-addons' ),
-					'10' => __( 'Preset 10', 'better-el-addons' ),
-					'11' => __( 'Preset 11', 'better-el-addons' ),
+					'0' => __( 'Custom', 'better-elementor-addons' ),
+					'1' => __( 'Preset 1', 'better-elementor-addons' ),
+					'2' => __( 'Preset 2', 'better-elementor-addons' ),
+					'3' => __( 'Preset 3', 'better-elementor-addons' ),
+					'4' => __( 'Preset 4', 'better-elementor-addons' ),
+					'5' => __( 'Preset 5', 'better-elementor-addons' ),
+					'6' => __( 'Preset 6', 'better-elementor-addons' ),
+					'7' => __( 'Preset 7', 'better-elementor-addons' ),
+					'8' => __( 'Preset 8', 'better-elementor-addons' ),
+					'9' => __( 'Preset 9', 'better-elementor-addons' ),
+					'10' => __( 'Preset 10', 'better-elementor-addons' ),
+					'11' => __( 'Preset 11', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -126,29 +126,29 @@ class Better_Slider extends Widget_Base {
         $repeater1->add_control(
             'title',
             [
-                'label' => __( 'Slider Heading Title', 'better-el-addons' ),
+                'label' => __( 'Slider Heading Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __( 'Insert your slider heading title here..', 'better-el-addons' ),
-                'default' => __( 'Slider Heading Title' ,  'better-el-addons'  ),
+                'placeholder' => __( 'Insert your slider heading title here..', 'better-elementor-addons' ),
+                'default' => __( 'Slider Heading Title' , 'better-elementor-addons'  ),
             ]
         );
 
         $repeater1->add_control(
             'title_html_tag',
             [
-                'label' => __( 'HTML Tag', 'better-el-addons' ),
+                'label' => __( 'HTML Tag', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'h1' => __( 'H1', 'better-el-addons' ),
-                    'h2' => __( 'H2', 'better-el-addons' ),
-                    'h3' => __( 'H3', 'better-el-addons' ),
-                    'h4' => __( 'H4', 'better-el-addons' ),
-                    'h5' => __( 'H5', 'better-el-addons' ),
-                    'h6' => __( 'H6', 'better-el-addons' ),
-                    'div' => __( 'div', 'better-el-addons' ),
-                    'span' => __( 'span', 'better-el-addons' ),
-                    'p' => __( 'P', 'better-el-addons' ),
+                    'h1' => __( 'H1', 'better-elementor-addons' ),
+                    'h2' => __( 'H2', 'better-elementor-addons' ),
+                    'h3' => __( 'H3', 'better-elementor-addons' ),
+                    'h4' => __( 'H4', 'better-elementor-addons' ),
+                    'h5' => __( 'H5', 'better-elementor-addons' ),
+                    'h6' => __( 'H6', 'better-elementor-addons' ),
+                    'div' => __( 'div', 'better-elementor-addons' ),
+                    'span' => __( 'span', 'better-elementor-addons' ),
+                    'p' => __( 'P', 'better-elementor-addons' ),
                 ],
                 'default' => 'h1',
             ]
@@ -157,28 +157,28 @@ class Better_Slider extends Widget_Base {
         $repeater1->add_control(
             'subtitle',
             [
-                'label' => __( 'Slider Subtitle', 'better-el-addons' ),
+                'label' => __( 'Slider Subtitle', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __( 'Insert your slider subtitle here..', 'better-el-addons' ),
-                'default' => __( 'Slider Subtitle' ,  'better-el-addons'  ),
+                'placeholder' => __( 'Insert your slider subtitle here..', 'better-elementor-addons' ),
+                'default' => __( 'Slider Subtitle' , 'better-elementor-addons'  ),
             ]
         );
 
         $repeater1->add_control(
             'text',
             [
-                'label' => __( 'Slider Text (style 1 & 7)', 'better-el-addons' ),
+                'label' => __( 'Slider Text (style 1 & 7)', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXTAREA,
                 'label_block' => true,
-                'default' => __( 'Slider Text' ,  'better-el-addons' ),
+                'default' => __( 'Slider Text' , 'better-elementor-addons' ),
             ]
         );
 
         $repeater1->add_control(
             'btn_text',
             [
-                'label' => __( 'Button Text', 'better-el-addons' ),
+                'label' => __( 'Button Text', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
             ]
@@ -187,17 +187,17 @@ class Better_Slider extends Widget_Base {
         $repeater1->add_control(
             'btn_link',
             [
-                'label' => __( 'Button Link', 'better-el-addons' ),
+                'label' => __( 'Button Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
-                'placeholder' => __( 'Leave it blank if you don\'t need this button', 'better-el-addons' ),
+                'placeholder' => __( 'Leave it blank if you don\'t need this button', 'better-elementor-addons' ),
             ]
         );
 
         $repeater1->add_control(
             'image',
             [
-                'label' => __( 'Slider Image', 'better-el-addons' ),
+                'label' => __( 'Slider Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -208,26 +208,26 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'slider_list',
 			[
-				'label' => __( 'Slider List', 'better-el-addons' ),
+				'label' => __( 'Slider List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_slider_style' => array('1','2','5','7','8','9','11')
 				],
 				'default' => [
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'subtitle' => __( 'Slider subtitle', 'better-el-addons' ),
-						'text' => __( 'Slider text', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'subtitle' => __( 'Slider subtitle', 'better-elementor-addons' ),
+						'text' => __( 'Slider text', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'subtitle' => __( 'Slider subtitle', 'better-el-addons' ),
-						'text' => __( 'Slider text', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'subtitle' => __( 'Slider subtitle', 'better-elementor-addons' ),
+						'text' => __( 'Slider text', 'better-elementor-addons' ),
 					],
 					[
-						'title' => __( 'Slider Heading Title', 'better-el-addons' ),
-						'subtitle' => __( 'Slider subtitle', 'better-el-addons' ),
-						'text' => __( 'Slider text', 'better-el-addons' ),
+						'title' => __( 'Slider Heading Title', 'better-elementor-addons' ),
+						'subtitle' => __( 'Slider subtitle', 'better-elementor-addons' ),
+						'text' => __( 'Slider text', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => $repeater1->get_controls(),
@@ -238,10 +238,10 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'better_slider4_title',
 			[
-				'label' => __( 'Title', 'better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'art & illustration' ,  'better-el-addons' ),
+				'default' => __( 'art & illustration' , 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('3','6')
 				],
@@ -251,10 +251,10 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'better_slider4_subtitle',
 			[
-				'label' => __( 'Sub-Title', 'better-el-addons' ),
+				'label' => __( 'Sub-Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __( 'Inspiring new space.' ,  'better-el-addons' ),
+				'default' => __( 'Inspiring new space.' , 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('3')
 				],
@@ -264,7 +264,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'bg_image',
             [
-                'label' => __( 'BG Image', 'better-el-addons' ),
+                'label' => __( 'BG Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'condition' => [
 					'better_slider_style' => array('1','3','4','6','10')
@@ -275,7 +275,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'logo_image',
             [
-                'label' => __( 'Logo Image', 'better-el-addons' ),
+                'label' => __( 'Logo Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'condition' => [
 					'better_slider_style' => array('8')
@@ -288,49 +288,49 @@ class Better_Slider extends Widget_Base {
         $repeater2->add_control(
             'better_slider4_list_title',
             [
-                'label' => __( 'Title', 'better-el-addons' ),
+                'label' => __( 'Title', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'placeholder' => __( 'Insert your slider heading title here..', 'better-el-addons' ),
-                'default' => __( 'Slider Heading Title' ,  'better-el-addons'  ),
+                'placeholder' => __( 'Insert your slider heading title here..', 'better-elementor-addons' ),
+                'default' => __( 'Slider Heading Title' , 'better-elementor-addons'  ),
             ]
         );
 
         $repeater2->add_control(
             'better_slider4_list_content',
             [
-                'label' => __( 'Content', 'better-el-addons' ),
+                'label' => __( 'Content', 'better-elementor-addons' ),
                 'type' => Controls_Manager::WYSIWYG,
                 'label_block' => true,
-                'placeholder' => __( 'Insert your slider subtitle here..', 'better-el-addons' ),
-                'default' => __( 'Slider Subtitle' ,  'better-el-addons'  ),
+                'placeholder' => __( 'Insert your slider subtitle here..', 'better-elementor-addons' ),
+                'default' => __( 'Slider Subtitle' , 'better-elementor-addons'  ),
             ]
         );
 		
 		$this->add_control(
 			'better_slider4_list',
 			[
-				'label' => __( 'Slider List', 'better-el-addons' ),
+				'label' => __( 'Slider List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'condition' => [
 					'better_slider_style' => array('3')
 				],
 				'default' => [
 					[
-						'better_slider4_list_title' => __( 'Title', 'better-el-addons' ),
-						'better_slider4_list_content' => __( 'Content', 'better-el-addons' ),
+						'better_slider4_list_title' => __( 'Title', 'better-elementor-addons' ),
+						'better_slider4_list_content' => __( 'Content', 'better-elementor-addons' ),
 					],
 					[
-						'better_slider4_list_title' => __( 'Title', 'better-el-addons' ),
-						'better_slider4_list_content' => __( 'Content', 'better-el-addons' ),
+						'better_slider4_list_title' => __( 'Title', 'better-elementor-addons' ),
+						'better_slider4_list_content' => __( 'Content', 'better-elementor-addons' ),
 					],
 					[
-						'better_slider4_list_title' => __( 'Title', 'better-el-addons' ),
-						'better_slider4_list_content' => __( 'Content', 'better-el-addons' ),
+						'better_slider4_list_title' => __( 'Title', 'better-elementor-addons' ),
+						'better_slider4_list_content' => __( 'Content', 'better-elementor-addons' ),
 					],
 					[
-						'better_slider4_list_title' => __( 'Title', 'better-el-addons' ),
-						'better_slider4_list_content' => __( 'Content', 'better-el-addons' ),
+						'better_slider4_list_title' => __( 'Title', 'better-elementor-addons' ),
+						'better_slider4_list_content' => __( 'Content', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => $repeater2->get_controls(),
@@ -345,7 +345,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_style8_social_list',
 			[
-				'label' => __( 'Social Links Settings', 'better-el-addons' ),
+				'label' => __( 'Social Links Settings', 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('7','8')
 				],
@@ -357,7 +357,7 @@ class Better_Slider extends Widget_Base {
         $repeater3->add_control(
             'style8_social_btn_icon',
             [
-                'label' => esc_html__( 'Social Icon', 'better-el-addons' ),
+                'label' => esc_html__( 'Social Icon', 'better-elementor-addons' ),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'fab fa-facebook-f',
@@ -369,29 +369,29 @@ class Better_Slider extends Widget_Base {
         $repeater3->add_control(
             'style8_social_btn_link',
             [
-                'label' => esc_html__( 'Social link', 'better-el-addons' ),
+                'label' => esc_html__( 'Social link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
-                'placeholder' => __('Social link'),
+                'placeholder' => __('Social link','better-elementor-addons'),
             ]
         );
 
 		$this->add_control(
 			'style8_social_links_list',
 			[
-				'label' => __( 'Social Links List', 'better-el-addons' ),
+				'label' => __( 'Social Links List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
-						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-el-addons' ),
-						'style8_social_btn_link' => __( '#0', 'better-el-addons' ),
+						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-elementor-addons' ),
+						'style8_social_btn_link' => __( '#0', 'better-elementor-addons' ),
 					],
 					[
-						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-el-addons' ),
-						'style8_social_btn_link' => __( '#0', 'better-el-addons' ),
+						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-elementor-addons' ),
+						'style8_social_btn_link' => __( '#0', 'better-elementor-addons' ),
 					],
 					[
-						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-el-addons' ),
-						'style8_social_btn_link' => __( '#0', 'better-el-addons' ),
+						'style8_social_btn_icon' => __( 'fab fa-facebook-f', 'better-elementor-addons' ),
+						'style8_social_btn_link' => __( '#0', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => $repeater3->get_controls(),
@@ -404,7 +404,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_social_list',
 			[
-				'label' => __( 'Social Links Settings', 'better-el-addons' ),
+				'label' => __( 'Social Links Settings', 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('2')
 				],
@@ -416,7 +416,7 @@ class Better_Slider extends Widget_Base {
         $repeater4->add_control(
             'social_btn_title',
             [
-                'label' => __( 'Button Text', 'better-el-addons' ),
+                'label' => __( 'Button Text', 'better-elementor-addons' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
             ]
@@ -425,7 +425,7 @@ class Better_Slider extends Widget_Base {
         $repeater4->add_control(
             'social_btn_link',
             [
-                'label' => __( 'Button Link', 'better-el-addons' ),
+                'label' => __( 'Button Link', 'better-elementor-addons' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
             ]
@@ -434,17 +434,17 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'social_links_list',
 			[
-				'label' => __( 'Social Links List', 'better-el-addons' ),
+				'label' => __( 'Social Links List', 'better-elementor-addons' ),
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
-						'social_btn_title' => __( 'Tw', 'better-el-addons' ),
+						'social_btn_title' => __( 'Tw', 'better-elementor-addons' ),
 					],
 					[
-						'social_btn_title' => __( 'Fb', 'better-el-addons' ),
+						'social_btn_title' => __( 'Fb', 'better-elementor-addons' ),
 					],
 					[
-						'social_btn_title' => __( 'Be', 'better-el-addons' ),
+						'social_btn_title' => __( 'Be', 'better-elementor-addons' ),
 					],
 				],
 				'fields' => $repeater4->get_controls(),
@@ -457,7 +457,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'slider5_srttings',
 			[
-				'label' => __( 'Settings', 'better-el-addons' ),
+				'label' => __( 'Settings', 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('4','10')
 				],
@@ -467,11 +467,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'slider5_title1',
             [
-                'label' => __( 'Slider Heading Title 1', 'better-el-addons' ),
+                'label' => __( 'Slider Heading Title 1', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'placeholder' => __( 'Insert your slider heading title here..', 'better-el-addons' ),
-				'default' => __( 'Slider Heading Title 1' ,  'better-el-addons'  ),
+				'placeholder' => __( 'Insert your slider heading title here..', 'better-elementor-addons' ),
+				'default' => __( 'Slider Heading Title 1' , 'better-elementor-addons'  ),
 				'condition' => [
 					'better_slider_style' => array('4','10')
 				],
@@ -481,11 +481,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'slider5_title2',
             [
-                'label' => __( 'Slider Heading Title 2', 'better-el-addons' ),
+                'label' => __( 'Slider Heading Title 2', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'placeholder' => __( 'Insert your slider heading title here..', 'better-el-addons'),
-				'default' => __( 'Slider Heading Title 2',  'better-el-addons'),
+				'placeholder' => __( 'Insert your slider heading title here..', 'better-elementor-addons'),
+				'default' => __( 'Slider Heading Title 2', 'better-elementor-addons'),
 				'condition' => [
 					'better_slider_style' => '4'
 				],
@@ -495,11 +495,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'slider5_text',
             [
-                'label' => __( 'Slider Text', 'better-el-addons' ),
+                'label' => __( 'Slider Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'placeholder' => __( 'Insert your slider text here..', 'better-el-addons' ),
-				'default' => __( 'Slider Text' ,  'better-el-addons'  ),
+				'placeholder' => __( 'Insert your slider text here..', 'better-elementor-addons' ),
+				'default' => __( 'Slider Text' , 'better-elementor-addons'  ),
 				'condition' => [
 					'better_slider_style' => array('4','10')
 				],
@@ -509,11 +509,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'slider5_btn_text',
             [
-                'label' => __( 'Slider Button Text', 'better-el-addons' ),
+                'label' => __( 'Slider Button Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'placeholder' => __( 'Insert your button text here..', 'better-el-addons' ),
-				'default' => __( 'Read More' ,  'better-el-addons'  ),
+				'placeholder' => __( 'Insert your button text here..', 'better-elementor-addons' ),
+				'default' => __( 'Read More' , 'better-elementor-addons'  ),
 				'condition' => [
 					'better_slider_style' => array('4','10')
 				],
@@ -523,10 +523,10 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
             'slider5_btn_link',
             [
-                'label' => __( 'Button Link', 'better-el-addons' ),
+                'label' => __( 'Button Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'label_block' => true,
-				'placeholder' => __( 'Leave it blank if you don\'t need this button', 'better-el-addons' ),
+				'placeholder' => __( 'Leave it blank if you don\'t need this button', 'better-elementor-addons' ),
 				'condition' => [
 					'better_slider_style' => array('4','10')
 				],
@@ -536,7 +536,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -554,7 +554,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_slider_options',
 			[
-				'label' => __( 'Slider Options', 'better-el-addons' ),
+				'label' => __( 'Slider Options', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -562,11 +562,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'show_arrows',
 			[
-				'label' => __( 'Show Arrows','better-el-addons' ),
+				'label' => __( 'Show Arrows', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => esc_html__( 'Show','better-el-addons' ),
-					'hidden' => esc_html__( 'Hide','better-el-addons' ),
+					'' => esc_html__( 'Show', 'better-elementor-addons' ),
+					'hidden' => esc_html__( 'Hide', 'better-elementor-addons' ),
 				],
 				'default' => '',
 				'condition' => [
@@ -583,11 +583,11 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'show_dots',
 			[
-				'label' => __( 'Show Dots','better-el-addons' ),
+				'label' => __( 'Show Dots', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Show','better-el-addons' ),
-					'hidden' => __( 'Hide','better-el-addons' ),
+					'' => __( 'Show', 'better-elementor-addons' ),
+					'hidden' => __( 'Hide', 'better-elementor-addons' ),
 				],
 				'default' => '',
 				'selectors' => [
@@ -602,7 +602,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'slider_mask',
 			[
-				'label' => __( 'Slider Mask', 'better-el-addons' ),
+				'label' => __( 'Slider Mask', 'better-elementor-addons' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 5,
 				
@@ -612,7 +612,7 @@ class Better_Slider extends Widget_Base {
         $this->add_control( 
         	'show_paging',
             [
-                'label' => esc_html__( 'Show Paging', 'better-el-addons' ),
+                'label' => esc_html__( 'Show Paging', 'better-elementor-addons' ),
                 'type' => Controls_Manager::SWITCHER,
 				'condition' => [
 					'better_slider_style' => array('1','8')
@@ -622,7 +622,7 @@ class Better_Slider extends Widget_Base {
         $this->add_control(
 			'speed',
 			[
-				'label' => __('Slider Speed', 'better-el-addons'),
+				'label' => __('Slider Speed', 'better-elementor-addons'),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 3000,
 				'condition' => [
@@ -633,7 +633,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_responsive_control(
 			'slider_height',
 			[
-				'label' => __( 'Slider Height','better-el-addons' ),
+				'label' => __( 'Slider Height', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'vh', '%', 'px', 'rem', 'custom' ],
                 'default' => [
@@ -654,7 +654,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('1')
@@ -667,7 +667,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .custom-font',
 			]
 		);
@@ -675,7 +675,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'better_slider_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 				'{{WRAPPER}} .better-slider.style-1 .cta__slider-item .caption .thin' => 'color: {{VALUE}}',
@@ -688,7 +688,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'better_slider_bgcolor',
 			[
-				'label' => esc_html__( 'Backgrond Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Backgrond Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 				'{{WRAPPER}} .better-slider.style-1 .slid-half .nofull' => 'background-color: {{VALUE}}',
@@ -702,7 +702,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'title_style_section',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('1','9')
@@ -715,7 +715,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'title_slider_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 				'{{WRAPPER}} .better-slider .caption .title' => 'color: {{VALUE}}',
@@ -727,7 +727,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_title_typograph',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider .caption .title',
 			]
 		);
@@ -740,7 +740,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'subtitle_style_section',
 			[
-				'label' => esc_html__( 'SubTitle', 'better-el-addons' ),
+				'label' => esc_html__( 'SubTitle', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('1','9')
@@ -752,7 +752,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'subtitle_slider_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 				'{{WRAPPER}} .better-slider .caption .subtitle' => 'color: {{VALUE}}',
@@ -763,7 +763,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_subtitle_typograph',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider .caption .subtitle',
 			]
 		);
@@ -775,7 +775,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'text_style_section',
 			[
-				'label' => esc_html__( 'Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Text', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('1','9')
@@ -787,7 +787,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'text_slider_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 				'{{WRAPPER}} .better-slider .caption .text' => 'color: {{VALUE}}',
@@ -798,7 +798,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_text_typograph',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider .caption .text',
 			]
 		);
@@ -810,7 +810,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'button_style_section',
 			[
-				'label' => esc_html__( 'Button Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Button Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('1','9')
@@ -834,7 +834,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => esc_html__( 'Normal', 'elementor' ),
+				'label' => esc_html__( 'Normal', 'better-elementor-addons' ),
 			]
 		);
 
@@ -842,7 +842,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => esc_html__( 'Text Color', 'elementor' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -855,7 +855,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'background',
-				'label' => esc_html__( 'Background', 'elementor' ),
+				'label' => esc_html__( 'Background', 'better-elementor-addons' ),
 				'types' => [ 'classic', 'gradient' ],
 				'exclude' => [ 'image' ],
 				'selector' => '{{WRAPPER}} .better-slider .caption .button',
@@ -877,14 +877,14 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => esc_html__( 'Hover', 'elementor' ),
+				'label' => esc_html__( 'Hover', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'hover_color',
 			[
-				'label' => esc_html__( 'Text Color', 'elementor' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-slider .caption .button:hover span, {{WRAPPER}} .better-slider .caption .button:focus span' => 'color: {{VALUE}};',
@@ -897,7 +897,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'button_background_hover',
-				'label' => esc_html__( 'Background', 'elementor' ),
+				'label' => esc_html__( 'Background', 'better-elementor-addons' ),
 				'types' => [ 'classic', 'gradient' ],
 				'exclude' => [ 'image' ],
 				'selector' => '{{WRAPPER}} .better-slider .caption .button:hover:after, {{WRAPPER}} .better-slider .caption .button:focus',
@@ -912,7 +912,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'elementor' ),
+				'label' => esc_html__( 'Border Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'border_border!' => '',
@@ -926,7 +926,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => esc_html__( 'Hover Animation', 'elementor' ),
+				'label' => esc_html__( 'Hover Animation', 'better-elementor-addons' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -946,7 +946,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'elementor' ),
+				'label' => esc_html__( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -966,7 +966,7 @@ class Better_Slider extends Widget_Base {
 		$this->add_responsive_control(
 			'text_padding',
 			[
-				'label' => esc_html__( 'Padding', 'elementor' ),
+				'label' => esc_html__( 'Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -983,7 +983,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'style2_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('2')
@@ -996,7 +996,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style2_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-2 .parallax-slider .caption h1',
 			]
 		);
@@ -1006,7 +1006,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style2_sub_title_typography',
-				'label' => esc_html__( 'Sub-Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Sub-Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-2 .parallax-slider .caption p',
 			]
 		);
@@ -1016,7 +1016,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style2_btn_typography',
-				'label' => esc_html__( 'Button Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Button Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-2 .parallax-slider .caption .btn-dis',
 			]
 		);
@@ -1027,7 +1027,7 @@ class Better_Slider extends Widget_Base {
 		$this->start_controls_section(
 			'style4_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_slider_style' => array('3')
@@ -1039,7 +1039,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style4_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-3 .cont h2',
 			]
 		);
@@ -1048,7 +1048,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style4_subtitle_typography',
-				'label' => esc_html__( 'Sub-Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Sub-Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-3 .cont h6',
 			]
 		);
@@ -1057,7 +1057,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style4_info_title_typography',
-				'label' => esc_html__( 'Info Title Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Info Title Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-3.better-bg-img .item h6',
 			]
 		);
@@ -1066,7 +1066,7 @@ class Better_Slider extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_slider_style4_info_content_typography',
-				'label' => esc_html__( 'Info Content Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Info Content Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-slider.style-3.better-bg-img .item p',
 			]
 		);

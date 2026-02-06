@@ -38,7 +38,7 @@ class Better_Heading extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Heading', 'better-el-addons' );
+		return esc_html__( 'Heading', 'better-elementor-addons' );
 	}
 
 	/**
@@ -87,7 +87,7 @@ class Better_Heading extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -96,10 +96,10 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_sub_title',
 			[
-				'label' => esc_html__( 'Sub Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'sub titel' ),
+				'default' => esc_html( 'sub titel' ),
 			]
 		);
 
@@ -107,10 +107,10 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Main title' ),
+				'default' => esc_html( 'Main title' ),
 			]
 		);
 
@@ -118,10 +118,10 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_des',
 			[
-				'label' => esc_html__( 'Description', 'better-el-addons' ),
+				'label' => esc_html__( 'Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'default' => esc_html__( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
+				'default' => esc_html( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
 			]
 		);
 
@@ -132,7 +132,7 @@ class Better_Heading extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -141,7 +141,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_sub_title_options',
 			[
-				'label' => esc_html__( 'Sub Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -151,7 +151,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_sub_title_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'default' => '#333',
 				'selectors' => [
@@ -165,7 +165,7 @@ class Better_Heading extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_heading_sub_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-heading span',
 			]
 		);
@@ -174,7 +174,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_title_options',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -184,7 +184,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_title_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -198,7 +198,7 @@ class Better_Heading extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_heading_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-heading h4',
 			]
 		);
@@ -207,7 +207,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading__title_border1_color',
 			[
-				'label' => esc_html__( 'Border 1 Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Border 1 Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#2c3e50',
 				'selectors' => [
@@ -220,7 +220,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading__title_border2_color',
 			[
-				'label' => esc_html__( 'Border 2 Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Border 2 Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#db3157',
 				'selectors' => [
@@ -233,7 +233,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_des_options',
 			[
-				'label' => esc_html__( 'Description', 'better-el-addons' ),
+				'label' => esc_html__( 'Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -243,7 +243,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_des_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'default' => '#333',
 				'selectors' => [
@@ -257,7 +257,7 @@ class Better_Heading extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_heading_des_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-heading p',
 			]
 		);
@@ -266,7 +266,7 @@ class Better_Heading extends Widget_Base {
 		$this->add_control(
 			'better_heading_options',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -276,19 +276,19 @@ class Better_Heading extends Widget_Base {
 		$this->add_responsive_control(
 			'better_heading_alignment',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

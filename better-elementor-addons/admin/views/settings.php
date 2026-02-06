@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 /* Deactivation of Elementor Elements */
-$basic_elements = array(
+$better_elementor_addons_basic_elements = array(
     'countdown',
     'image-box',
     'featured',
@@ -55,9 +55,9 @@ $basic_elements = array(
     'icon-box',
     'flip-box'
 );
-foreach ( $basic_elements as $element_name ) {
-    $element_name__ = str_replace( '-', '_', $element_name );
-    ${'deactivate_element_' . $element_name__} = bea_get_option( 'bea_deactivate_element_' . $element_name__, false );
+foreach ( $better_elementor_addons_basic_elements as $better_elementor_addons_element_name ) {
+    $better_elementor_addons_element_name__ = str_replace( '-', '_', $better_elementor_addons_element_name );
+    ${'deactivate_element_' . $better_elementor_addons_element_name__} = better_elementor_addons_get_option( 'bea_deactivate_element_' . $better_elementor_addons_element_name__, false );
 }
 ?>
 
@@ -77,12 +77,12 @@ foreach ( $basic_elements as $element_name ) {
                 <ul class="bea-tabs-wrap">
                     <li class="bea-tab" data-target="general"><i
                                 class="bea-icon dashicons dashicons-admin-generic"></i><?php 
-echo esc_html( __( 'General', 'better-el-addons' ) );
+echo esc_html( __( 'General', 'better-elementor-addons' ) );
 ?>
                     </li>
                     <li class="bea-tab  selected" data-target="elements"><i
                                 class="bea-icon dashicons dashicons-admin-settings"></i><?php 
-echo esc_html( __( 'Elements', 'better-el-addons' ) );
+echo esc_html( __( 'Elements', 'better-elementor-addons' ) );
 ?>
                     </li>
                 </ul>
@@ -94,17 +94,17 @@ echo esc_html( __( 'Elements', 'better-el-addons' ) );
                     <!---- Theme Colors -->
                     <div class="bea-box-side">
                         <h3><?php 
-echo esc_html( __( 'Intro', 'better-el-addons' ) );
+echo esc_html( __( 'Intro', 'better-elementor-addons' ) );
 ?></h3>
                     </div>
                     <div class="bea-inner bea-box-inner">
                         <div class="bea-row bea-field">
                             <label
                                     class="bea-label"><?php 
-echo esc_html( __( 'Better Elementor Addons', 'better-el-addons' ) );
+echo esc_html( __( 'Better Elementor Addons', 'better-elementor-addons' ) );
 ?></label>
                             <p class="bea-desc"><?php 
-echo esc_html( __( 'Better Elementor Addons is an elementor add-on to showcase your Count down, Service Box, Team, Testimonial, our team, and Heading with card style/design. This is an simple and flexible way to add new elements/widgets to Elementor Page Builder.', 'better-el-addons' ) );
+echo esc_html( __( 'Better Elementor Addons is an elementor add-on to showcase your Count down, Service Box, Team, Testimonial, our team, and Heading with card style/design. This is an simple and flexible way to add new elements/widgets to Elementor Page Builder.', 'better-elementor-addons' ) );
 ?></p>
                         </div>
 
@@ -125,7 +125,7 @@ echo esc_html( __( 'Better Elementor Addons is an elementor add-on to showcase y
                     <div class="bea-box-side">
 
                         <h3><?php 
-echo esc_html( __( 'Optimize Plugin', 'better-el-addons' ) );
+echo esc_html( __( 'Optimize Plugin', 'better-elementor-addons' ) );
 ?></h3>
 
                     </div>
@@ -135,40 +135,40 @@ echo esc_html( __( 'Optimize Plugin', 'better-el-addons' ) );
 
                         <div class="bea-row bea-field">
                             <label class="bea-label"><?php 
-echo esc_html( __( 'Deactivate elements for better performance', 'better-el-addons' ) );
+echo esc_html( __( 'Deactivate elements for better performance', 'better-elementor-addons' ) );
 ?></label>
 
                             <p class="bea-desc"><?php 
-echo esc_html( __( 'You can deactivate those elements that you do not intend to use to avoid loading scripts and files related to those elements.', 'better-el-addons' ) );
+echo esc_html( __( 'You can deactivate those elements that you do not intend to use to avoid loading scripts and files related to those elements.', 'better-elementor-addons' ) );
 ?></p>
                         </div>
 
                         <div class="bea-elements-deactivate">
                             
                             <?php 
-foreach ( $basic_elements as $element_name ) {
-    $element_name__ = str_replace( '-', '_', $element_name );
-    $element_name_ = str_replace( '_', ' ', $element_name__ );
+foreach ( $better_elementor_addons_basic_elements as $better_elementor_addons_element_name ) {
+    $better_elementor_addons_element_name__ = str_replace( '-', '_', $better_elementor_addons_element_name );
+    $better_elementor_addons_element_name_ = str_replace( '_', ' ', $better_elementor_addons_element_name__ );
     ?>
                                     <div class="bea-row bea-type-checkbox bea-field">
                                         <label class="bea-label"><?php 
-    echo esc_html( $element_name_, 'better-el-addons' );
+    echo esc_html( $better_elementor_addons_element_name_, 'better-elementor-addons' );
     ?></label>
                                         <div class="bea-toggle">
                                             <input type="checkbox" class="bea-checkbox" name="<?php 
-    echo esc_attr( 'bea_deactivate_element_' . $element_name__ );
+    echo esc_attr( 'bea_deactivate_element_' . $better_elementor_addons_element_name__ );
     ?>"
                                                     id="<?php 
-    echo esc_attr( 'bea_deactivate_element_' . $element_name__ );
+    echo esc_attr( 'bea_deactivate_element_' . $better_elementor_addons_element_name__ );
     ?>" data-default=""
                                                     value="<?php 
-    echo esc_attr( ${'deactivate_element_' . $element_name__} );
+    echo esc_attr( ${'deactivate_element_' . $better_elementor_addons_element_name__} );
     ?>" 
                                                     <?php 
-    echo checked( !empty(${'deactivate_element_' . $element_name__}), 1, false );
+    echo checked( !empty(${'deactivate_element_' . $better_elementor_addons_element_name__}), 1, false );
     ?>>
                                             <label for="<?php 
-    echo esc_attr( 'bea_deactivate_element_' . $element_name__ );
+    echo esc_attr( 'bea_deactivate_element_' . $better_elementor_addons_element_name__ );
     ?>"></label>
                                         </div>
                                     </div>

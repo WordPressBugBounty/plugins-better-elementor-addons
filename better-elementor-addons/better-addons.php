@@ -2,20 +2,22 @@
 
 /**
  * @package better_el_addons 
- * @version 1.5.4
+ * @version 1.5.7
  */
 /**
- * Plugin Name: Better Elementor Addons
+ * Plugin Name: Better Addons for Elementor
  * Description: Simple Elementor Addons for making Beautiful Website.
  * Plugin URI:  https://wordpress.org/plugins/better-elementor-addons/
- * Version:     1.5.4
- * Author:      BetterAddons
- * Author URI:  https://widgets.betteraddons.com/
- * Text Domain: better-el-addons
+ * Version:     1.5.7
+ * Author:      WPDive
+ * Author URI:  https://wpdive.com/plugins/better-addons/
+ * Text Domain: better-elementor-addons
  * Domain Path: /lang
- * Tested up to: 6.7
- * Elementor tested up to: 3.25.10
- * Elementor Pro tested up to: 3.25.4
+ * license:     GPLv3 or later
+ * license URI: https://www.gnu.org/licenses/gpl-3.0.html
+ * Tested up to: 6.8
+ * Elementor tested up to: 3.33
+ * Elementor Pro tested up to: 3.33
  */
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -24,7 +26,7 @@ if ( !defined( 'ABSPATH' ) ) {
 // Ensure the free version is deactivated if premium is running
 
 // Plugin version
-define( 'BEA_VERSION', '1.5.4' );
+define( 'BEA_VERSION', '1.5.7' );
 // Plugin Root File
 define( 'BEA_PLUGIN_FILE', __FILE__ );
 // Plugin Folder Path
@@ -92,7 +94,7 @@ define( 'BEA_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
          */
         public function i18n()
         {
-            load_plugin_textdomain( 'better-el-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
+            load_plugin_textdomain( 'better-elementor-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
         }
         
         /**
@@ -130,16 +132,17 @@ define( 'BEA_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
          */
         public function admin_notice_missing_main_plugin()
         {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking WordPress core activation parameter
             if ( isset( $_GET['activate'] ) ) {
                 unset( $_GET['activate'] );
             }
             $message = sprintf(
                 /* translators: 1: Plugin name 2: Elementor */
-                esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'better-el-addons' ),
-                '<strong>' . esc_html__( 'Better Elementor Elements', 'better-el-addons' ) . '</strong>',
-                '<strong>' . esc_html__( 'Elementor', 'better-el-addons' ) . '</strong>'
+                esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'better-elementor-addons' ),
+                '<strong>' . esc_html__( 'Better Elementor Elements', 'better-elementor-addons' ) . '</strong>',
+                '<strong>' . esc_html__( 'Elementor', 'better-elementor-addons' ) . '</strong>'
             );
-            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-el-addons') );
+            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-elementor-addons') );
         }
         
         /**
@@ -152,17 +155,18 @@ define( 'BEA_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
          */
         public function admin_notice_minimum_elementor_version()
         {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking WordPress core activation parameter
             if ( isset( $_GET['activate'] ) ) {
                 unset( $_GET['activate'] );
             }
             $message = sprintf(
                 /* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-                esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'better-el-addons' ),
-                '<strong>' . esc_html__( 'Better Elementor Elements', 'better-el-addons' ) . '</strong>',
-                '<strong>' . esc_html__( 'Elementor', 'better-el-addons' ) . '</strong>',
+                esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'better-elementor-addons' ),
+                '<strong>' . esc_html__( 'Better Elementor Elements', 'better-elementor-addons' ) . '</strong>',
+                '<strong>' . esc_html__( 'Elementor', 'better-elementor-addons' ) . '</strong>',
                 self::MINIMUM_ELEMENTOR_VERSION
             );
-            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-el-addons') );
+            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-elementor-addons') );
         }
         
         /**
@@ -175,31 +179,32 @@ define( 'BEA_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
          */
         public function admin_notice_minimum_php_version()
         {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking WordPress core activation parameter
             if ( isset( $_GET['activate'] ) ) {
                 unset( $_GET['activate'] );
             }
             $message = sprintf(
                 /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-                esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'better-el-addons' ),
-                '<strong>' . esc_html__( 'Elementor Hello World', 'better-el-addons' ) . '</strong>',
-                '<strong>' . esc_html__( 'PHP', 'better-el-addons' ) . '</strong>',
+                esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'better-elementor-addons' ),
+                '<strong>' . esc_html__( 'Elementor Hello World', 'better-elementor-addons' ) . '</strong>',
+                '<strong>' . esc_html__( 'PHP', 'better-elementor-addons' ) . '</strong>',
                 self::MINIMUM_PHP_VERSION
             );
-            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-el-addons') );
+            printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_attr($message, 'better-elementor-addons') );
         }
     
     }
     // Instantiate Better_Elementor_Elements.
     new Better_Elementor_Elements();
-    function create_custom_categories( $elements_manager )
+    function better_elementor_addons_create_custom_categories( $elements_manager )
     {
         $elements_manager->add_category( 'better-category', [
-            'title' => __( 'Better Elements.', 'better-el-addons' ),
+            'title' => __( 'Better Elements.', 'better-elementor-addons' ),
             'icon'  => 'fa fa-plug',
         ] );
     }
     
-    add_action( 'elementor/elements/categories_registered', 'create_custom_categories' );
+    add_action( 'elementor/elements/categories_registered', 'better_elementor_addons_create_custom_categories' );
     //include elementor addon
     include 'inc/elementor-addon.php';
 

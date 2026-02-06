@@ -40,7 +40,7 @@ class Better_Map extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Map', 'better-el-addons' );
+		return esc_html__( 'Map', 'better-elementor-addons' );
 	}
 
 	/**
@@ -103,37 +103,37 @@ class Better_Map extends Widget_Base {
         $this->start_controls_section(
 			'section_shortcode',
 			[
-				'label' => esc_html__( 'Shortcode', 'genesis-core' ),
+				'label' => esc_html__( 'Shortcode', 'better-elementor-addons' ),
 			]
         );
         
         $this->add_control(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
-                'placeholder' => esc_html__( 'Enter your title', 'better-el-addons' ),
-				'default' => esc_html__('We Make Creative Solutions', 'better-el-addons' ),
+                'placeholder' => esc_html__( 'Enter your title', 'better-elementor-addons' ),
+				'default' => esc_html('We Make Creative Solutions', 'better-elementor-addons' ),
 			]
         );
 
 		$this->add_control(
 			'section_subtitle',
 			[
-				'label' => esc_html__( 'Sub-Title Text', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::WYSIWYG,
-                'placeholder' => esc_html__( 'Enter your sub-title', 'better-el-addons' ),
-                'default' => esc_html__('Quisque massa ipsum, luctus at tempus eleifend congue quis
+                'placeholder' => esc_html__( 'Enter your sub-title', 'better-elementor-addons' ),
+                'default' => esc_html('Quisque massa ipsum, luctus at tempus eleifend congue quis
 				lectus. Morbi bibendum nisl id
 				porttitor ultrices odio elit vestibulum metus, ac semper velit quam sed nulla aenean eu
-				hendreritt.', 'better-el-addons' )
+				hendreritt.', 'better-elementor-addons' )
 			]
 		);
 
 		$this->add_control(
 			'location_link',
 			[
-				'label' => esc_html__( 'Map location link', 'genesis-core' ),
+				'label' => esc_html__( 'Map location link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => esc_url( 'http://your-link.com' ),
 				'default' => [
@@ -147,7 +147,7 @@ class Better_Map extends Widget_Base {
         $this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Content Style', 'better-el-addons' ),
+				'label' => __( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -157,7 +157,7 @@ class Better_Map extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-about .main-tit h2,{{WRAPPER}} .better-heading.style-4 .img-wrapper .title h3',
 			]
 		);
@@ -167,7 +167,7 @@ class Better_Map extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_sub_title_typography',
-				'label' => esc_html__( 'Sub-Title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-about .content p,{{WRAPPER}} .better-heading.style-4 .cont h4',
 			]
 		);
@@ -175,7 +175,7 @@ class Better_Map extends Widget_Base {
 		$this->add_control(
 			'better_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-heading.style-4 .img-wrapper .title h3' => '-webkit-text-stroke-color: {{VALUE}}',
@@ -186,7 +186,7 @@ class Better_Map extends Widget_Base {
         $this->add_control(
 			'better_sub_title_color',
 			[
-				'label' => esc_html__( 'Sub-Title Accent Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub-Title Accent Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-heading.style-4 .cont h4 .stroke' => '-webkit-text-stroke-color: {{VALUE}}',

@@ -44,7 +44,7 @@ class Better_Breadcrumbs extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Breadcrumbs', 'better-el-addons' );
+		return __( 'Breadcrumbs', 'better-elementor-addons' );
 	}
 
 	/**
@@ -92,17 +92,17 @@ class Better_Breadcrumbs extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Breadcrumbs Settings', 'better-el-addons' ),
+				'label' => __( 'Breadcrumbs Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'button_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -111,19 +111,19 @@ class Better_Breadcrumbs extends Widget_Base {
 		$this->add_responsive_control(
 			'breadcrumbs_align',
 			[
-				'label' => __( 'Button Alignment', 'better-el-addons' ),
+				'label' => __( 'Button Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons'),
+						'title' => __( 'Right', 'better-elementor-addons'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -141,7 +141,7 @@ class Better_Breadcrumbs extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -151,7 +151,7 @@ class Better_Breadcrumbs extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_breadcrumbs_text_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-breadcrumbs.style1 a, {{WRAPPER}} .better-breadcrumbs.style1 a',
 			]
 		);
@@ -159,7 +159,7 @@ class Better_Breadcrumbs extends Widget_Base {
 		$this->add_control(
 			'better_breadcrumbs_text_color',
 			[
-				'label' => esc_html__( 'Text Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Text Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-breadcrumbs.style1 span' => 'color: {{VALUE}};',
@@ -170,7 +170,7 @@ class Better_Breadcrumbs extends Widget_Base {
 		$this->add_control(
 			'better_breadcrumbs_link_color',
 			[
-				'label' => esc_html__( 'Link Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Link Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-breadcrumbs.style1 a' => 'color: {{VALUE}};',

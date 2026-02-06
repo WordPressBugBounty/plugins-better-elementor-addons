@@ -59,7 +59,7 @@ class Better_Counter extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Counter', 'better-el-addons' );
+		return __( 'Counter', 'better-elementor-addons' );
 	}
 
 	/**
@@ -107,18 +107,18 @@ class Better_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Button Settings', 'better-el-addons' ),
+				'label' => __( 'Button Settings', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'counter_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -127,7 +127,7 @@ class Better_Counter extends Widget_Base {
         $this->add_control(
 			'counter_title',
 			[
-				'label' => __( 'Counter Title','better-el-addons' ),
+				'label' => __( 'Counter Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
@@ -138,7 +138,7 @@ class Better_Counter extends Widget_Base {
 		$this->add_control(
 			'counter_sub_title',
 			[
-				'label' => __( 'Counter Sub-Title','better-el-addons' ),
+				'label' => __( 'Counter Sub-Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
@@ -152,7 +152,7 @@ class Better_Counter extends Widget_Base {
 		$this->add_control(
 			'counter_percent',
 			[
-				'label' => __( 'Width', 'better-el-addons' ),
+				'label' => __( 'Width', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ '%' ],
 				'range' => [
@@ -173,7 +173,7 @@ class Better_Counter extends Widget_Base {
         $this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Content Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Content Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -181,7 +181,7 @@ class Better_Counter extends Widget_Base {
         $this->add_control(
 			'better_counter_bar_color',
 			[
-				'label' => esc_html__( 'Circle or Bar Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Circle or Bar Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#eee'
 			]
@@ -190,7 +190,7 @@ class Better_Counter extends Widget_Base {
         $this->add_control(
 			'better_counter_percent_color',
 			[
-				'label' => esc_html__( 'Percent Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Percent Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -203,7 +203,7 @@ class Better_Counter extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_counter_percent_typography',
-				'label' => esc_html__( 'Percent Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Percent Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-counter .skill span',
 			]
 		);
@@ -211,7 +211,7 @@ class Better_Counter extends Widget_Base {
         $this->add_control(
 			'better_counter_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -224,7 +224,7 @@ class Better_Counter extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_counter_title_typography',
-				'label' => esc_html__( 'Title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-counter h6',
 			]
 		);
@@ -232,7 +232,7 @@ class Better_Counter extends Widget_Base {
 		$this->add_control(
 			'better_counter_sub_title_color',
 			[
-				'label' => esc_html__( 'Sub Title Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub Title Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -248,7 +248,7 @@ class Better_Counter extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_counter_sub_title_typography',
-				'label' => esc_html__( 'Sub Title Typography', 'better-el-addons' ),
+				'label' => esc_html__( 'Sub Title Typography', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-counter span',
 				'condition' => [
 					'counter_style' => '2'

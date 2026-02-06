@@ -7,7 +7,7 @@
                     <span class="icon gr-text <?php echo esc_attr( $item['style3_item_icon'] ); ?>"></span>
                     <h6><?php echo esc_html( $item['style3_item_title'] ); ?></h6>
                     <p><?php echo esc_html( $item['style3_item_text'] ); ?></p>
-                    <a href="<?php echo esc_url( $item['style3_item_link']['url'] ); ?>"><?php esc_html_e( 'Read More', 'text-domain' ); ?></a>
+                    <a href="<?php echo esc_url( $item['style3_item_link']['url'] ); ?>"><?php esc_html_e( 'Read More', 'better-elementor-addons' ); ?></a>
                 </div>
             </div>
             <?php endforeach; ?>

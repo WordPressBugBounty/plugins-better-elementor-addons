@@ -30,7 +30,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Post F Image', 'better-el-addons' );
+		return __( 'Post F Image', 'better-elementor-addons' );
 	}
 
 	public function get_icon() {
@@ -48,7 +48,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Settings', 'better-el-addons' ),
+				'label' => __( 'Settings', 'better-elementor-addons' ),
 			]
 		);
 
@@ -65,7 +65,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 			Group_Control_Image_Size::get_type(),
 			[
 				'name' => 'size',
-				'label' => __( 'Image Size', 'better-el-addons' ),
+				'label' => __( 'Image Size', 'better-elementor-addons' ),
 				'default' => 'large',
 				'exclude' => [ 'custom' ],
 			]
@@ -74,23 +74,23 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'better-el-addons' ),
+				'label' => __( 'Alignment', 'better-elementor-addons' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'better-el-addons' ),
+						'title' => __( 'Justified', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -104,15 +104,15 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => __( 'Link to', 'better-el-addons' ),
+				'label' => __( 'Link to', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => __( 'None', 'better-el-addons' ),
-					'home' => __( 'Home URL', 'better-el-addons' ),
+					'none' => __( 'None', 'better-elementor-addons' ),
+					'home' => __( 'Home URL', 'better-elementor-addons' ),
 					'post' => 'Post',
-					'file' => __( 'Media File URL', 'better-el-addons' ),
-					'custom' => __( 'Custom URL', 'better-el-addons' ),
+					'file' => __( 'Media File URL', 'better-elementor-addons' ),
+					'custom' => __( 'Custom URL', 'better-elementor-addons' ),
 				],
 			]
 		);
@@ -120,9 +120,9 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link to', 'better-el-addons' ),
+				'label' => __( 'Link to', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'better-el-addons' ),
+				'placeholder' => __( 'https://your-link.com', 'better-elementor-addons' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -135,7 +135,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Settings', 'better-el-addons' ),
+				'label' => __( 'Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -143,7 +143,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_responsive_control(
 			'space',
 			[
-				'label' => __( 'Size (%)', 'better-el-addons' ),
+				'label' => __( 'Size (%)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -165,7 +165,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_responsive_control(
 			'opacity',
 			[
-				'label' => __( 'Opacity (%)', 'better-el-addons' ),
+				'label' => __( 'Opacity (%)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -186,7 +186,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_control(
 			'angle',
 			[
-				'label' => __( 'Angle (deg)', 'better-el-addons' ),
+				'label' => __( 'Angle (deg)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
@@ -209,7 +209,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'better-el-addons' ),
+				'label' => __( 'Hover Animation', 'better-elementor-addons' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -218,7 +218,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'image_border',
-				'label' => __( 'Image Border', 'better-el-addons' ),
+				'label' => __( 'Image Border', 'better-elementor-addons' ),
 				'selector' => '{{WRAPPER}} .better-widgets-featured-image img',
 			]
 		);
@@ -226,7 +226,7 @@ class Better_Post_Featured_Image extends Widget_Base {
 		$this->add_control(
 			'image_border_radius',
 			[
-				'label' => __( 'Border Radius', 'better-el-addons' ),
+				'label' => __( 'Border Radius', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [

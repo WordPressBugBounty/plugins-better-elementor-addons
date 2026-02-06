@@ -39,7 +39,7 @@ class Better_Info_Box extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Info box', 'better_plg' );
+		return __( 'Info box', 'better-elementor-addons' );
 	}
 
 	//script depend
@@ -91,22 +91,22 @@ class Better_Info_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Info box Settings', 'better-el-addons' ),
+				'label' => __( 'Info box Settings', 'better-elementor-addons' ),
 			]
 		);
 		
 		$this->add_control(
 			'better_infobox_style',
 			[
-				'label' => __( 'Style', 'better-el-addons' ),
+				'label' => __( 'Style', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Style 1', 'better-el-addons' ),
-					'2' => __( 'Style 2', 'better-el-addons' ),
-					'3' => __( 'Style 3', 'better-el-addons' ),
-					'4' => __( 'Style 4', 'better-el-addons' ),
-					'5' => __( 'Style 5', 'better-el-addons' ),
-					'6' => __( 'Style 6', 'better-el-addons' ),
+					'1' => __( 'Style 1', 'better-elementor-addons' ),
+					'2' => __( 'Style 2', 'better-elementor-addons' ),
+					'3' => __( 'Style 3', 'better-elementor-addons' ),
+					'4' => __( 'Style 4', 'better-elementor-addons' ),
+					'5' => __( 'Style 5', 'better-elementor-addons' ),
+					'6' => __( 'Style 6', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 			]
@@ -115,7 +115,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'letter',
 			[
-				'label' => __( 'Letter','better-el-addons' ),
+				'label' => __( 'Letter', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -129,11 +129,11 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'better_infobox_style6_type',
 			[
-				'label' => __( 'Mode', 'better-el-addons' ),
+				'label' => __( 'Mode', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'1' => __( 'Number', 'better-el-addons' ),
-					'2' => __( 'Icon', 'better-el-addons' ),
+					'1' => __( 'Number', 'better-elementor-addons' ),
+					'2' => __( 'Icon', 'better-elementor-addons' ),
 				],
 				'default' => '1',
 				'condition' => [
@@ -145,7 +145,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'number',
 			[
-				'label' => __( 'Number','better-el-addons' ),
+				'label' => __( 'Number', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -160,7 +160,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title','better-el-addons' ),
+				'label' => __( 'Title', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Insert your title..',
@@ -172,7 +172,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'subtitle',
 			[
-				'label' => __( 'Subtitle','better-el-addons' ),
+				'label' => __( 'Subtitle', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -185,7 +185,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'text',
 			[
-				'label' => __( 'Text','better-el-addons' ),
+				'label' => __( 'Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'placeholder' => 'Leave it blank if you don\'t want to use this subtitle',
@@ -196,30 +196,30 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'better_infobox_pe7_icon',
 			[
-				'label' => __( 'Icon', 'better-el-addons' ),
+				'label' => __( 'Icon', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'pe-7s-map-marker' => __( 'map marker', 'better-el-addons' ),
-					'pe-7s-mail' => __( 'mail', 'better-el-addons' ),
-					'pe-7s-call' => __( 'call', 'better-el-addons' ),
-					'pe-7s-refresh' => __( 'refresh', 'better-el-addons' ),
-					'pe-7s-refresh-2' => __( 'refresh 2', 'better-el-addons' ),
-					'pe-7s-cloud-upload' => __( 'cloud upload', 'better-el-addons' ),
-					'pe-7s-close' => __( 'close', 'better-el-addons' ),
-					'pe-7s-photo' => __( 'photo', 'better-el-addons' ),
-					'pe-7s-users' => __( 'users', 'better-el-addons' ),
-					'pe-7s-angle-right' => __( 'angle right', 'better-el-addons' ),
-					'pe-7s-angle-left' => __( 'angle left', 'better-el-addons' ),
-					'pe-7s-angle-up' => __( 'angle up', 'better-el-addons' ),
-					'pe-7s-angle-down' => __( 'angle down', 'better-el-addons' ),
-					'pe-7s-paint-bucket' => __( 'paint bucket', 'better-el-addons' ),
-					'pe-7s-gleam' => __( 'gleam', 'better-el-addons' ),
-					'pe-7s-vector' => __( 'vector', 'better-el-addons' ),
-					'pe-7s-drop' => __( 'drop', 'better-el-addons' ),
-					'pe-7s-glasses' => __( 'glasses', 'better-el-addons' ),
-					'pe-7s-music' => __( 'music', 'better-el-addons' ),
-					'pe-7s-way' => __( 'way', 'better-el-addons' ),
-					'pe-7s-settings' => __( 'settings', 'better-el-addons' ),
+					'pe-7s-map-marker' => __( 'map marker', 'better-elementor-addons' ),
+					'pe-7s-mail' => __( 'mail', 'better-elementor-addons' ),
+					'pe-7s-call' => __( 'call', 'better-elementor-addons' ),
+					'pe-7s-refresh' => __( 'refresh', 'better-elementor-addons' ),
+					'pe-7s-refresh-2' => __( 'refresh 2', 'better-elementor-addons' ),
+					'pe-7s-cloud-upload' => __( 'cloud upload', 'better-elementor-addons' ),
+					'pe-7s-close' => __( 'close', 'better-elementor-addons' ),
+					'pe-7s-photo' => __( 'photo', 'better-elementor-addons' ),
+					'pe-7s-users' => __( 'users', 'better-elementor-addons' ),
+					'pe-7s-angle-right' => __( 'angle right', 'better-elementor-addons' ),
+					'pe-7s-angle-left' => __( 'angle left', 'better-elementor-addons' ),
+					'pe-7s-angle-up' => __( 'angle up', 'better-elementor-addons' ),
+					'pe-7s-angle-down' => __( 'angle down', 'better-elementor-addons' ),
+					'pe-7s-paint-bucket' => __( 'paint bucket', 'better-elementor-addons' ),
+					'pe-7s-gleam' => __( 'gleam', 'better-elementor-addons' ),
+					'pe-7s-vector' => __( 'vector', 'better-elementor-addons' ),
+					'pe-7s-drop' => __( 'drop', 'better-elementor-addons' ),
+					'pe-7s-glasses' => __( 'glasses', 'better-elementor-addons' ),
+					'pe-7s-music' => __( 'music', 'better-elementor-addons' ),
+					'pe-7s-way' => __( 'way', 'better-elementor-addons' ),
+					'pe-7s-settings' => __( 'settings', 'better-elementor-addons' ),
 				],
 				'default' => 'pe-7s-map-marker',
 				'condition' => [
@@ -232,7 +232,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'info_icon',
 			[
-				'label' =>esc_html__( 'Icon', 'better-el-addons' ),
+				'label' =>esc_html__( 'Icon', 'better-elementor-addons' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'better_btn_icon',
 				'label_block' => true,
@@ -248,7 +248,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
             'image',
             [
-                'label' => __( 'Image', 'better-el-addons' ),
+                'label' => __( 'Image', 'better-elementor-addons' ),
                 'type' => Controls_Manager::MEDIA,
 				'default' => [
 				'url' => Utils::get_placeholder_image_src(),
@@ -263,7 +263,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'better_infobox_color',
 			[
-				'label' => esc_html__( 'Color', 'better-el-addons' ),
+				'label' => esc_html__( 'Color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 				'{{WRAPPER}} .better-info-box.style-1 .item-sm .numb' => 'color: {{VALUE}}',
@@ -279,7 +279,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->start_controls_section(
 			'title_settings',
 			[
-				'label' => __( 'Title Setting','better-el-addons' ),
+				'label' => __( 'Title Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -288,7 +288,7 @@ class Better_Info_Box extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'title_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .icon-title, {{WRAPPER}} .better-info-box h6',
 			]
 		);
@@ -296,7 +296,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .icon-title' => 'color: {{VALUE}};', 
@@ -310,7 +310,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->start_controls_section(
 			'text_settings',
 			[
-				'label' => __( 'Text Setting','better-el-addons' ),
+				'label' => __( 'Text Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -319,7 +319,7 @@ class Better_Info_Box extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'      => 'text_typography',
-				'label'     => __( 'Typography', 'better-el-addons' ),
+				'label'     => __( 'Typography', 'better-elementor-addons' ),
 				'selector'  => '{{WRAPPER}} .icon-text, {{WRAPPER}} .better-info-box p',
 			]
 		);
@@ -327,7 +327,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'text_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .icon-text' => 'color: {{VALUE}};',
@@ -339,7 +339,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'text_margin',
 			[
-				'label' => __( 'Margin)', 'better-el-addons' ),
+				'label' => __( 'Margin)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -353,7 +353,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->start_controls_section(
 			'icon_settings',
 			[
-				'label' => __( 'Icon Setting','better-el-addons' ),
+				'label' => __( 'Icon Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_infobox_style' => array('5','6')
@@ -364,7 +364,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'better-el-addons' ),
+				'label' => __( 'Icon Size', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -383,7 +383,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_margin',
 			[
-				'label' => __( 'Margin)', 'better-el-addons' ),
+				'label' => __( 'Margin)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -395,7 +395,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-info-box .icon' => 'color: {{VALUE}};',
@@ -408,7 +408,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->start_controls_section(
 			'letter_settings',
 			[
-				'label' => __( 'Icon Setting','better-el-addons' ),
+				'label' => __( 'Icon Setting', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'better_infobox_style' => array('5')
@@ -419,7 +419,7 @@ class Better_Info_Box extends Widget_Base {
 		$this->add_control(
 			'letter_color',
 			[
-				'label' => __( 'Color','better-el-addons' ),
+				'label' => __( 'Color', 'better-elementor-addons' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .better-info-box .letr-bg' => 'color: {{VALUE}};',

@@ -38,7 +38,7 @@ class Better_Image_Box extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Image Box', 'better-el-addons' );
+		return esc_html__( 'Image Box', 'better-elementor-addons' );
 	}
 
 	/**
@@ -102,7 +102,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'better-el-addons' ),
+				'label' => esc_html__( 'Content', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -110,10 +110,10 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_number',
 			[
-				'label' => esc_html__( 'Number', 'better-el-addons' ),
+				'label' => esc_html__( 'Number', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( '1' ),
+				'default' => esc_html( '1' ),
 			]
 		);
 
@@ -121,7 +121,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_image',
 			[
-				'label' => esc_html__( 'Choose Image', 'better-el-addons' ),
+				'label' => esc_html__( 'Choose Image', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
 				'label_block' => true,
 				'default' => [
@@ -134,10 +134,10 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_title',
 			[
-				'label' => esc_html__( 'Title', 'better-el-addons' ),
+				'label' => esc_html__( 'Title', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Better Image box' ),
+				'default' => esc_html( 'Better Image box' ),
 			]
 		);
 
@@ -145,16 +145,16 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_des',
 			[
-				'label' => esc_html__( 'Description', 'better-el-addons' ),
+				'label' => esc_html__( 'Description', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'default' => esc_html__( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
+				'default' => esc_html( 'write your profissional text here and you can styling and customize it form style or advanced tabs or check documentation for more details.' ),
 			]
 		);
 		$this->add_control(
 			'btn_text',
 			[
-				'label' => __( 'Button Text','bim_plg' ),
+				'label' => __( 'Button Text', 'better-elementor-addons' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'label_block' => true,
@@ -165,7 +165,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Button Link','bim_plg' ),
+				'label' => __( 'Button Link', 'better-elementor-addons' ),
 				'type' => Controls_Manager::URL,
 				'placeholder' => 'Leave it blank if you don\'t want to use this button',
 			]
@@ -174,7 +174,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'icon_btn',
 			[
-				'label' => __( 'Button Icon', 'bim_plg' ),
+				'label' => __( 'Button Icon', 'better-elementor-addons' ),
 				'type' => Controls_Manager::ICON,
 				'label_block' => true,
 				'default' => '',
@@ -191,7 +191,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_box_style',
 			[
-				'label' => __( 'Box Settings', 'bim_plg' ),
+				'label' => __( 'Box Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -199,7 +199,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'box_Padding',
 			[
-				'label' => __( 'Box Padding', 'bim_plg' ),
+				'label' => __( 'Box Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -212,19 +212,19 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'better_all_box_alignment',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -243,7 +243,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_number_style',
 			[
-				'label' => __( 'Number Settings', 'bim_plg' ),
+				'label' => __( 'Number Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -252,7 +252,7 @@ class Better_Image_Box extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_image_box_number_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-single-image-box h2',
 			]
 		);
@@ -260,7 +260,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'number_margin',
 			[
-				'label' => __( 'Number Margin', 'bim_plg' ),
+				'label' => __( 'Number Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -273,14 +273,14 @@ class Better_Image_Box extends Widget_Base {
 				$this->start_controls_tab(
 			'number_normal',
 			[
-				'label' => __( 'Normal', 'bim_plg' ),
+				'label' => __( 'Normal', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'number_color_normal',
 			[
-				'label' => __( 'Number color.','bim_plg' ),
+				'label' => __( 'Number color.', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box h2' => 'color: {{VALUE}}',
@@ -290,7 +290,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'number_color_stroke-normal',
 			[
-				'label' => __( 'Number color stroke','bim_plg' ),
+				'label' => __( 'Number color stroke', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box h2' => '-webkit-text-stroke-color: {{VALUE}}',
@@ -300,7 +300,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'number_width_stroke-normal',
 			[
-				'label' => __( 'Number stroke width','bim_plg' ),
+				'label' => __( 'Number stroke width', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -313,13 +313,13 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'number_hover',
 			[
-				'label' => __( 'Hover', 'bim_plg' ),
+				'label' => __( 'Hover', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'number_color_hover',
 			[
-				'label' => esc_html__( 'Number color','better-el-addons' ),
+				'label' => esc_html__( 'Number color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box:hover h2' => 'color: {{VALUE}}',
@@ -337,7 +337,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => __( 'Title Settings', 'bim_plg' ),
+				'label' => __( 'Title Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -346,14 +346,14 @@ class Better_Image_Box extends Widget_Base {
 				$this->start_controls_tab(
 			'title_normal',
 			[
-				'label' => __( 'Normal', 'bim_plg' ),
+				'label' => __( 'Normal', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'title_color_normal',
 			[
-				'label' => __( 'Title color.','bim_plg' ),
+				'label' => __( 'Title color.', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box h4' => 'color: {{VALUE}}',
@@ -365,13 +365,13 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'title_hover',
 			[
-				'label' => __( 'Hover', 'bim_plg' ),
+				'label' => __( 'Hover', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => esc_html__( 'Title color','better-el-addons' ),
+				'label' => esc_html__( 'Title color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box:hover h4' => 'color: {{VALUE}}',
@@ -387,7 +387,7 @@ class Better_Image_Box extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'better_image_box_title_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-single-image-box h4',
 			]
 		);
@@ -395,7 +395,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'title_margin',
 			[
-				'label' => __( 'Title Margin', 'bim_plg' ),
+				'label' => __( 'Title Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -412,7 +412,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_paragraph_style',
 			[
-				'label' => __( 'Paragraph Settings', 'bim_plg' ),
+				'label' => __( 'Paragraph Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -421,14 +421,14 @@ class Better_Image_Box extends Widget_Base {
 				$this->start_controls_tab(
 			'paragraph_normal',
 			[
-				'label' => __( 'Normal', 'bim_plg' ),
+				'label' => __( 'Normal', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'paragraph_color_normal',
 			[
-				'label' => __( 'Paragraph color.','bim_plg' ),
+				'label' => __( 'Paragraph color.', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box p' => 'color: {{VALUE}}',
@@ -440,13 +440,13 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'paragraph_hover',
 			[
-				'label' => __( 'Hover', 'bim_plg' ),
+				'label' => __( 'Hover', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'paragraph_color_hover',
 			[
-				'label' => esc_html__( 'Title color','better-el-addons' ),
+				'label' => esc_html__( 'Title color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box:hover p' => 'color: {{VALUE}}',
@@ -462,7 +462,7 @@ class Better_Image_Box extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'paragraph_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-single-image-box p',
 			]
 		);
@@ -470,7 +470,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'paragraph_margin',
 			[
-				'label' => __( 'Paragraph Margin', 'bim_plg' ),
+				'label' => __( 'Paragraph Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -485,7 +485,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_btn_style',
 			[
-				'label' => __( 'Button Settings', 'bim_plg' ),
+				'label' => __( 'Button Settings', 'better-elementor-addons' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -494,7 +494,7 @@ class Better_Image_Box extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'btn_typography',
-				'label' => esc_html__( 'Typography', 'better-el-addons' ), 
+				'label' => esc_html__( 'Typography', 'better-elementor-addons' ), 
 				'selector' => '{{WRAPPER}} .better-single-image-box a',
 			]
 		);
@@ -502,7 +502,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_margin',
 			[
-				'label' => __( 'Button Margin', 'bim_plg' ),
+				'label' => __( 'Button Margin', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -513,7 +513,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_padding',
 			[
-				'label' => __( 'Button Padding', 'bim_plg' ),
+				'label' => __( 'Button Padding', 'better-elementor-addons' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -525,12 +525,12 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'btn_display',
 			[
-				'label' => __( 'Display', 'elementor' ),
+				'label' => __( 'Display', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'inline-block',
 				'options' => [
-					'inline-block' => __( 'Inline-block', 'elementor' ),
-					'block' => __( 'Blok', 'elementor' ),
+					'inline-block' => __( 'Inline-block', 'better-elementor-addons' ),
+					'block' => __( 'Blok', 'better-elementor-addons' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box a' => 'display: {{VALUE}};',
@@ -542,14 +542,14 @@ class Better_Image_Box extends Widget_Base {
 				$this->start_controls_tab(
 			'btn_normal',
 			[
-				'label' => __( 'Normal', 'bim_plg' ),
+				'label' => __( 'Normal', 'better-elementor-addons' ),
 			]
 		);
 
 		$this->add_control(
 			'btn_color_normal',
 			[
-				'label' => __( 'Button color.','bim_plg' ),
+				'label' => __( 'Button color.', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box a' => 'color: {{VALUE}}',
@@ -561,13 +561,13 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_tab(
 			'btn_hover',
 			[
-				'label' => __( 'Hover', 'bim_plg' ),
+				'label' => __( 'Hover', 'better-elementor-addons' ),
 			]
 		);
 		$this->add_control(
 			'btn_color_hover',
 			[
-				'label' => esc_html__( 'Button color','better-el-addons' ),
+				'label' => esc_html__( 'Button color', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR, 
 				'selectors' => [
 					'{{WRAPPER}} .better-single-image-box:hover a' => 'color: {{VALUE}}',
@@ -586,7 +586,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Image Style', 'better-el-addons' ),
+				'label' => esc_html__( 'Image Style', 'better-elementor-addons' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -595,7 +595,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_image_options',
 			[
-				'label' => esc_html__( 'Image.', 'better-el-addons' ),
+				'label' => esc_html__( 'Image.', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -605,7 +605,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'better_image_size',
 			[
-				'label' => esc_html__( 'Image Size (%)', 'elementor' ),
+				'label' => esc_html__( 'Image Size (%)', 'better-elementor-addons' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -635,7 +635,7 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_control(
 			'better_image_box_options',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -645,19 +645,19 @@ class Better_Image_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'better_image_box_alignment',
 			[
-				'label' => esc_html__( 'Alignment', 'better-el-addons' ),
+				'label' => esc_html__( 'Alignment', 'better-elementor-addons' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'better-el-addons' ),
+						'title' => __( 'Left', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'better-el-addons' ),
+						'title' => __( 'Center', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'better-el-addons' ),
+						'title' => __( 'Right', 'better-elementor-addons' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],
